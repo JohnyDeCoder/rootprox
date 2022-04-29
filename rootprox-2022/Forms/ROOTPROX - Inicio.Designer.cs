@@ -232,7 +232,7 @@ namespace rootprox_2022
             this.btnReglaFalsa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReglaFalsa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReglaFalsa.UseVisualStyleBackColor = true;
-            this.btnReglaFalsa.Click += new System.EventHandler(this.btnSustitucion_Click);
+            this.btnReglaFalsa.Click += new System.EventHandler(this.btnReglaFalsa_Click);
             // 
             // btnSecante
             // 

@@ -62,9 +62,9 @@ namespace rootprox_2022
             hideSubMenu();
         }
 
-        private void btnSustitucion_Click(object sender, EventArgs e)
+        private void btnReglaFalsa_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new Forms.ROOTPROX_Regla_Falsa());
 
             hideSubMenu();
         }
