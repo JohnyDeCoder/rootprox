@@ -12,3 +12,5 @@ D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\Git
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\obj\Debug\rootprox-2022.csproj.CopyComplete
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\obj\Debug\rootprox-2022.exe
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\obj\Debug\rootprox-2022.pdb
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\obj\Debug\rootprox_2022.Forms.ROOTPROX_Bisección.resources
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\obj\Debug\rootprox_2022.Forms.ROOTPROX_Regla_Falsa.resources

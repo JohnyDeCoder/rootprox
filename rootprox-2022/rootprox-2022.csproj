@@ -55,14 +55,32 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\ColorsTheme.cs" />
+    <Compile Include="Forms\ROOTPROX - Bisección.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ROOTPROX - Bisección.Designer.cs">
+      <DependentUpon>ROOTPROX - Bisección.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ROOTPROX - Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\ROOTPROX - Inicio.Designer.cs">
       <DependentUpon>ROOTPROX - Inicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ROOTPROX - Regla Falsa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ROOTPROX - Regla Falsa.Designer.cs">
+      <DependentUpon>ROOTPROX - Regla Falsa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\ROOTPROX - Bisección.resx">
+      <DependentUpon>ROOTPROX - Bisección.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ROOTPROX - Regla Falsa.resx">
+      <DependentUpon>ROOTPROX - Regla Falsa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

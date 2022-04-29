@@ -50,7 +50,7 @@ namespace rootprox_2022
 
         private void btnBiseccion_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new Forms.ROOTPROX_Bisección());
 
             hideSubMenu();
         }
