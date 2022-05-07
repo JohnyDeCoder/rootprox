@@ -54,7 +54,7 @@ namespace rootprox_2022.Forms
             this.numericRound = new System.Windows.Forms.NumericUpDown();
             this.rbRedondear = new System.Windows.Forms.RadioButton();
             this.rbNormal = new System.Windows.Forms.RadioButton();
-            this.btnLog = new System.Windows.Forms.Button();
+            this.btnPow = new System.Windows.Forms.Button();
             this.btnSigns = new System.Windows.Forms.Button();
             this.lblCorchete2 = new System.Windows.Forms.Label();
             this.btnEuler = new System.Windows.Forms.Button();
@@ -352,15 +352,16 @@ namespace rootprox_2022.Forms
             this.rbNormal.Text = "Normal";
             this.rbNormal.UseVisualStyleBackColor = true;
             // 
-            // btnLog
+            // btnPow
             // 
-            this.btnLog.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLog.Location = new System.Drawing.Point(367, 20);
-            this.btnLog.Name = "btnLog";
-            this.btnLog.Size = new System.Drawing.Size(47, 36);
-            this.btnLog.TabIndex = 23;
-            this.btnLog.Text = "log";
-            this.btnLog.UseVisualStyleBackColor = true;
+            this.btnPow.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPow.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnPow.Location = new System.Drawing.Point(367, 20);
+            this.btnPow.Name = "btnPow";
+            this.btnPow.Size = new System.Drawing.Size(47, 36);
+            this.btnPow.TabIndex = 23;
+            this.btnPow.Text = "^";
+            this.btnPow.UseVisualStyleBackColor = true;
             // 
             // btnSigns
             // 
@@ -384,12 +385,12 @@ namespace rootprox_2022.Forms
             // 
             // btnEuler
             // 
-            this.btnEuler.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEuler.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEuler.Location = new System.Drawing.Point(329, 20);
             this.btnEuler.Name = "btnEuler";
             this.btnEuler.Size = new System.Drawing.Size(32, 36);
             this.btnEuler.TabIndex = 22;
-            this.btnEuler.Text = "e";
+            this.btnEuler.Text = "ℯ";
             this.btnEuler.UseVisualStyleBackColor = true;
             // 
             // lblIteraciones
@@ -486,7 +487,7 @@ namespace rootprox_2022.Forms
             // 
             // gbValues
             // 
-            this.gbValues.Controls.Add(this.btnLog);
+            this.gbValues.Controls.Add(this.btnPow);
             this.gbValues.Controls.Add(this.gbResult);
             this.gbValues.Controls.Add(this.btnEuler);
             this.gbValues.Controls.Add(this.lblComa);
@@ -539,7 +540,7 @@ namespace rootprox_2022.Forms
             // 
             this.lblBisección.AutoSize = true;
             this.lblBisección.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBisección.Location = new System.Drawing.Point(360, 9);
+            this.lblBisección.Location = new System.Drawing.Point(338, 9);
             this.lblBisección.Name = "lblBisección";
             this.lblBisección.Size = new System.Drawing.Size(196, 29);
             this.lblBisección.TabIndex = 29;
@@ -555,6 +556,7 @@ namespace rootprox_2022.Forms
             this.btnCalculate.TabIndex = 24;
             this.btnCalculate.Text = "Calcular";
             this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
             // ROOTPROX_Secante
             // 
@@ -570,6 +572,7 @@ namespace rootprox_2022.Forms
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ROOTPROX_Secante";
             this.Text = "ROOTPROX - Secante";
+            this.Load += new System.EventHandler(this.ROOTPROX_Secante_Load);
             this.gbResult.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultAprox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResults)).EndInit();
@@ -606,7 +609,7 @@ namespace rootprox_2022.Forms
         private System.Windows.Forms.NumericUpDown numericRound;
         private System.Windows.Forms.RadioButton rbRedondear;
         private System.Windows.Forms.RadioButton rbNormal;
-        private System.Windows.Forms.Button btnLog;
+        private System.Windows.Forms.Button btnPow;
         private System.Windows.Forms.Button btnSigns;
         private System.Windows.Forms.Label lblCorchete2;
         private System.Windows.Forms.Button btnEuler;
