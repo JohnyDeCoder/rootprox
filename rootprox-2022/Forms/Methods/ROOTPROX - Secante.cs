@@ -51,7 +51,7 @@ namespace rootprox_2022.Forms
         private void btnCalculate_Click(object sender, EventArgs e)
         {
             int imax, iter;
-            double xi, xd, ea, em, xa, xaold;
+            double xi, xd, ea, em, xa;
 
             /* xi = a
              * xd = b

@@ -55,10 +55,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\ColorsTheme.cs" />
-    <Compile Include="Forms\ROOTPROX - Bisección.cs">
+    <Compile Include="Forms\Methods\ROOTPROX - Bisección.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ROOTPROX - Bisección.Designer.cs">
+    <Compile Include="Forms\Methods\ROOTPROX - Bisección.Designer.cs">
       <DependentUpon>ROOTPROX - Bisección.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\ROOTPROX - Inicio.cs">
@@ -67,27 +67,27 @@
     <Compile Include="Forms\ROOTPROX - Inicio.Designer.cs">
       <DependentUpon>ROOTPROX - Inicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ROOTPROX - Regla Falsa.cs">
+    <Compile Include="Forms\Methods\ROOTPROX - Regla Falsa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ROOTPROX - Regla Falsa.Designer.cs">
+    <Compile Include="Forms\Methods\ROOTPROX - Regla Falsa.Designer.cs">
       <DependentUpon>ROOTPROX - Regla Falsa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ROOTPROX - Secante.cs">
+    <Compile Include="Forms\Methods\ROOTPROX - Secante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ROOTPROX - Secante.Designer.cs">
+    <Compile Include="Forms\Methods\ROOTPROX - Secante.Designer.cs">
       <DependentUpon>ROOTPROX - Secante.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\ROOTPROX - Bisección.resx">
+    <EmbeddedResource Include="Forms\Methods\ROOTPROX - Bisección.resx">
       <DependentUpon>ROOTPROX - Bisección.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ROOTPROX - Regla Falsa.resx">
+    <EmbeddedResource Include="Forms\Methods\ROOTPROX - Regla Falsa.resx">
       <DependentUpon>ROOTPROX - Regla Falsa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ROOTPROX - Secante.resx">
+    <EmbeddedResource Include="Forms\Methods\ROOTPROX - Secante.resx">
       <DependentUpon>ROOTPROX - Secante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
