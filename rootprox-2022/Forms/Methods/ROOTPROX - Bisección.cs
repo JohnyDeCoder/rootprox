@@ -1,4 +1,5 @@
-﻿using System;
+﻿using rootprox_2022.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +13,17 @@ namespace rootprox_2022.Forms
 {
     public partial class ROOTPROX_Bisección : Form
     {
-        public ROOTPROX_Bisección()
+        public ROOTPROX_Bisección(string currentTheme)
         {
+            ColorsTheme.ChooseTheme(currentTheme);
+
             InitializeComponent();
         }
 
         private void ROOTPROX_Bisección_Load(object sender, EventArgs e)
         {
-
+            dgvResultAprox.ColumnHeadersDefaultCellStyle.BackColor = ColorsTheme.PanelContainerLeft;
+            dgvResults.ColumnHeadersDefaultCellStyle.BackColor = ColorsTheme.PanelContainerLeft;
         }
 
         // Functions

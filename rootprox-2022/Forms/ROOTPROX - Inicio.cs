@@ -18,6 +18,7 @@ namespace rootprox_2022
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form activeForm;
+        private string currentTheme;
 
         public ROOTPROX_Inicio()
         {
@@ -25,7 +26,7 @@ namespace rootprox_2022
 
             customizeSubMenus();
             leftBorderBtn = new Panel();
-            leftBorderBtn.Size = new Size(7, 45);
+            leftBorderBtn.Size = new Size(8, 45);
             panelContainerLeft.Controls.Add(leftBorderBtn);
         }
 
@@ -77,21 +78,21 @@ namespace rootprox_2022
 
         private void btnBiseccion_Click(object sender, EventArgs e)
         {
-            openChildForm(new Forms.ROOTPROX_Bisección());
+            openChildForm(new Forms.ROOTPROX_Bisección(currentTheme));
 
             hideSubMenu();
         }
 
         private void btnSecante_Click(object sender, EventArgs e)
         {
-            openChildForm(new Forms.ROOTPROX_Secante());
+            openChildForm(new Forms.ROOTPROX_Secante(currentTheme));
 
             hideSubMenu();
         }
 
         private void btnReglaFalsa_Click(object sender, EventArgs e)
         {
-            openChildForm(new Forms.ROOTPROX_Regla_Falsa());
+            openChildForm(new Forms.ROOTPROX_Regla_Falsa(currentTheme));
 
             hideSubMenu();
         }
@@ -136,6 +137,7 @@ namespace rootprox_2022
 
         private void btnBlueTheme_Click(object sender, EventArgs e)
         {
+            currentTheme = "Default";
             ColorsTheme.ChooseTheme("Default");
 
             // Left Panel
@@ -177,6 +179,7 @@ namespace rootprox_2022
 
         private void btnRedTheme_Click(object sender, EventArgs e)
         {
+            currentTheme = "Red";
             ColorsTheme.ChooseTheme("Red");
 
             // Left Panel
@@ -218,6 +221,7 @@ namespace rootprox_2022
 
         private void btnGreenTheme_Click(object sender, EventArgs e)
         {
+            currentTheme = "Green";
             ColorsTheme.ChooseTheme("Green");
 
             // Left Panel
@@ -259,6 +263,7 @@ namespace rootprox_2022
 
         private void btnPurpleTheme_Click(object sender, EventArgs e)
         {
+            currentTheme = "Purple";
             ColorsTheme.ChooseTheme("Purple");
 
             // Left Panel
