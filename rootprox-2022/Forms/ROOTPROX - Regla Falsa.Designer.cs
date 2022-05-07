@@ -29,23 +29,16 @@ namespace rootprox_2022.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvResults = new System.Windows.Forms.DataGridView();
-            this.iter = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.xr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ea = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbValues = new System.Windows.Forms.GroupBox();
-            this.btnSigns = new System.Windows.Forms.Button();
             this.gbResult = new System.Windows.Forms.GroupBox();
             this.dgvResultAprox = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblComa = new System.Windows.Forms.Label();
             this.lblPor100 = new System.Windows.Forms.Label();
             this.lblCorchete2 = new System.Windows.Forms.Label();
@@ -63,17 +56,29 @@ namespace rootprox_2022.Forms
             this.txtFX = new System.Windows.Forms.TextBox();
             this.btnReset = new System.Windows.Forms.Button();
             this.gbOptions = new System.Windows.Forms.GroupBox();
-            this.cbIterInfi = new System.Windows.Forms.CheckBox();
+            this.cbSinEA = new System.Windows.Forms.CheckBox();
             this.gbTipoResult = new System.Windows.Forms.GroupBox();
             this.rbRedondear = new System.Windows.Forms.RadioButton();
             this.rbNormal = new System.Windows.Forms.RadioButton();
             this.btnCalculate = new System.Windows.Forms.Button();
+            this.numericRound = new System.Windows.Forms.NumericUpDown();
+            this.btnLog = new System.Windows.Forms.Button();
+            this.btnEuler = new System.Windows.Forms.Button();
+            this.btnSigns = new System.Windows.Forms.Button();
+            this.iter = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.xr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ea = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblBisección = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResults)).BeginInit();
             this.gbValues.SuspendLayout();
             this.gbResult.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultAprox)).BeginInit();
             this.gbOptions.SuspendLayout();
             this.gbTipoResult.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericRound)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvResults
@@ -92,14 +97,14 @@ namespace rootprox_2022.Forms
             this.dgvResults.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvResults.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.dgvResults.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvResults.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle31.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvResults.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle31;
             this.dgvResults.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResults.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iter,
@@ -112,51 +117,32 @@ namespace rootprox_2022.Forms
             this.dgvResults.Name = "dgvResults";
             this.dgvResults.ReadOnly = true;
             this.dgvResults.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvResults.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle32.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvResults.RowHeadersDefaultCellStyle = dataGridViewCellStyle32;
             this.dgvResults.RowHeadersVisible = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            this.dgvResults.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle33.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
+            dataGridViewCellStyle33.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            this.dgvResults.RowsDefaultCellStyle = dataGridViewCellStyle33;
             this.dgvResults.Size = new System.Drawing.Size(685, 205);
             this.dgvResults.TabIndex = 22;
             this.dgvResults.TabStop = false;
             // 
-            // iter
-            // 
-            this.iter.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.iter.Frozen = true;
-            this.iter.HeaderText = "Iteración";
-            this.iter.Name = "iter";
-            this.iter.ReadOnly = true;
-            this.iter.Width = 176;
-            // 
-            // xr
-            // 
-            this.xr.HeaderText = "Raíz Aproximada";
-            this.xr.Name = "xr";
-            this.xr.ReadOnly = true;
-            // 
-            // ea
-            // 
-            this.ea.HeaderText = "Error Porcentual";
-            this.ea.Name = "ea";
-            this.ea.ReadOnly = true;
-            // 
             // gbValues
             // 
-            this.gbValues.Controls.Add(this.btnSigns);
+            this.gbValues.Controls.Add(this.btnLog);
             this.gbValues.Controls.Add(this.gbResult);
+            this.gbValues.Controls.Add(this.btnEuler);
             this.gbValues.Controls.Add(this.lblComa);
+            this.gbValues.Controls.Add(this.btnSigns);
             this.gbValues.Controls.Add(this.lblPor100);
             this.gbValues.Controls.Add(this.lblCorchete2);
             this.gbValues.Controls.Add(this.lblCorchete1);
@@ -172,22 +158,12 @@ namespace rootprox_2022.Forms
             this.gbValues.Controls.Add(this.lblFX);
             this.gbValues.Controls.Add(this.txtFX);
             this.gbValues.Font = new System.Drawing.Font("Trebuchet MS", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbValues.Location = new System.Drawing.Point(197, 12);
+            this.gbValues.Location = new System.Drawing.Point(197, 41);
             this.gbValues.Name = "gbValues";
-            this.gbValues.Size = new System.Drawing.Size(500, 326);
+            this.gbValues.Size = new System.Drawing.Size(500, 297);
             this.gbValues.TabIndex = 21;
             this.gbValues.TabStop = false;
             this.gbValues.Text = "Valores";
-            // 
-            // btnSigns
-            // 
-            this.btnSigns.Font = new System.Drawing.Font("Trebuchet MS", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSigns.Location = new System.Drawing.Point(416, 20);
-            this.btnSigns.Name = "btnSigns";
-            this.btnSigns.Size = new System.Drawing.Size(76, 36);
-            this.btnSigns.TabIndex = 18;
-            this.btnSigns.Text = "Signos";
-            this.btnSigns.UseVisualStyleBackColor = true;
             // 
             // gbResult
             // 
@@ -195,7 +171,7 @@ namespace rootprox_2022.Forms
             this.gbResult.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbResult.Location = new System.Drawing.Point(6, 209);
             this.gbResult.Name = "gbResult";
-            this.gbResult.Size = new System.Drawing.Size(486, 111);
+            this.gbResult.Size = new System.Drawing.Size(488, 84);
             this.gbResult.TabIndex = 16;
             this.gbResult.TabStop = false;
             this.gbResult.Text = "Resultado";
@@ -216,14 +192,14 @@ namespace rootprox_2022.Forms
             this.dgvResultAprox.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvResultAprox.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.dgvResultAprox.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvResultAprox.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle34.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle34.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvResultAprox.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle34;
             this.dgvResultAprox.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultAprox.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -236,45 +212,24 @@ namespace rootprox_2022.Forms
             this.dgvResultAprox.Name = "dgvResultAprox";
             this.dgvResultAprox.ReadOnly = true;
             this.dgvResultAprox.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvResultAprox.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle35.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle35.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvResultAprox.RowHeadersDefaultCellStyle = dataGridViewCellStyle35;
             this.dgvResultAprox.RowHeadersVisible = false;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            this.dgvResultAprox.RowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.dgvResultAprox.Size = new System.Drawing.Size(474, 86);
+            dataGridViewCellStyle36.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
+            dataGridViewCellStyle36.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            this.dgvResultAprox.RowsDefaultCellStyle = dataGridViewCellStyle36;
+            this.dgvResultAprox.Size = new System.Drawing.Size(476, 59);
             this.dgvResultAprox.TabIndex = 18;
             this.dgvResultAprox.TabStop = false;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dataGridViewTextBoxColumn1.Frozen = true;
-            this.dataGridViewTextBoxColumn1.HeaderText = "Iteración";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 176;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Raíz Aproximada";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Error Porcentual";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // lblComa
             // 
@@ -323,17 +278,17 @@ namespace rootprox_2022.Forms
             this.lblError.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblError.Location = new System.Drawing.Point(6, 170);
             this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(244, 28);
+            this.lblError.Size = new System.Drawing.Size(231, 28);
             this.lblError.TabIndex = 11;
-            this.lblError.Text = "Error Porcentual  (ε) =";
+            this.lblError.Text = "Factor de Paro  (εa) =";
             // 
             // txtE
             // 
-            this.txtE.Font = new System.Drawing.Font("Cascadia Code SemiLight", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtE.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtE.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtE.Location = new System.Drawing.Point(256, 167);
+            this.txtE.Location = new System.Drawing.Point(243, 167);
             this.txtE.Name = "txtE";
-            this.txtE.Size = new System.Drawing.Size(142, 35);
+            this.txtE.Size = new System.Drawing.Size(155, 36);
             this.txtE.TabIndex = 10;
             this.txtE.Text = "0.01";
             // 
@@ -359,11 +314,11 @@ namespace rootprox_2022.Forms
             // 
             // txtNmax
             // 
-            this.txtNmax.Font = new System.Drawing.Font("Cascadia Code SemiLight", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNmax.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNmax.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtNmax.Location = new System.Drawing.Point(216, 119);
             this.txtNmax.Name = "txtNmax";
-            this.txtNmax.Size = new System.Drawing.Size(143, 35);
+            this.txtNmax.Size = new System.Drawing.Size(143, 36);
             this.txtNmax.TabIndex = 12;
             this.txtNmax.Text = "100";
             // 
@@ -379,11 +334,11 @@ namespace rootprox_2022.Forms
             // 
             // txtB
             // 
-            this.txtB.Font = new System.Drawing.Font("Cascadia Code SemiLight", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtB.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtB.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtB.Location = new System.Drawing.Point(327, 68);
             this.txtB.Name = "txtB";
-            this.txtB.Size = new System.Drawing.Size(134, 35);
+            this.txtB.Size = new System.Drawing.Size(134, 36);
             this.txtB.TabIndex = 8;
             this.txtB.Text = "1";
             // 
@@ -399,11 +354,11 @@ namespace rootprox_2022.Forms
             // 
             // txtA
             // 
-            this.txtA.Font = new System.Drawing.Font("Cascadia Code SemiLight", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtA.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtA.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtA.Location = new System.Drawing.Point(95, 71);
             this.txtA.Name = "txtA";
-            this.txtA.Size = new System.Drawing.Size(134, 35);
+            this.txtA.Size = new System.Drawing.Size(134, 36);
             this.txtA.TabIndex = 6;
             this.txtA.Text = "0";
             // 
@@ -425,7 +380,7 @@ namespace rootprox_2022.Forms
             this.txtFX.Name = "txtFX";
             this.txtFX.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtFX.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtFX.Size = new System.Drawing.Size(331, 36);
+            this.txtFX.Size = new System.Drawing.Size(242, 36);
             this.txtFX.TabIndex = 0;
             this.txtFX.Text = "x*e^x-1";
             // 
@@ -441,7 +396,7 @@ namespace rootprox_2022.Forms
             // 
             // gbOptions
             // 
-            this.gbOptions.Controls.Add(this.cbIterInfi);
+            this.gbOptions.Controls.Add(this.cbSinEA);
             this.gbOptions.Controls.Add(this.gbTipoResult);
             this.gbOptions.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbOptions.Location = new System.Drawing.Point(12, 193);
@@ -451,19 +406,20 @@ namespace rootprox_2022.Forms
             this.gbOptions.TabStop = false;
             this.gbOptions.Text = "Opciones";
             // 
-            // cbIterInfi
+            // cbSinEA
             // 
-            this.cbIterInfi.AutoSize = true;
-            this.cbIterInfi.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbIterInfi.Location = new System.Drawing.Point(6, 19);
-            this.cbIterInfi.Name = "cbIterInfi";
-            this.cbIterInfi.Size = new System.Drawing.Size(169, 22);
-            this.cbIterInfi.TabIndex = 16;
-            this.cbIterInfi.Text = "Iteraciones Infinitasᴮᴱᵀᴬ";
-            this.cbIterInfi.UseVisualStyleBackColor = true;
+            this.cbSinEA.AutoSize = true;
+            this.cbSinEA.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbSinEA.Location = new System.Drawing.Point(6, 19);
+            this.cbSinEA.Name = "cbSinEA";
+            this.cbSinEA.Size = new System.Drawing.Size(157, 22);
+            this.cbSinEA.TabIndex = 16;
+            this.cbSinEA.Text = "Sin Factor de Paroᴮᴱᵀᴬ";
+            this.cbSinEA.UseVisualStyleBackColor = true;
             // 
             // gbTipoResult
             // 
+            this.gbTipoResult.Controls.Add(this.numericRound);
             this.gbTipoResult.Controls.Add(this.rbRedondear);
             this.gbTipoResult.Controls.Add(this.rbNormal);
             this.gbTipoResult.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -480,9 +436,9 @@ namespace rootprox_2022.Forms
             this.rbRedondear.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbRedondear.Location = new System.Drawing.Point(6, 47);
             this.rbRedondear.Name = "rbRedondear";
-            this.rbRedondear.Size = new System.Drawing.Size(87, 22);
+            this.rbRedondear.Size = new System.Drawing.Size(87, 40);
             this.rbRedondear.TabIndex = 1;
-            this.rbRedondear.Text = "Redondear";
+            this.rbRedondear.Text = "Redondear\r\ndecimales";
             this.rbRedondear.UseVisualStyleBackColor = true;
             // 
             // rbNormal
@@ -500,7 +456,7 @@ namespace rootprox_2022.Forms
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalculate.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalculate.Location = new System.Drawing.Point(12, 12);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(175, 106);
@@ -509,11 +465,104 @@ namespace rootprox_2022.Forms
             this.btnCalculate.UseVisualStyleBackColor = true;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
+            // numericRound
+            // 
+            this.numericRound.Enabled = false;
+            this.numericRound.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericRound.Location = new System.Drawing.Point(99, 55);
+            this.numericRound.Name = "numericRound";
+            this.numericRound.Size = new System.Drawing.Size(50, 26);
+            this.numericRound.TabIndex = 23;
+            // 
+            // btnLog
+            // 
+            this.btnLog.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLog.Location = new System.Drawing.Point(367, 20);
+            this.btnLog.Name = "btnLog";
+            this.btnLog.Size = new System.Drawing.Size(47, 36);
+            this.btnLog.TabIndex = 23;
+            this.btnLog.Text = "log";
+            this.btnLog.UseVisualStyleBackColor = true;
+            // 
+            // btnEuler
+            // 
+            this.btnEuler.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEuler.Location = new System.Drawing.Point(329, 20);
+            this.btnEuler.Name = "btnEuler";
+            this.btnEuler.Size = new System.Drawing.Size(32, 36);
+            this.btnEuler.TabIndex = 22;
+            this.btnEuler.Text = "e";
+            this.btnEuler.UseVisualStyleBackColor = true;
+            // 
+            // btnSigns
+            // 
+            this.btnSigns.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSigns.Location = new System.Drawing.Point(420, 20);
+            this.btnSigns.Name = "btnSigns";
+            this.btnSigns.Size = new System.Drawing.Size(74, 36);
+            this.btnSigns.TabIndex = 21;
+            this.btnSigns.Text = "Signos";
+            this.btnSigns.UseVisualStyleBackColor = true;
+            // 
+            // iter
+            // 
+            this.iter.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.iter.Frozen = true;
+            this.iter.HeaderText = "Iteración";
+            this.iter.Name = "iter";
+            this.iter.ReadOnly = true;
+            this.iter.Width = 176;
+            // 
+            // xr
+            // 
+            this.xr.HeaderText = "Raíz Aproximada";
+            this.xr.Name = "xr";
+            this.xr.ReadOnly = true;
+            // 
+            // ea
+            // 
+            this.ea.HeaderText = "Error Relativo Aproximado";
+            this.ea.Name = "ea";
+            this.ea.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dataGridViewTextBoxColumn1.Frozen = true;
+            this.dataGridViewTextBoxColumn1.HeaderText = "Iteración";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 176;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Raíz Aproximada";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Error Relativo Aproximado";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // lblBisección
+            // 
+            this.lblBisección.AutoSize = true;
+            this.lblBisección.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBisección.Location = new System.Drawing.Point(287, 9);
+            this.lblBisección.Name = "lblBisección";
+            this.lblBisección.Size = new System.Drawing.Size(295, 29);
+            this.lblBisección.TabIndex = 23;
+            this.lblBisección.Text = "R  E  G  L  A     F  A  L  S  A";
+            this.lblBisección.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // ROOTPROX_Regla_Falsa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(709, 561);
+            this.Controls.Add(this.lblBisección);
             this.Controls.Add(this.dgvResults);
             this.Controls.Add(this.gbValues);
             this.Controls.Add(this.btnReset);
@@ -532,23 +581,18 @@ namespace rootprox_2022.Forms
             this.gbOptions.PerformLayout();
             this.gbTipoResult.ResumeLayout(false);
             this.gbTipoResult.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericRound)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.DataGridView dgvResults;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn xr;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ea;
         private System.Windows.Forms.GroupBox gbValues;
-        private System.Windows.Forms.Button btnSigns;
         private System.Windows.Forms.GroupBox gbResult;
         private System.Windows.Forms.DataGridView dgvResultAprox;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.Label lblComa;
         private System.Windows.Forms.Label lblPor100;
         private System.Windows.Forms.Label lblCorchete2;
@@ -566,10 +610,21 @@ namespace rootprox_2022.Forms
         private System.Windows.Forms.TextBox txtFX;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.GroupBox gbOptions;
-        private System.Windows.Forms.CheckBox cbIterInfi;
+        private System.Windows.Forms.CheckBox cbSinEA;
         private System.Windows.Forms.GroupBox gbTipoResult;
         private System.Windows.Forms.RadioButton rbRedondear;
         private System.Windows.Forms.RadioButton rbNormal;
         private System.Windows.Forms.Button btnCalculate;
+        private System.Windows.Forms.NumericUpDown numericRound;
+        private System.Windows.Forms.Button btnLog;
+        private System.Windows.Forms.Button btnEuler;
+        private System.Windows.Forms.Button btnSigns;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn xr;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ea;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.Label lblBisección;
     }
 }
