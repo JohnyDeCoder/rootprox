@@ -1,4 +1,5 @@
-﻿using System;
+﻿using rootprox_2022.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +13,17 @@ namespace rootprox_2022.Forms
 {
     public partial class ROOTPROX_Secante : Form
     {
-        public ROOTPROX_Secante()
+        public ROOTPROX_Secante(string currentTheme)
         {
+            ColorsTheme.ChooseTheme(currentTheme);
+
             InitializeComponent();
         }
 
         private void ROOTPROX_Secante_Load(object sender, EventArgs e)
         {
-
+            dgvResultAprox.ColumnHeadersDefaultCellStyle.BackColor = ColorsTheme.PanelContainerLeft;
+            dgvResults.ColumnHeadersDefaultCellStyle.BackColor = ColorsTheme.PanelContainerLeft;
         }
 
         // Functions

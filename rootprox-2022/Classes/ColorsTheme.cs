@@ -9,10 +9,15 @@ namespace rootprox_2022.Classes
 {
     class ColorsTheme
     {
-
         public static Color PanelContainerLeft; // Color del panel general principal
         public static Color PanelChildForm; // Color del background de los formularios
         public static Color PanelSubMenu; // Color del submenu principal
+
+        internal static void ChooseTheme(object currentTheme)
+        {
+            throw new NotImplementedException();
+        }
+
         public static Color PrimaryFont; // Color del texto
         public static Color PrimaryFontSelected; // Color del texto seleccionado
         public static Color leftBorderButton; // Color del borde izquierdo del botón seleccionado
@@ -41,7 +46,7 @@ namespace rootprox_2022.Classes
         private static readonly Color PanelChildFormG = Color.FromArgb(171, 247, 163); // B
         private static readonly Color PanelSubMenuG = Color.FromArgb(50, 177, 42); // A
         private static readonly Color PrimaryFontG = Color.White;
-        private static readonly Color PrimaryFontSelectedG = Color.Black;
+        private static readonly Color PrimaryFontSelectedG = Color.White;
         private static readonly Color leftBorderButtonG = Color.FromArgb(81, 117, 77); // D
         private static readonly Color btnActivatedG = Color.FromArgb(105, 245, 89); // C
 

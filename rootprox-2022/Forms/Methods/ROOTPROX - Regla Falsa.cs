@@ -1,4 +1,5 @@
-﻿using System;
+﻿using rootprox_2022.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +13,17 @@ namespace rootprox_2022.Forms
 {
     public partial class ROOTPROX_Regla_Falsa : Form
     {
-        public ROOTPROX_Regla_Falsa()
+        public ROOTPROX_Regla_Falsa(string currentTheme)
         {
+            ColorsTheme.ChooseTheme(currentTheme);
+
             InitializeComponent();
         }
 
         private void ROOTPROX_Regla_Falsa_Load(object sender, EventArgs e)
         {
-
+            dgvResultAprox.ColumnHeadersDefaultCellStyle.BackColor = ColorsTheme.PanelContainerLeft;
+            dgvResults.ColumnHeadersDefaultCellStyle.BackColor = ColorsTheme.PanelContainerLeft;
         }
 
         // Functions
