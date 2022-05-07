@@ -57,7 +57,7 @@ namespace rootprox_2022
 
         private void btnSecante_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new Forms.ROOTPROX_Secante());
 
             hideSubMenu();
         }
