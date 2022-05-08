@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AngouriMath;
 
 namespace rootprox_2022.Forms
 {
@@ -38,24 +39,35 @@ namespace rootprox_2022.Forms
 
         private double function(double x)
         {
-            MSScriptControl.ScriptControl sc = new MSScriptControl.ScriptControl();
-            sc.Language = "VBScript";
+            string expression = txtFX.Text;
 
-            string expression = "", eulerReplace = "";
-
-            if ((txtFX.Text.Contains("ℯ")) && (txtFX.Text.Contains("x")))
+            if (expression.Contains("ℯ"))
             {
-                eulerReplace = txtFX.Text.Replace("ℯ", "2.7182818284");
-                expression = eulerReplace.Replace("x", x.ToString());
-            }
-            else
-            {
-                expression = txtFX.Text.Replace("x", x.ToString());
+                expression = expression.Replace("ℯ", "e");
             }
 
-            double result = sc.Eval(expression);
+            if (expression.Contains("√"))
+            {
+                expression = expression.Replace("√", "sqrt");
+            }
 
-            return result;
+            if (expression.Contains("π"))
+            {
+                expression = expression.Replace("π", "pi");
+            }
+
+            if (expression.Contains("x"))
+            {
+                expression = expression.Replace("x", x.ToString());
+            }
+
+            var expr = MathS.FromString(expression);
+
+            expr.Simplify(); // Simplificar expresiones complicadas
+
+            double evalDouble = (double)expr.EvalNumerical();
+
+            return evalDouble;
         }
 
         // Controls
@@ -229,7 +241,7 @@ namespace rootprox_2022.Forms
                 txtE.Enabled = true;
                 txtE.Visible = true;
                 lblPor100.Visible = true;
-                
+
             }
         }
 
