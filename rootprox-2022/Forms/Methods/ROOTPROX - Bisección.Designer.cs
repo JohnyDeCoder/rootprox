@@ -287,6 +287,7 @@ namespace rootprox_2022.Forms
             this.txtE.Size = new System.Drawing.Size(155, 36);
             this.txtE.TabIndex = 10;
             this.txtE.Text = "0.01";
+            this.txtE.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtE_KeyPress);
             // 
             // lblIteraciones
             // 
@@ -317,6 +318,7 @@ namespace rootprox_2022.Forms
             this.txtNmax.Size = new System.Drawing.Size(143, 36);
             this.txtNmax.TabIndex = 12;
             this.txtNmax.Text = "100";
+            this.txtNmax.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNmax_KeyPress);
             // 
             // lblB
             // 
@@ -337,6 +339,7 @@ namespace rootprox_2022.Forms
             this.txtB.Size = new System.Drawing.Size(134, 36);
             this.txtB.TabIndex = 8;
             this.txtB.Text = "2";
+            this.txtB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtB_KeyPress);
             // 
             // lblA
             // 
@@ -357,6 +360,7 @@ namespace rootprox_2022.Forms
             this.txtA.Size = new System.Drawing.Size(134, 36);
             this.txtA.TabIndex = 6;
             this.txtA.Text = "1";
+            this.txtA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtA_KeyPress);
             // 
             // lblFX
             // 
@@ -379,6 +383,7 @@ namespace rootprox_2022.Forms
             this.txtFX.Size = new System.Drawing.Size(242, 36);
             this.txtFX.TabIndex = 0;
             this.txtFX.Text = "x^3-x-1";
+            this.txtFX.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFX_KeyPress);
             // 
             // btnReset
             // 
@@ -389,6 +394,7 @@ namespace rootprox_2022.Forms
             this.btnReset.TabIndex = 13;
             this.btnReset.Text = "Reiniciar";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // gbOptions
             // 
@@ -412,6 +418,7 @@ namespace rootprox_2022.Forms
             this.cbSinEA.TabIndex = 16;
             this.cbSinEA.Text = "Sin Factor de Paroᴮᴱᵀᴬ";
             this.cbSinEA.UseVisualStyleBackColor = true;
+            this.cbSinEA.CheckedChanged += new System.EventHandler(this.cbSinEA_CheckedChanged);
             // 
             // gbTipoResult
             // 
@@ -445,6 +452,7 @@ namespace rootprox_2022.Forms
             this.rbRedondear.TabIndex = 1;
             this.rbRedondear.Text = "Redondear\r\ndecimales";
             this.rbRedondear.UseVisualStyleBackColor = true;
+            this.rbRedondear.CheckedChanged += new System.EventHandler(this.rbRedondear_CheckedChanged);
             // 
             // rbNormal
             // 
