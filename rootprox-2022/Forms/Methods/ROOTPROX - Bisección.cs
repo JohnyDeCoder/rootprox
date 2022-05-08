@@ -17,7 +17,7 @@ namespace rootprox_2022.Forms
         private TextBox currentTxtBox;
         public bool txtEmpty; // Variable utilizada para saber si hay algún TextBox vacio.
         public bool txtContains; // Variable utilizada para saber si hay algún TextBox únicamente con - o .
-        private string currentForm;
+        private string currentForm; // Variable utilizada para guardar el Name del formulario padre
 
         public ROOTPROX_Bisección(string currentTheme)
         {
@@ -41,6 +41,7 @@ namespace rootprox_2022.Forms
         {
             string expression = txtFX.Text;
 
+            // Puede ser lento a la hora de ejecutar .Replace
             if (expression.Contains("ℯ"))
             {
                 expression = expression.Replace("ℯ", "e");
@@ -54,6 +55,21 @@ namespace rootprox_2022.Forms
             if (expression.Contains("π"))
             {
                 expression = expression.Replace("π", "pi");
+            }
+
+            if (expression.Contains("sin⁻¹"))
+            {
+                expression = expression.Replace("sin⁻¹", "arcsin");
+            }
+
+            if (expression.Contains("cos⁻¹"))
+            {
+                expression = expression.Replace("cos⁻¹", "arccos");
+            }
+
+            if (expression.Contains("tan⁻¹"))
+            {
+                expression = expression.Replace("tan⁻¹", "arctan");
             }
 
             if (expression.Contains("x"))
@@ -145,7 +161,7 @@ namespace rootprox_2022.Forms
         {
             if (MessageBox.Show("¿Desea reiniciar los valores?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
             {
-                Reset(gbValues);
+                Reset();
             }
         }
 
@@ -153,16 +169,17 @@ namespace rootprox_2022.Forms
         {
             onlyNumbersAndFunctions(sender, e);
 
-            if (e.KeyChar == (char)(Keys.Enter))
+            if (char.IsSeparator(e.KeyChar)) // No imprime un espacio en blanco
             {
                 e.Handled = true;
-                SendKeys.Send("{TAB}");
             }
 
-            if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = true;
-            }
+            // Envía un TAB al precionar enter
+            //if (e.KeyChar == (char)Keys.Enter)
+            //{
+            //    e.Handled = true;
+            //    SendKeys.Send("{TAB}");
+            //}
         }
 
         private void txtFX_TextChanged(object sender, EventArgs e)
@@ -176,6 +193,21 @@ namespace rootprox_2022.Forms
                     txtFX.Text = txtFX.Text.Replace("e", "ℯ^");
                     txtFX.Select(txtFX.Text.Length, 0);
                 }
+
+                if (txtFX.Text.Contains("sin") || txtFX.Text.Contains("cos") ||
+                    txtFX.Text.Contains("tan") || txtFX.Text.Contains("sin⁻¹") ||
+                    txtFX.Text.Contains("cos⁻¹") || txtFX.Text.Contains("tan⁻¹"))
+                {
+                    lblMODE.Visible = true;
+                }
+                else
+                {
+                    lblMODE.Visible = false;
+                }
+            }
+            else
+            {
+                lblMODE.Visible = false;
             }
         }
 
@@ -259,7 +291,7 @@ namespace rootprox_2022.Forms
 
         // Methods
 
-        private void Reset(Control ROOTPROX_Bisección)
+        private void Reset()
         {
             dgvResults.Rows.Clear();
             dgvResults.Refresh();

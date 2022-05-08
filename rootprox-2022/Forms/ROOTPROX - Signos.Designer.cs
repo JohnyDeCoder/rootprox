@@ -30,18 +30,18 @@ namespace rootprox_2022.Forms
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblSignos = new System.Windows.Forms.Label();
             this.tabControlSignos = new System.Windows.Forms.TabControl();
             this.pageOpMath = new System.Windows.Forms.TabPage();
-            this.pageFunc = new System.Windows.Forms.TabPage();
-            this.lblSignos = new System.Windows.Forms.Label();
-            this.btnSum = new System.Windows.Forms.Button();
-            this.btnResta = new System.Windows.Forms.Button();
-            this.btnMulti = new System.Windows.Forms.Button();
-            this.btnDivi = new System.Windows.Forms.Button();
             this.btnPow = new System.Windows.Forms.Button();
             this.btnParen2 = new System.Windows.Forms.Button();
             this.btnParen1 = new System.Windows.Forms.Button();
             this.btnRaiz = new System.Windows.Forms.Button();
+            this.btnDivi = new System.Windows.Forms.Button();
+            this.btnMulti = new System.Windows.Forms.Button();
+            this.btnResta = new System.Windows.Forms.Button();
+            this.btnSum = new System.Windows.Forms.Button();
+            this.pageFunc = new System.Windows.Forms.TabPage();
             this.btnPi = new System.Windows.Forms.Button();
             this.btnE = new System.Windows.Forms.Button();
             this.btnLn = new System.Windows.Forms.Button();
@@ -49,6 +49,9 @@ namespace rootprox_2022.Forms
             this.btnTan = new System.Windows.Forms.Button();
             this.btnCos = new System.Windows.Forms.Button();
             this.btnSen = new System.Windows.Forms.Button();
+            this.btnArcTan = new System.Windows.Forms.Button();
+            this.btnArcCos = new System.Windows.Forms.Button();
+            this.btnArcSen = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControlSignos.SuspendLayout();
             this.pageOpMath.SuspendLayout();
@@ -63,6 +66,17 @@ namespace rootprox_2022.Forms
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(384, 42);
             this.panel1.TabIndex = 1;
+            // 
+            // lblSignos
+            // 
+            this.lblSignos.AutoSize = true;
+            this.lblSignos.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSignos.Location = new System.Drawing.Point(12, 9);
+            this.lblSignos.Name = "lblSignos";
+            this.lblSignos.Size = new System.Drawing.Size(310, 24);
+            this.lblSignos.TabIndex = 26;
+            this.lblSignos.Text = "MAPA DE SÍMBOLOS MATEMÁTICOS";
+            this.lblSignos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tabControlSignos
             // 
@@ -95,80 +109,6 @@ namespace rootprox_2022.Forms
             this.pageOpMath.Text = "Operadores Matemáticos";
             this.pageOpMath.ToolTipText = "Operadores matemáticos clásicos";
             this.pageOpMath.UseVisualStyleBackColor = true;
-            // 
-            // pageFunc
-            // 
-            this.pageFunc.BackColor = System.Drawing.Color.Transparent;
-            this.pageFunc.Controls.Add(this.btnPi);
-            this.pageFunc.Controls.Add(this.btnE);
-            this.pageFunc.Controls.Add(this.btnLn);
-            this.pageFunc.Controls.Add(this.btnLog);
-            this.pageFunc.Controls.Add(this.btnTan);
-            this.pageFunc.Controls.Add(this.btnCos);
-            this.pageFunc.Controls.Add(this.btnSen);
-            this.pageFunc.Location = new System.Drawing.Point(4, 27);
-            this.pageFunc.Name = "pageFunc";
-            this.pageFunc.Padding = new System.Windows.Forms.Padding(3);
-            this.pageFunc.Size = new System.Drawing.Size(376, 234);
-            this.pageFunc.TabIndex = 1;
-            this.pageFunc.Text = "Funciones avanzadas";
-            this.pageFunc.ToolTipText = "Funciones trigonométricas y otros símbolos";
-            this.pageFunc.UseVisualStyleBackColor = true;
-            // 
-            // lblSignos
-            // 
-            this.lblSignos.AutoSize = true;
-            this.lblSignos.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSignos.Location = new System.Drawing.Point(12, 9);
-            this.lblSignos.Name = "lblSignos";
-            this.lblSignos.Size = new System.Drawing.Size(310, 24);
-            this.lblSignos.TabIndex = 26;
-            this.lblSignos.Text = "MAPA DE SÍMBOLOS MATEMÁTICOS";
-            this.lblSignos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnSum
-            // 
-            this.btnSum.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSum.Location = new System.Drawing.Point(8, 6);
-            this.btnSum.Name = "btnSum";
-            this.btnSum.Size = new System.Drawing.Size(86, 70);
-            this.btnSum.TabIndex = 0;
-            this.btnSum.Text = "+";
-            this.btnSum.UseVisualStyleBackColor = true;
-            this.btnSum.Click += new System.EventHandler(this.btnSum_Click);
-            // 
-            // btnResta
-            // 
-            this.btnResta.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResta.Location = new System.Drawing.Point(98, 6);
-            this.btnResta.Name = "btnResta";
-            this.btnResta.Size = new System.Drawing.Size(86, 70);
-            this.btnResta.TabIndex = 1;
-            this.btnResta.Text = "−";
-            this.btnResta.UseVisualStyleBackColor = true;
-            this.btnResta.Click += new System.EventHandler(this.btnResta_Click);
-            // 
-            // btnMulti
-            // 
-            this.btnMulti.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMulti.Location = new System.Drawing.Point(190, 6);
-            this.btnMulti.Name = "btnMulti";
-            this.btnMulti.Size = new System.Drawing.Size(86, 70);
-            this.btnMulti.TabIndex = 2;
-            this.btnMulti.Text = "×";
-            this.btnMulti.UseVisualStyleBackColor = true;
-            this.btnMulti.Click += new System.EventHandler(this.btnMulti_Click);
-            // 
-            // btnDivi
-            // 
-            this.btnDivi.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDivi.Location = new System.Drawing.Point(282, 6);
-            this.btnDivi.Name = "btnDivi";
-            this.btnDivi.Size = new System.Drawing.Size(86, 70);
-            this.btnDivi.TabIndex = 3;
-            this.btnDivi.Text = "÷";
-            this.btnDivi.UseVisualStyleBackColor = true;
-            this.btnDivi.Click += new System.EventHandler(this.btnDivi_Click);
             // 
             // btnPow
             // 
@@ -214,10 +154,76 @@ namespace rootprox_2022.Forms
             this.btnRaiz.UseVisualStyleBackColor = true;
             this.btnRaiz.Click += new System.EventHandler(this.btnRaiz_Click);
             // 
+            // btnDivi
+            // 
+            this.btnDivi.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDivi.Location = new System.Drawing.Point(282, 6);
+            this.btnDivi.Name = "btnDivi";
+            this.btnDivi.Size = new System.Drawing.Size(86, 70);
+            this.btnDivi.TabIndex = 3;
+            this.btnDivi.Text = "÷";
+            this.btnDivi.UseVisualStyleBackColor = true;
+            this.btnDivi.Click += new System.EventHandler(this.btnDivi_Click);
+            // 
+            // btnMulti
+            // 
+            this.btnMulti.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMulti.Location = new System.Drawing.Point(190, 6);
+            this.btnMulti.Name = "btnMulti";
+            this.btnMulti.Size = new System.Drawing.Size(86, 70);
+            this.btnMulti.TabIndex = 2;
+            this.btnMulti.Text = "×";
+            this.btnMulti.UseVisualStyleBackColor = true;
+            this.btnMulti.Click += new System.EventHandler(this.btnMulti_Click);
+            // 
+            // btnResta
+            // 
+            this.btnResta.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResta.Location = new System.Drawing.Point(98, 6);
+            this.btnResta.Name = "btnResta";
+            this.btnResta.Size = new System.Drawing.Size(86, 70);
+            this.btnResta.TabIndex = 1;
+            this.btnResta.Text = "−";
+            this.btnResta.UseVisualStyleBackColor = true;
+            this.btnResta.Click += new System.EventHandler(this.btnResta_Click);
+            // 
+            // btnSum
+            // 
+            this.btnSum.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSum.Location = new System.Drawing.Point(8, 6);
+            this.btnSum.Name = "btnSum";
+            this.btnSum.Size = new System.Drawing.Size(86, 70);
+            this.btnSum.TabIndex = 0;
+            this.btnSum.Text = "+";
+            this.btnSum.UseVisualStyleBackColor = true;
+            this.btnSum.Click += new System.EventHandler(this.btnSum_Click);
+            // 
+            // pageFunc
+            // 
+            this.pageFunc.BackColor = System.Drawing.Color.Transparent;
+            this.pageFunc.Controls.Add(this.btnArcTan);
+            this.pageFunc.Controls.Add(this.btnArcCos);
+            this.pageFunc.Controls.Add(this.btnArcSen);
+            this.pageFunc.Controls.Add(this.btnPi);
+            this.pageFunc.Controls.Add(this.btnE);
+            this.pageFunc.Controls.Add(this.btnLn);
+            this.pageFunc.Controls.Add(this.btnLog);
+            this.pageFunc.Controls.Add(this.btnTan);
+            this.pageFunc.Controls.Add(this.btnCos);
+            this.pageFunc.Controls.Add(this.btnSen);
+            this.pageFunc.Location = new System.Drawing.Point(4, 27);
+            this.pageFunc.Name = "pageFunc";
+            this.pageFunc.Padding = new System.Windows.Forms.Padding(3);
+            this.pageFunc.Size = new System.Drawing.Size(376, 234);
+            this.pageFunc.TabIndex = 1;
+            this.pageFunc.Text = "Funciones avanzadas";
+            this.pageFunc.ToolTipText = "Funciones trigonométricas y otros símbolos";
+            this.pageFunc.UseVisualStyleBackColor = true;
+            // 
             // btnPi
             // 
             this.btnPi.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPi.Location = new System.Drawing.Point(190, 82);
+            this.btnPi.Location = new System.Drawing.Point(98, 158);
             this.btnPi.Name = "btnPi";
             this.btnPi.Size = new System.Drawing.Size(86, 70);
             this.btnPi.TabIndex = 14;
@@ -228,7 +234,7 @@ namespace rootprox_2022.Forms
             // btnE
             // 
             this.btnE.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnE.Location = new System.Drawing.Point(98, 82);
+            this.btnE.Location = new System.Drawing.Point(8, 158);
             this.btnE.Name = "btnE";
             this.btnE.Size = new System.Drawing.Size(86, 70);
             this.btnE.TabIndex = 13;
@@ -239,7 +245,7 @@ namespace rootprox_2022.Forms
             // btnLn
             // 
             this.btnLn.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLn.Location = new System.Drawing.Point(8, 82);
+            this.btnLn.Location = new System.Drawing.Point(282, 82);
             this.btnLn.Name = "btnLn";
             this.btnLn.Size = new System.Drawing.Size(86, 70);
             this.btnLn.TabIndex = 12;
@@ -291,6 +297,39 @@ namespace rootprox_2022.Forms
             this.btnSen.UseVisualStyleBackColor = true;
             this.btnSen.Click += new System.EventHandler(this.btnSen_Click);
             // 
+            // btnArcTan
+            // 
+            this.btnArcTan.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnArcTan.Location = new System.Drawing.Point(190, 82);
+            this.btnArcTan.Name = "btnArcTan";
+            this.btnArcTan.Size = new System.Drawing.Size(86, 70);
+            this.btnArcTan.TabIndex = 17;
+            this.btnArcTan.Text = "tan⁻¹(x)";
+            this.btnArcTan.UseVisualStyleBackColor = true;
+            this.btnArcTan.Click += new System.EventHandler(this.btnArcTan_Click);
+            // 
+            // btnArcCos
+            // 
+            this.btnArcCos.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnArcCos.Location = new System.Drawing.Point(98, 82);
+            this.btnArcCos.Name = "btnArcCos";
+            this.btnArcCos.Size = new System.Drawing.Size(86, 70);
+            this.btnArcCos.TabIndex = 16;
+            this.btnArcCos.Text = "cos⁻¹(x)";
+            this.btnArcCos.UseVisualStyleBackColor = true;
+            this.btnArcCos.Click += new System.EventHandler(this.btnArcCos_Click);
+            // 
+            // btnArcSen
+            // 
+            this.btnArcSen.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnArcSen.Location = new System.Drawing.Point(8, 82);
+            this.btnArcSen.Name = "btnArcSen";
+            this.btnArcSen.Size = new System.Drawing.Size(86, 70);
+            this.btnArcSen.TabIndex = 15;
+            this.btnArcSen.Text = "sin⁻¹(x)";
+            this.btnArcSen.UseVisualStyleBackColor = true;
+            this.btnArcSen.Click += new System.EventHandler(this.btnArcSin_Click);
+            // 
             // ROOTPROX_Signos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -335,5 +374,8 @@ namespace rootprox_2022.Forms
         private System.Windows.Forms.Button btnTan;
         private System.Windows.Forms.Button btnCos;
         private System.Windows.Forms.Button btnSen;
+        private System.Windows.Forms.Button btnArcTan;
+        private System.Windows.Forms.Button btnArcCos;
+        private System.Windows.Forms.Button btnArcSen;
     }
 }

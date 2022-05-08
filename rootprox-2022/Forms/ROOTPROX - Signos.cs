@@ -33,14 +33,17 @@ namespace rootprox_2022.Forms
             switch (currentFormReceived)
             {
                 case "ROOTPROX_Bisección":
+                    // Crea la instancia como un rol
                     ROOTPROX_Bisección formMethodBi = Owner as ROOTPROX_Bisección;
                     formMethodBi.txtFX.Text += sign;
                     break;
                 case "ROOTPROX_Secante":
+                    // Crea la instancia como un rol
                     ROOTPROX_Secante formMethodSe = Owner as ROOTPROX_Secante;
                     formMethodSe.txtFX.Text += sign;
                     break;
                 case "ROOTPROX_Regla_Falsa":
+                    // Crea la instancia como un rol
                     ROOTPROX_Bisección formMethodReFa = Owner as ROOTPROX_Bisección;
                     formMethodReFa.txtFX.Text += sign;
                     break;
@@ -100,6 +103,21 @@ namespace rootprox_2022.Forms
         private void btnTan_Click(object sender, EventArgs e)
         {
             printSign("tan(x)");
+        }
+
+        private void btnArcSin_Click(object sender, EventArgs e)
+        {
+            printSign("sin⁻¹(x)");
+        }
+
+        private void btnArcCos_Click(object sender, EventArgs e)
+        {
+            printSign("cos⁻¹(x)");
+        }
+
+        private void btnArcTan_Click(object sender, EventArgs e)
+        {
+            printSign("tan⁻¹(x)");
         }
 
         private void btnLog_Click(object sender, EventArgs e)

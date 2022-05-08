@@ -54,3 +54,25 @@ C:\Users\Sebasrián Mora\source\repos\JohnyDeCoder\rootprox\rootprox-2022\bin\De
 C:\Users\Sebasrián Mora\source\repos\JohnyDeCoder\rootprox\rootprox-2022\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Sebasrián Mora\source\repos\JohnyDeCoder\rootprox\rootprox-2022\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Sebasrián Mora\source\repos\JohnyDeCoder\rootprox\rootprox-2022\bin\Debug\System.ValueTuple.xml
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\AngouriMath.dll
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\Antlr4.Runtime.Standard.dll
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\GenericTensor.dll
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\HonkSharp.dll
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\IndexRange.dll
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\Numbers.dll
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\System.Buffers.dll
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\System.Memory.dll
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\System.Numerics.Vectors.dll
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\System.ValueTuple.dll
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\AngouriMath.xml
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\Antlr4.Runtime.Standard.xml
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\GenericTensor.xml
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\HonkSharp.xml
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\Numbers.xml
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\System.Buffers.xml
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\System.Memory.xml
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\System.Numerics.Vectors.xml
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\System.ValueTuple.xml
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\obj\Debug\rootprox_2022.Forms.ROOTPROX_Signos.resources
