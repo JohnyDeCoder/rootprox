@@ -15,3 +15,21 @@ D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\Git
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\obj\Debug\rootprox_2022.Forms.ROOTPROX_Bisección.resources
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\obj\Debug\rootprox_2022.Forms.ROOTPROX_Regla_Falsa.resources
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\obj\Debug\rootprox_2022.Forms.ROOTPROX_Secante.resources
+C:\Users\Sebasrián Mora\source\repos\JohnyDeCoder\rootprox\rootprox-2022\bin\Debug\rootprox-2022.exe.config
+C:\Users\Sebasrián Mora\source\repos\JohnyDeCoder\rootprox\rootprox-2022\bin\Debug\rootprox-2022.exe
+C:\Users\Sebasrián Mora\source\repos\JohnyDeCoder\rootprox\rootprox-2022\bin\Debug\rootprox-2022.pdb
+C:\Users\Sebasrián Mora\source\repos\JohnyDeCoder\rootprox\rootprox-2022\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Sebasrián Mora\source\repos\JohnyDeCoder\rootprox\rootprox-2022\obj\Debug\rootprox-2022.csproj.AssemblyReference.cache
+C:\Users\Sebasrián Mora\source\repos\JohnyDeCoder\rootprox\rootprox-2022\obj\Debug\Interop.MSScriptControl.dll
+C:\Users\Sebasrián Mora\source\repos\JohnyDeCoder\rootprox\rootprox-2022\obj\Debug\rootprox-2022.csproj.ResolveComReference.cache
+C:\Users\Sebasrián Mora\source\repos\JohnyDeCoder\rootprox\rootprox-2022\obj\Debug\rootprox_2022.Forms.ROOTPROX_Bisección.resources
+C:\Users\Sebasrián Mora\source\repos\JohnyDeCoder\rootprox\rootprox-2022\obj\Debug\rootprox_2022.Forms.ROOTPROX_Regla_Falsa.resources
+C:\Users\Sebasrián Mora\source\repos\JohnyDeCoder\rootprox\rootprox-2022\obj\Debug\rootprox_2022.Forms.ROOTPROX_Secante.resources
+C:\Users\Sebasrián Mora\source\repos\JohnyDeCoder\rootprox\rootprox-2022\obj\Debug\rootprox_2022.Properties.Resources.resources
+C:\Users\Sebasrián Mora\source\repos\JohnyDeCoder\rootprox\rootprox-2022\obj\Debug\rootprox_2022.ROOTPROX_Inicio.resources
+C:\Users\Sebasrián Mora\source\repos\JohnyDeCoder\rootprox\rootprox-2022\obj\Debug\rootprox-2022.csproj.GenerateResource.cache
+C:\Users\Sebasrián Mora\source\repos\JohnyDeCoder\rootprox\rootprox-2022\obj\Debug\rootprox-2022.csproj.CoreCompileInputs.cache
+C:\Users\Sebasrián Mora\source\repos\JohnyDeCoder\rootprox\rootprox-2022\obj\Debug\rootprox-2022.csproj.CopyComplete
+C:\Users\Sebasrián Mora\source\repos\JohnyDeCoder\rootprox\rootprox-2022\obj\Debug\rootprox-2022.exe
+C:\Users\Sebasrián Mora\source\repos\JohnyDeCoder\rootprox\rootprox-2022\obj\Debug\rootprox-2022.pdb
+C:\Users\Sebasrián Mora\source\repos\JohnyDeCoder\rootprox\rootprox-2022\obj\Debug\rootprox_2022.Forms.ROOTPROX_Signos.resources

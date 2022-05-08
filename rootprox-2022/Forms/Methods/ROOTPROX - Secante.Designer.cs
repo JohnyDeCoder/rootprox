@@ -624,8 +624,8 @@ namespace rootprox_2022.Forms
         private System.Windows.Forms.Label lblFX;
         private System.Windows.Forms.GroupBox gbValues;
         private System.Windows.Forms.TextBox txtNmax;
-        private System.Windows.Forms.TextBox txtFX;
         private System.Windows.Forms.Label lblBisección;
         private System.Windows.Forms.Button btnCalculate;
+        public System.Windows.Forms.TextBox txtFX;
     }
 }

@@ -16,6 +16,7 @@ namespace rootprox_2022.Forms
         private TextBox currentTxtBox;
         public bool txtEmpty; // Variable utilizada para saber si hay algún TextBox vacio.
         public bool txtContains; // Variable utilizada para saber si hay algún TextBox únicamente con - o .
+        private string currentForm;
 
         public ROOTPROX_Bisección(string currentTheme)
         {
@@ -42,9 +43,9 @@ namespace rootprox_2022.Forms
 
             string expression = "", eulerReplace = "";
 
-            if ((txtFX.Text.Contains("e")) && (txtFX.Text.Contains("x")))
+            if ((txtFX.Text.Contains("ℯ")) && (txtFX.Text.Contains("x")))
             {
-                eulerReplace = txtFX.Text.Replace("e", "2.7182818284");
+                eulerReplace = txtFX.Text.Replace("ℯ", "2.7182818284");
                 expression = eulerReplace.Replace("x", x.ToString());
             }
             else
@@ -130,11 +131,16 @@ namespace rootprox_2022.Forms
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            Reset(gbValues);
+            if (MessageBox.Show("¿Desea reiniciar los valores?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+            {
+                Reset(gbValues);
+            }
         }
 
         private void txtFX_KeyPress(object sender, KeyPressEventArgs e)
         {
+            onlyNumbersAndFunctions(sender, e);
+
             if (e.KeyChar == (char)(Keys.Enter))
             {
                 e.Handled = true;
@@ -144,6 +150,47 @@ namespace rootprox_2022.Forms
             if (Char.IsSeparator(e.KeyChar))
             {
                 e.Handled = true;
+            }
+        }
+
+        private void txtFX_TextChanged(object sender, EventArgs e)
+        {
+            txtFX.CharacterCasing = CharacterCasing.Lower; // Solo aceptar minúsculas
+
+            if (txtFX.Text != "")
+            {
+                if (txtFX.Text.Contains("e"))
+                {
+                    txtFX.Text = txtFX.Text.Replace("e", "ℯ^");
+                    txtFX.Select(txtFX.Text.Length, 0);
+                }
+            }
+        }
+
+        private void btnEuler_Click(object sender, EventArgs e)
+        {
+            txtFX.Text += "ℯ^";
+        }
+
+        private void btnPow_Click(object sender, EventArgs e)
+        {
+            txtFX.Text += "^";
+        }
+
+        private void btnSigns_Click(object sender, EventArgs e)
+        {
+            Form ROOTPROX_Signos = Application.OpenForms.OfType<Form>().Where(pre => pre.Name == "ROOTPROX_Signos").SingleOrDefault<Form>();
+
+            if (ROOTPROX_Signos != null)
+            {
+                ROOTPROX_Signos.BringToFront();
+            }
+            else
+            {
+                currentForm = GetType().Name; // Obtiene el nombre del formulario padre
+                ROOTPROX_Signos formSigns = new ROOTPROX_Signos(currentForm);
+                AddOwnedForm(formSigns);
+                formSigns.Show();
             }
         }
 
@@ -208,13 +255,11 @@ namespace rootprox_2022.Forms
             dgvResultAprox.Rows.Clear();
             dgvResultAprox.Refresh();
 
-            foreach (Control oControls in ROOTPROX_Bisección.Controls)
-            {
-                if (oControls is TextBox)
-                {
-                    oControls.Text = "";
-                }
-            }
+            txtFX.Text = "x";
+            txtA.Text = "0";
+            txtB.Text = "1";
+            txtNmax.Text = "100";
+            txtE.Text = "0.01";
         }
 
         // Validation
@@ -238,6 +283,21 @@ namespace rootprox_2022.Forms
 
             // Para que acepte un solo punto guión de resta.
             if ((e.KeyChar == '-') && (currentTxtBox.Text.IndexOf('-') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void onlyNumbersAndFunctions(object senderTxtBox, KeyPressEventArgs e)
+        {
+            currentTxtBox = (TextBox)senderTxtBox;
+
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar)
+                && (e.KeyChar != '.') && (e.KeyChar != '-')
+                && (e.KeyChar != '+') && (e.KeyChar != '*')
+                && (e.KeyChar != 'e') && (e.KeyChar != '(')
+                && (e.KeyChar != ')') && (e.KeyChar != 'x')
+                && (e.KeyChar != '^') && (e.KeyChar != '/'))
             {
                 e.Handled = true;
             }
