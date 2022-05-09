@@ -97,6 +97,12 @@
     <Compile Include="Forms\Methods\ROOTPROX - Bisección.Designer.cs">
       <DependentUpon>ROOTPROX - Bisección.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ROOTPROX - About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ROOTPROX - About.Designer.cs">
+      <DependentUpon>ROOTPROX - About.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ROOTPROX - Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,18 +138,17 @@
     <EmbeddedResource Include="Forms\Methods\ROOTPROX - Secante.resx">
       <DependentUpon>ROOTPROX - Secante.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ROOTPROX - About.resx">
+      <DependentUpon>ROOTPROX - About.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ROOTPROX - Signos.resx">
       <DependentUpon>ROOTPROX - Signos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Forms\ROOTPROX - Inicio.resx">
       <DependentUpon>ROOTPROX - Inicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +157,11 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -171,6 +181,24 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BrandonMoran11_Avatar_GitHub_2022.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag_mexico_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JohnyDeCoder_Avatar_GitHub_2022.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GitHub-Mark-120px-plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UdeC_2L izq_Negro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ROOTPROX_logo_blanco.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -22,6 +22,9 @@ namespace rootprox_2022.Classes
         public static Color PrimaryFontSelected; // Color del texto seleccionado
         public static Color leftBorderButton; // Color del borde izquierdo del botón seleccionado
         public static Color btnActivated; // Color del botón seleccionado
+        public static Color LinkColor; // Color del link normal
+        public static Color ActiveLinkColor; // Color del link al activar
+        public static Color VisitedLinkColor; // Color del link al visitar
 
         // Default Colors
         private static readonly Color PanelContainerLeftD = Color.FromArgb(76, 137, 199); // E
@@ -31,6 +34,9 @@ namespace rootprox_2022.Classes
         private static readonly Color PrimaryFontSelectedD = Color.White;
         private static readonly Color leftBorderButtonD = Color.FromArgb(83, 103, 122); // D
         private static readonly Color btnActivatedD = Color.FromArgb(94, 172, 250); // C
+        private static readonly Color LinkColorD = Color.Blue;
+        private static readonly Color ActiveLinkColorD = Color.Red;
+        private static readonly Color VisitedLinkColorD = Color.Purple;
 
         // Red Theme
         private static readonly Color PanelContainerLeftR = Color.FromArgb(179, 52, 37); // E
@@ -40,6 +46,9 @@ namespace rootprox_2022.Classes
         private static readonly Color PrimaryFontSelectedR = Color.White;
         private static readonly Color leftBorderButtonR = Color.FromArgb(102, 57, 52); // D
         private static readonly Color btnActivatedR = Color.FromArgb(230, 66, 48); // C
+        private static readonly Color LinkColorR = Color.Red;
+        private static readonly Color ActiveLinkColorR = Color.Blue;
+        private static readonly Color VisitedLinkColorR = Color.Purple;
 
         // Green Theme
         private static readonly Color PanelContainerLeftG = Color.FromArgb(82, 194, 70); // E
@@ -49,6 +58,9 @@ namespace rootprox_2022.Classes
         private static readonly Color PrimaryFontSelectedG = Color.White;
         private static readonly Color leftBorderButtonG = Color.FromArgb(81, 117, 77); // D
         private static readonly Color btnActivatedG = Color.FromArgb(105, 245, 89); // C
+        private static readonly Color LinkColorG = Color.Green;
+        private static readonly Color ActiveLinkColorG = Color.Red;
+        private static readonly Color VisitedLinkColorG = Color.Purple;
 
         // Purple Theme
         private static readonly Color PanelContainerLeftP = Color.FromArgb(158, 88, 199); // E
@@ -58,6 +70,9 @@ namespace rootprox_2022.Classes
         private static readonly Color PrimaryFontSelectedP = Color.White;
         private static readonly Color leftBorderButtonP = Color.FromArgb(111, 91, 122); // D
         private static readonly Color btnActivatedP = Color.FromArgb(198, 109, 250); // C
+        private static readonly Color LinkColorP = Color.Purple;
+        private static readonly Color ActiveLinkColorP = Color.Red;
+        private static readonly Color VisitedLinkColorP = Color.Blue;
 
         #region Methods
         public static void ChooseTheme(string Theme)
@@ -72,6 +87,9 @@ namespace rootprox_2022.Classes
                     PrimaryFontSelected = PrimaryFontSelectedD;
                     leftBorderButton = leftBorderButtonD;
                     btnActivated = btnActivatedD;
+                    LinkColor = LinkColorD;
+                    ActiveLinkColor = ActiveLinkColorD;
+                    VisitedLinkColor = VisitedLinkColorD;
                     break;
                 case "Red":
                     PanelContainerLeft = PanelContainerLeftR;
@@ -81,6 +99,9 @@ namespace rootprox_2022.Classes
                     PrimaryFontSelected = PrimaryFontSelectedR;
                     leftBorderButton = leftBorderButtonR;
                     btnActivated = btnActivatedR;
+                    LinkColor = LinkColorR;
+                    ActiveLinkColor = ActiveLinkColorR;
+                    VisitedLinkColor = VisitedLinkColorR;
                     break;
                 case "Green":
                     PanelContainerLeft = PanelContainerLeftG;
@@ -90,6 +111,9 @@ namespace rootprox_2022.Classes
                     PrimaryFontSelected = PrimaryFontSelectedG;
                     leftBorderButton = leftBorderButtonG;
                     btnActivated = btnActivatedG;
+                    LinkColor = LinkColorG;
+                    ActiveLinkColor = ActiveLinkColorG;
+                    VisitedLinkColor = VisitedLinkColorG;
                     break;
                 case "Purple":
                     PanelContainerLeft = PanelContainerLeftP;
@@ -99,6 +123,9 @@ namespace rootprox_2022.Classes
                     PrimaryFontSelected = PrimaryFontSelectedP;
                     leftBorderButton = leftBorderButtonP;
                     btnActivated = btnActivatedP;
+                    LinkColor = LinkColorP;
+                    ActiveLinkColor = ActiveLinkColorP;
+                    VisitedLinkColor = VisitedLinkColorP;
                     break;
             }
         }
