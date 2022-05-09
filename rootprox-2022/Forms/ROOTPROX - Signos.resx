@@ -117,4 +117,40 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="ttipBtn.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="ttipBtn.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="ttipBtn.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="btnLn.ToolTip" xml:space="preserve">
+    <value>Logaritmo Natural base 2 (log₂)
+
+• Información:
+   Es importante que el número esté dentro
+   de los paréntesis junto a la función.
+   Es la inversa de la función exponencial ℯˣ.
+
+• Aplicación:
+    ln(n)
+</value>
+  </data>
+  <data name="btnLog.ToolTip" xml:space="preserve">
+    <value>Logaritmo base 10 (log₁₀)
+
+• Información: 
+   Es importante que el número esté dentro
+   de los paréntesis junto a la función.
+   Es la inversa de la función exponencial 10ˣ.
+
+• Aplicación:
+    log(n)
+</value>
+  </data>
+  <metadata name="ttipBtn.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>
