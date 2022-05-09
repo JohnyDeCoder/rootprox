@@ -132,7 +132,7 @@ namespace rootprox_2022.Forms
 
         private void btnE_Click(object sender, EventArgs e)
         {
-            printSign("ℯ");
+            printSign("ℯ^");
         }
 
         private void btnPi_Click(object sender, EventArgs e)
