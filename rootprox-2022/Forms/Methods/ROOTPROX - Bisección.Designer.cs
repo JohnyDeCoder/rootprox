@@ -73,12 +73,12 @@ namespace rootprox_2022.Forms
             this.rbNormal = new System.Windows.Forms.RadioButton();
             this.btnCalculate = new System.Windows.Forms.Button();
             this.dgvResults = new System.Windows.Forms.DataGridView();
-            this.lblMethodName = new System.Windows.Forms.Label();
             this.iter = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.X0 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.X1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.xr = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ea = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblMethodName = new System.Windows.Forms.Label();
             this.ttipTxtBox = new System.Windows.Forms.ToolTip(this.components);
             this.ttipBtn = new System.Windows.Forms.ToolTip(this.components);
             this.ttipOptions = new System.Windows.Forms.ToolTip(this.components);
@@ -209,7 +209,7 @@ namespace rootprox_2022.Forms
             this.dgvResultAprox.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(137)))), ((int)(((byte)(199)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Trebuchet MS", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(137)))), ((int)(((byte)(199)))));
             dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.Window;
@@ -540,8 +540,8 @@ namespace rootprox_2022.Forms
             this.rbRedondear.Size = new System.Drawing.Size(87, 40);
             this.rbRedondear.TabIndex = 8;
             this.rbRedondear.Text = "Redondear\r\ndecimales";
-            this.ttipOptions.SetToolTip(this.rbRedondear, "Redondear a n decimales\r\n\r\n• Información:\r\n   Toma el número del cuadro de la \r\n " +
-        "  derecha y redondea la raíz aproximada.");
+            this.ttipOptions.SetToolTip(this.rbRedondear, "Redondear a n decimales\r\n\r\n• Información:\r\n   Toma el número del cuadro de número" +
+        "\r\n   de la derecha y redondea los valores.");
             this.rbRedondear.UseVisualStyleBackColor = true;
             this.rbRedondear.CheckedChanged += new System.EventHandler(this.rbRedondear_CheckedChanged);
             // 
@@ -639,18 +639,6 @@ namespace rootprox_2022.Forms
             this.dgvResults.TabIndex = 17;
             this.dgvResults.TabStop = false;
             // 
-            // lblMethodName
-            // 
-            this.lblMethodName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblMethodName.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMethodName.Location = new System.Drawing.Point(316, 9);
-            this.lblMethodName.Name = "lblMethodName";
-            this.lblMethodName.Size = new System.Drawing.Size(242, 29);
-            this.lblMethodName.TabIndex = 25;
-            this.lblMethodName.Text = "B  I  S  E  C  C  I  Ó  N";
-            this.lblMethodName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // iter
             // 
             this.iter.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
@@ -683,6 +671,18 @@ namespace rootprox_2022.Forms
             this.ea.HeaderText = "Error Relativo Aproximado";
             this.ea.Name = "ea";
             this.ea.ReadOnly = true;
+            // 
+            // lblMethodName
+            // 
+            this.lblMethodName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblMethodName.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMethodName.Location = new System.Drawing.Point(316, 9);
+            this.lblMethodName.Name = "lblMethodName";
+            this.lblMethodName.Size = new System.Drawing.Size(242, 29);
+            this.lblMethodName.TabIndex = 25;
+            this.lblMethodName.Text = "B  I  S  E  C  C  I  Ó  N";
+            this.lblMethodName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ttipTxtBox
             // 
