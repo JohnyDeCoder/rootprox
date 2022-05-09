@@ -14,6 +14,7 @@ namespace rootprox_2022.Forms
 {
     public partial class ROOTPROX_Bisección : Form
     {
+        // Campos
         private TextBox currentTxtBox;
         public bool txtEmpty; // Variable utilizada para saber si hay algún TextBox vacio.
         public bool txtContains; // Variable utilizada para saber si hay algún TextBox únicamente con - o .
@@ -136,7 +137,16 @@ namespace rootprox_2022.Forms
 
                 if (function(xi) * function(xd) > 0)
                 {
-                    MessageBox.Show("No existe raíz en esos intérvalos.");
+                    MessageBox.Show(
+                    "No se existe una raíz entre esos intérvalos [X₀, X₁], por favor cambie de intérvalos y/o cambie la función para calcular\n\n" +
+                    "Da click en el botón AYUDA para obtener más información.\n\n" +
+                    "Código: A101",
+                    "Advertencia",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning,
+                    MessageBoxDefaultButton.Button1,
+                    0, "https://google.com"
+                    );
                 }
                 else
                 {
@@ -154,8 +164,8 @@ namespace rootprox_2022.Forms
 
                                 int n1 = dgvResults.Rows.Add();
 
-                                dgvResults.Rows[n1].Cells[1].Value = xi;
-                                dgvResults.Rows[n1].Cells[2].Value = xd;
+                                dgvResults.Rows[n1].Cells[1].Value = Math.Round(xi, round);
+                                dgvResults.Rows[n1].Cells[2].Value = Math.Round(xd, round);
 
                                 if (function(xi) * function(xa) < 0)
                                 {
@@ -226,8 +236,8 @@ namespace rootprox_2022.Forms
 
                                 int n1 = dgvResults.Rows.Add();
 
-                                dgvResults.Rows[n1].Cells[1].Value = xi;
-                                dgvResults.Rows[n1].Cells[2].Value = xd;
+                                dgvResults.Rows[n1].Cells[1].Value = Math.Round(xi, round);
+                                dgvResults.Rows[n1].Cells[2].Value = Math.Round(xd, round);
 
                                 if (function(xi) * function(xa) < 0)
                                 {
@@ -244,7 +254,7 @@ namespace rootprox_2022.Forms
 
                                 dgvResults.Rows[n1].Cells[0].Value = iter;
                                 dgvResults.Rows[n1].Cells[3].Value = Math.Round(xa, round);
-                                dgvResults.Rows[n1].Cells[4].Value = ea + " %";
+                                dgvResults.Rows[n1].Cells[4].Value = Math.Round(ea, round) + " %";
 
                             } while (ea > em && iter <= imax);
 
@@ -252,7 +262,7 @@ namespace rootprox_2022.Forms
 
                             dgvResultAprox.Rows[n2].Cells[0].Value = iter;
                             dgvResultAprox.Rows[n2].Cells[1].Value = Math.Round(xa, round);
-                            dgvResultAprox.Rows[n2].Cells[2].Value = ea + " %";
+                            dgvResultAprox.Rows[n2].Cells[2].Value = Math.Round(ea, round) + " %";
                         }
                         else
                         {
@@ -454,7 +464,7 @@ namespace rootprox_2022.Forms
             txtFX.Text = "x";
             txtA.Text = "0";
             txtB.Text = "1";
-            txtNmax.Text = "100";
+            txtNmax.Text = "20";
             txtE.Text = "0.01";
         }
 
