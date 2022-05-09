@@ -76,3 +76,4 @@ D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\Git
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\System.ValueTuple.xml
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\obj\Debug\rootprox_2022.Forms.ROOTPROX_Signos.resources
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\obj\Debug\rootprox_2022.Forms.ROOTPROX_About.resources

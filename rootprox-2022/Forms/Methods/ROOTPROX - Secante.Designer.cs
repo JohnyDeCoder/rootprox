@@ -40,26 +40,30 @@ namespace rootprox_2022.Forms
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.ttipTxtBox = new System.Windows.Forms.ToolTip(this.components);
-            this.ttipBtn = new System.Windows.Forms.ToolTip(this.components);
-            this.ttipOptions = new System.Windows.Forms.ToolTip(this.components);
-            this.gbTipoResult = new System.Windows.Forms.GroupBox();
-            this.rbNormal = new System.Windows.Forms.RadioButton();
-            this.rbRedondear = new System.Windows.Forms.RadioButton();
             this.numericRound = new System.Windows.Forms.NumericUpDown();
-            this.cbSinEA = new System.Windows.Forms.CheckBox();
-            this.gbOptions = new System.Windows.Forms.GroupBox();
+            this.txtFX = new System.Windows.Forms.TextBox();
+            this.txtA = new System.Windows.Forms.TextBox();
+            this.txtB = new System.Windows.Forms.TextBox();
+            this.txtNmax = new System.Windows.Forms.TextBox();
+            this.txtE = new System.Windows.Forms.TextBox();
+            this.lblMODE = new System.Windows.Forms.Label();
+            this.ttipBtn = new System.Windows.Forms.ToolTip(this.components);
             this.btnCalculate = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
-            this.txtFX = new System.Windows.Forms.TextBox();
+            this.btnSigns = new System.Windows.Forms.Button();
+            this.btnEuler = new System.Windows.Forms.Button();
+            this.btnPow = new System.Windows.Forms.Button();
+            this.ttipOptions = new System.Windows.Forms.ToolTip(this.components);
+            this.rbNormal = new System.Windows.Forms.RadioButton();
+            this.rbRedondear = new System.Windows.Forms.RadioButton();
+            this.cbSinEA = new System.Windows.Forms.CheckBox();
+            this.gbTipoResult = new System.Windows.Forms.GroupBox();
+            this.gbOptions = new System.Windows.Forms.GroupBox();
             this.lblFX = new System.Windows.Forms.Label();
-            this.txtA = new System.Windows.Forms.TextBox();
             this.lblA = new System.Windows.Forms.Label();
-            this.txtB = new System.Windows.Forms.TextBox();
             this.lblB = new System.Windows.Forms.Label();
-            this.txtNmax = new System.Windows.Forms.TextBox();
             this.lblNmax = new System.Windows.Forms.Label();
             this.lblIteraciones = new System.Windows.Forms.Label();
-            this.txtE = new System.Windows.Forms.TextBox();
             this.lblError = new System.Windows.Forms.Label();
             this.lblCorchete1 = new System.Windows.Forms.Label();
             this.lblCorchete2 = new System.Windows.Forms.Label();
@@ -67,13 +71,9 @@ namespace rootprox_2022.Forms
             this.lblComa = new System.Windows.Forms.Label();
             this.gbResult = new System.Windows.Forms.GroupBox();
             this.dgvResultAprox = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnSigns = new System.Windows.Forms.Button();
-            this.btnEuler = new System.Windows.Forms.Button();
-            this.btnPow = new System.Windows.Forms.Button();
-            this.lblMODE = new System.Windows.Forms.Label();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbValues = new System.Windows.Forms.GroupBox();
             this.ea = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.xr = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -82,8 +82,8 @@ namespace rootprox_2022.Forms
             this.iter = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvResults = new System.Windows.Forms.DataGridView();
             this.lblMethodName = new System.Windows.Forms.Label();
-            this.gbTipoResult.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericRound)).BeginInit();
+            this.gbTipoResult.SuspendLayout();
             this.gbOptions.SuspendLayout();
             this.gbResult.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultAprox)).BeginInit();
@@ -99,65 +99,6 @@ namespace rootprox_2022.Forms
             this.ttipTxtBox.ReshowDelay = 100;
             this.ttipTxtBox.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.ttipTxtBox.ToolTipTitle = "Ayuda con Campos de Texto";
-            // 
-            // ttipBtn
-            // 
-            this.ttipBtn.AutoPopDelay = 15000;
-            this.ttipBtn.InitialDelay = 3000;
-            this.ttipBtn.IsBalloon = true;
-            this.ttipBtn.ReshowDelay = 100;
-            this.ttipBtn.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.ttipBtn.ToolTipTitle = "Ayuda con Botones";
-            // 
-            // ttipOptions
-            // 
-            this.ttipOptions.AutoPopDelay = 15000;
-            this.ttipOptions.InitialDelay = 3000;
-            this.ttipOptions.IsBalloon = true;
-            this.ttipOptions.ReshowDelay = 100;
-            this.ttipOptions.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.ttipOptions.ToolTipTitle = "Ayuda con Opciones";
-            // 
-            // gbTipoResult
-            // 
-            this.gbTipoResult.Controls.Add(this.numericRound);
-            this.gbTipoResult.Controls.Add(this.rbRedondear);
-            this.gbTipoResult.Controls.Add(this.rbNormal);
-            this.gbTipoResult.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbTipoResult.Location = new System.Drawing.Point(6, 47);
-            this.gbTipoResult.Name = "gbTipoResult";
-            this.gbTipoResult.Size = new System.Drawing.Size(162, 95);
-            this.gbTipoResult.TabIndex = 15;
-            this.gbTipoResult.TabStop = false;
-            this.gbTipoResult.Text = "Tipo de Resultado";
-            // 
-            // rbNormal
-            // 
-            this.rbNormal.AutoSize = true;
-            this.rbNormal.Checked = true;
-            this.rbNormal.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbNormal.Location = new System.Drawing.Point(6, 19);
-            this.rbNormal.Name = "rbNormal";
-            this.rbNormal.Size = new System.Drawing.Size(67, 22);
-            this.rbNormal.TabIndex = 10;
-            this.rbNormal.TabStop = true;
-            this.rbNormal.Text = "Normal";
-            this.ttipOptions.SetToolTip(this.rbNormal, "Resultado sin alterar\r\n\r\n• Información:\r\n   No altera el resultado.");
-            this.rbNormal.UseVisualStyleBackColor = true;
-            // 
-            // rbRedondear
-            // 
-            this.rbRedondear.AutoSize = true;
-            this.rbRedondear.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbRedondear.Location = new System.Drawing.Point(6, 47);
-            this.rbRedondear.Name = "rbRedondear";
-            this.rbRedondear.Size = new System.Drawing.Size(87, 40);
-            this.rbRedondear.TabIndex = 8;
-            this.rbRedondear.Text = "Redondear\r\ndecimales";
-            this.ttipOptions.SetToolTip(this.rbRedondear, "Redondear a n decimales\r\n\r\n• Información:\r\n   Toma el número del cuadro de número" +
-        "\r\n   de la derecha y redondea los valores.");
-            this.rbRedondear.UseVisualStyleBackColor = true;
-            this.rbRedondear.CheckedChanged += new System.EventHandler(this.rbRedondear_CheckedChanged);
             // 
             // numericRound
             // 
@@ -176,31 +117,106 @@ namespace rootprox_2022.Forms
             0});
             this.numericRound.ValueChanged += new System.EventHandler(this.numericRound_ValueChanged);
             // 
-            // cbSinEA
+            // txtFX
             // 
-            this.cbSinEA.AutoSize = true;
-            this.cbSinEA.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbSinEA.Location = new System.Drawing.Point(6, 19);
-            this.cbSinEA.Name = "cbSinEA";
-            this.cbSinEA.Size = new System.Drawing.Size(157, 22);
-            this.cbSinEA.TabIndex = 11;
-            this.cbSinEA.Text = "Sin Factor de Paroᴮᴱᵀᴬ";
-            this.ttipOptions.SetToolTip(this.cbSinEA, resources.GetString("cbSinEA.ToolTip"));
-            this.cbSinEA.UseVisualStyleBackColor = true;
-            this.cbSinEA.CheckedChanged += new System.EventHandler(this.cbSinEA_CheckedChanged);
+            this.txtFX.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtFX.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFX.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtFX.Location = new System.Drawing.Point(79, 25);
+            this.txtFX.Name = "txtFX";
+            this.txtFX.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtFX.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtFX.Size = new System.Drawing.Size(261, 36);
+            this.txtFX.TabIndex = 0;
+            this.txtFX.Text = "xℯ^x-1";
+            this.ttipTxtBox.SetToolTip(this.txtFX, "• Escriba la fórmula\r\n\r\n• Ejemplos:\r\n   • x^3-x-1\r\n   • (ℯ^x+1)/(√(x))\r\n   • (ℯ^x" +
+        "^-x)/(ℯ^x^x^x)\r\n   • 1/2 + sin(π / 4) + (sin(3x)2 + cos(3x)2)\r\n");
+            this.txtFX.TextChanged += new System.EventHandler(this.txtFX_TextChanged);
+            this.txtFX.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFX_KeyPress);
             // 
-            // gbOptions
+            // txtA
             // 
-            this.gbOptions.AutoSize = true;
-            this.gbOptions.Controls.Add(this.cbSinEA);
-            this.gbOptions.Controls.Add(this.gbTipoResult);
-            this.gbOptions.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbOptions.Location = new System.Drawing.Point(12, 193);
-            this.gbOptions.Name = "gbOptions";
-            this.gbOptions.Size = new System.Drawing.Size(179, 161);
-            this.gbOptions.TabIndex = 28;
-            this.gbOptions.TabStop = false;
-            this.gbOptions.Text = "Opciones";
+            this.txtA.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtA.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtA.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtA.Location = new System.Drawing.Point(95, 77);
+            this.txtA.MaximumSize = new System.Drawing.Size(500, 36);
+            this.txtA.MinimumSize = new System.Drawing.Size(130, 4);
+            this.txtA.Name = "txtA";
+            this.txtA.Size = new System.Drawing.Size(130, 36);
+            this.txtA.TabIndex = 4;
+            this.txtA.Text = "0";
+            this.ttipTxtBox.SetToolTip(this.txtA, "• Escriba el intérvalo b  → [a, b].\r\n\r\n• Información:\r\n   Recuerde que los valore" +
+        "s del intérvalo\r\n   deben ser de distintos signos.");
+            this.txtA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtA_KeyPress);
+            // 
+            // txtB
+            // 
+            this.txtB.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtB.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtB.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtB.Location = new System.Drawing.Point(327, 77);
+            this.txtB.MaximumSize = new System.Drawing.Size(500, 4);
+            this.txtB.MinimumSize = new System.Drawing.Size(130, 36);
+            this.txtB.Name = "txtB";
+            this.txtB.Size = new System.Drawing.Size(130, 36);
+            this.txtB.TabIndex = 5;
+            this.txtB.Text = "1";
+            this.ttipTxtBox.SetToolTip(this.txtB, "• Escriba el intérvalo b  → [a, b].\r\n\r\n• Información:\r\n   Recuerde que los valore" +
+        "s del intérvalo\r\n   deben ser de distintos signos.");
+            this.txtB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtB_KeyPress);
+            // 
+            // txtNmax
+            // 
+            this.txtNmax.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNmax.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNmax.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtNmax.Location = new System.Drawing.Point(216, 124);
+            this.txtNmax.Name = "txtNmax";
+            this.txtNmax.Size = new System.Drawing.Size(143, 36);
+            this.txtNmax.TabIndex = 6;
+            this.txtNmax.Text = "20";
+            this.ttipTxtBox.SetToolTip(this.txtNmax, resources.GetString("txtNmax.ToolTip"));
+            this.txtNmax.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNmax_KeyPress);
+            // 
+            // txtE
+            // 
+            this.txtE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtE.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtE.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtE.Location = new System.Drawing.Point(243, 172);
+            this.txtE.Name = "txtE";
+            this.txtE.Size = new System.Drawing.Size(155, 36);
+            this.txtE.TabIndex = 7;
+            this.txtE.Text = "0.01";
+            this.ttipTxtBox.SetToolTip(this.txtE, resources.GetString("txtE.ToolTip"));
+            this.txtE.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtE_KeyPress);
+            // 
+            // lblMODE
+            // 
+            this.lblMODE.AutoSize = true;
+            this.lblMODE.BackColor = System.Drawing.Color.Transparent;
+            this.lblMODE.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMODE.Location = new System.Drawing.Point(81, 11);
+            this.lblMODE.Name = "lblMODE";
+            this.lblMODE.Size = new System.Drawing.Size(30, 16);
+            this.lblMODE.TabIndex = 27;
+            this.lblMODE.Text = "RAD";
+            this.ttipTxtBox.SetToolTip(this.lblMODE, "Radianes\r\n\r\n• Información:\r\n   Calcula la función en RADIANES\r\n   ÚNICAMENTE si e" +
+        "xiste una función \r\n   trigonométrica en el campo de texto.");
+            this.lblMODE.Visible = false;
+            // 
+            // ttipBtn
+            // 
+            this.ttipBtn.AutoPopDelay = 15000;
+            this.ttipBtn.InitialDelay = 3000;
+            this.ttipBtn.IsBalloon = true;
+            this.ttipBtn.ReshowDelay = 100;
+            this.ttipBtn.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.ttipBtn.ToolTipTitle = "Ayuda con Botones";
             // 
             // btnCalculate
             // 
@@ -230,23 +246,124 @@ namespace rootprox_2022.Forms
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
-            // txtFX
+            // btnSigns
             // 
-            this.txtFX.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtFX.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFX.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtFX.Location = new System.Drawing.Point(79, 25);
-            this.txtFX.Name = "txtFX";
-            this.txtFX.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtFX.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtFX.Size = new System.Drawing.Size(261, 36);
-            this.txtFX.TabIndex = 0;
-            this.txtFX.Text = "x*ℯ^x-1";
-            this.ttipTxtBox.SetToolTip(this.txtFX, "• Escriba la fórmula\r\n\r\n• Ejemplos:\r\n   • x^3-x-1\r\n   • (ℯ^x+1)/(√(x))\r\n   • (ℯ^x" +
-        "^-x)/(ℯ^x^x^x)\r\n   • 1/2 + sin(π / 4) + (sin(3x)2 + cos(3x)2)\r\n");
-            this.txtFX.TextChanged += new System.EventHandler(this.txtFX_TextChanged);
-            this.txtFX.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFX_KeyPress);
+            this.btnSigns.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSigns.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSigns.Location = new System.Drawing.Point(420, 25);
+            this.btnSigns.Name = "btnSigns";
+            this.btnSigns.Size = new System.Drawing.Size(74, 36);
+            this.btnSigns.TabIndex = 3;
+            this.btnSigns.Text = "Signos";
+            this.ttipBtn.SetToolTip(this.btnSigns, resources.GetString("btnSigns.ToolTip"));
+            this.btnSigns.UseVisualStyleBackColor = true;
+            this.btnSigns.Click += new System.EventHandler(this.btnSigns_Click);
+            // 
+            // btnEuler
+            // 
+            this.btnEuler.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEuler.Font = new System.Drawing.Font("Trebuchet MS", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEuler.Location = new System.Drawing.Point(346, 25);
+            this.btnEuler.Name = "btnEuler";
+            this.btnEuler.Padding = new System.Windows.Forms.Padding(3, 0, 0, 4);
+            this.btnEuler.Size = new System.Drawing.Size(32, 36);
+            this.btnEuler.TabIndex = 1;
+            this.btnEuler.Text = "ℯ";
+            this.ttipBtn.SetToolTip(this.btnEuler, "Símbolo de Euler ℯ\r\n\r\n• Función: \r\n   Imprime ℯ al campo de la función.\r\n\r\n• Valo" +
+        "r:\r\n    ℯ = 2.718281828\r\n\r\n• Aplicación:\r\n    ℯ^n ó ℯn");
+            this.btnEuler.UseVisualStyleBackColor = true;
+            this.btnEuler.Click += new System.EventHandler(this.btnEuler_Click);
+            // 
+            // btnPow
+            // 
+            this.btnPow.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPow.Font = new System.Drawing.Font("Trebuchet MS", 20.25F);
+            this.btnPow.Location = new System.Drawing.Point(384, 25);
+            this.btnPow.Name = "btnPow";
+            this.btnPow.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.btnPow.Size = new System.Drawing.Size(30, 36);
+            this.btnPow.TabIndex = 2;
+            this.btnPow.Text = "^";
+            this.ttipBtn.SetToolTip(this.btnPow, "Símbolo de Potencia\r\n\r\n• Función: \r\n   Imprime ^ al campo de la función.\r\n\r\n• Apl" +
+        "icación:\r\n    a^b = aᵇ");
+            this.btnPow.UseVisualStyleBackColor = true;
+            this.btnPow.Click += new System.EventHandler(this.btnPow_Click);
+            // 
+            // ttipOptions
+            // 
+            this.ttipOptions.AutoPopDelay = 15000;
+            this.ttipOptions.InitialDelay = 3000;
+            this.ttipOptions.IsBalloon = true;
+            this.ttipOptions.ReshowDelay = 100;
+            this.ttipOptions.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.ttipOptions.ToolTipTitle = "Ayuda con Opciones";
+            // 
+            // rbNormal
+            // 
+            this.rbNormal.AutoSize = true;
+            this.rbNormal.Checked = true;
+            this.rbNormal.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbNormal.Location = new System.Drawing.Point(6, 19);
+            this.rbNormal.Name = "rbNormal";
+            this.rbNormal.Size = new System.Drawing.Size(67, 22);
+            this.rbNormal.TabIndex = 10;
+            this.rbNormal.TabStop = true;
+            this.rbNormal.Text = "Normal";
+            this.ttipOptions.SetToolTip(this.rbNormal, "Resultado sin alterar\r\n\r\n• Información:\r\n   No altera el resultado.");
+            this.rbNormal.UseVisualStyleBackColor = true;
+            // 
+            // rbRedondear
+            // 
+            this.rbRedondear.AutoSize = true;
+            this.rbRedondear.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbRedondear.Location = new System.Drawing.Point(6, 47);
+            this.rbRedondear.Name = "rbRedondear";
+            this.rbRedondear.Size = new System.Drawing.Size(87, 40);
+            this.rbRedondear.TabIndex = 8;
+            this.rbRedondear.Text = "Redondear\r\ndecimales";
+            this.ttipOptions.SetToolTip(this.rbRedondear, "Redondear a n decimales\r\n\r\n• Información:\r\n   Toma el número del cuadro de número" +
+        "\r\n   de la derecha y redondea los valores.");
+            this.rbRedondear.UseVisualStyleBackColor = true;
+            this.rbRedondear.CheckedChanged += new System.EventHandler(this.rbRedondear_CheckedChanged);
+            // 
+            // cbSinEA
+            // 
+            this.cbSinEA.AutoSize = true;
+            this.cbSinEA.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbSinEA.Location = new System.Drawing.Point(6, 19);
+            this.cbSinEA.Name = "cbSinEA";
+            this.cbSinEA.Size = new System.Drawing.Size(157, 22);
+            this.cbSinEA.TabIndex = 11;
+            this.cbSinEA.Text = "Sin Factor de Paroᴮᴱᵀᴬ";
+            this.ttipOptions.SetToolTip(this.cbSinEA, resources.GetString("cbSinEA.ToolTip"));
+            this.cbSinEA.UseVisualStyleBackColor = true;
+            this.cbSinEA.CheckedChanged += new System.EventHandler(this.cbSinEA_CheckedChanged);
+            // 
+            // gbTipoResult
+            // 
+            this.gbTipoResult.Controls.Add(this.numericRound);
+            this.gbTipoResult.Controls.Add(this.rbRedondear);
+            this.gbTipoResult.Controls.Add(this.rbNormal);
+            this.gbTipoResult.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbTipoResult.Location = new System.Drawing.Point(6, 47);
+            this.gbTipoResult.Name = "gbTipoResult";
+            this.gbTipoResult.Size = new System.Drawing.Size(162, 95);
+            this.gbTipoResult.TabIndex = 15;
+            this.gbTipoResult.TabStop = false;
+            this.gbTipoResult.Text = "Tipo de Resultado";
+            // 
+            // gbOptions
+            // 
+            this.gbOptions.AutoSize = true;
+            this.gbOptions.Controls.Add(this.cbSinEA);
+            this.gbOptions.Controls.Add(this.gbTipoResult);
+            this.gbOptions.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbOptions.Location = new System.Drawing.Point(12, 193);
+            this.gbOptions.Name = "gbOptions";
+            this.gbOptions.Size = new System.Drawing.Size(179, 161);
+            this.gbOptions.TabIndex = 28;
+            this.gbOptions.TabStop = false;
+            this.gbOptions.Text = "Opciones";
             // 
             // lblFX
             // 
@@ -257,22 +374,6 @@ namespace rootprox_2022.Forms
             this.lblFX.Size = new System.Drawing.Size(66, 28);
             this.lblFX.TabIndex = 5;
             this.lblFX.Text = "f(x) =";
-            // 
-            // txtA
-            // 
-            this.txtA.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtA.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtA.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtA.Location = new System.Drawing.Point(95, 77);
-            this.txtA.MaximumSize = new System.Drawing.Size(500, 36);
-            this.txtA.MinimumSize = new System.Drawing.Size(130, 4);
-            this.txtA.Name = "txtA";
-            this.txtA.Size = new System.Drawing.Size(130, 36);
-            this.txtA.TabIndex = 4;
-            this.txtA.Text = "0";
-            this.ttipTxtBox.SetToolTip(this.txtA, "• Escriba el intérvalo b  → [a, b].\r\n\r\n• Información:\r\n   Recuerde que los valore" +
-        "s del intérvalo\r\n   deben ser de distintos signos.");
-            this.txtA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtA_KeyPress);
             // 
             // lblA
             // 
@@ -285,22 +386,6 @@ namespace rootprox_2022.Forms
             this.lblA.TabIndex = 7;
             this.lblA.Text = "X₀ =";
             // 
-            // txtB
-            // 
-            this.txtB.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtB.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtB.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtB.Location = new System.Drawing.Point(327, 77);
-            this.txtB.MaximumSize = new System.Drawing.Size(500, 4);
-            this.txtB.MinimumSize = new System.Drawing.Size(130, 36);
-            this.txtB.Name = "txtB";
-            this.txtB.Size = new System.Drawing.Size(130, 36);
-            this.txtB.TabIndex = 5;
-            this.txtB.Text = "1";
-            this.ttipTxtBox.SetToolTip(this.txtB, "• Escriba el intérvalo b  → [a, b].\r\n\r\n• Información:\r\n   Recuerde que los valore" +
-        "s del intérvalo\r\n   deben ser de distintos signos.");
-            this.txtB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtB_KeyPress);
-            // 
             // lblB
             // 
             this.lblB.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -311,20 +396,6 @@ namespace rootprox_2022.Forms
             this.lblB.Size = new System.Drawing.Size(52, 28);
             this.lblB.TabIndex = 9;
             this.lblB.Text = "X₁ =";
-            // 
-            // txtNmax
-            // 
-            this.txtNmax.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNmax.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNmax.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtNmax.Location = new System.Drawing.Point(216, 124);
-            this.txtNmax.Name = "txtNmax";
-            this.txtNmax.Size = new System.Drawing.Size(143, 36);
-            this.txtNmax.TabIndex = 6;
-            this.txtNmax.Text = "20";
-            this.ttipTxtBox.SetToolTip(this.txtNmax, resources.GetString("txtNmax.ToolTip"));
-            this.txtNmax.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNmax_KeyPress);
             // 
             // lblNmax
             // 
@@ -346,20 +417,6 @@ namespace rootprox_2022.Forms
             this.lblIteraciones.Size = new System.Drawing.Size(127, 28);
             this.lblIteraciones.TabIndex = 15;
             this.lblIteraciones.Text = "iteraciones";
-            // 
-            // txtE
-            // 
-            this.txtE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtE.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtE.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtE.Location = new System.Drawing.Point(243, 172);
-            this.txtE.Name = "txtE";
-            this.txtE.Size = new System.Drawing.Size(155, 36);
-            this.txtE.TabIndex = 7;
-            this.txtE.Text = "0.01";
-            this.ttipTxtBox.SetToolTip(this.txtE, resources.GetString("txtE.ToolTip"));
-            this.txtE.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtE_KeyPress);
             // 
             // lblError
             // 
@@ -490,18 +547,6 @@ namespace rootprox_2022.Forms
             this.dgvResultAprox.TabIndex = 18;
             this.dgvResultAprox.TabStop = false;
             // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Error Relativo Aproximado";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Raíz Aproximada";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
@@ -511,62 +556,17 @@ namespace rootprox_2022.Forms
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
             this.dataGridViewTextBoxColumn1.Width = 176;
             // 
-            // btnSigns
+            // dataGridViewTextBoxColumn2
             // 
-            this.btnSigns.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSigns.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSigns.Location = new System.Drawing.Point(420, 25);
-            this.btnSigns.Name = "btnSigns";
-            this.btnSigns.Size = new System.Drawing.Size(74, 36);
-            this.btnSigns.TabIndex = 3;
-            this.btnSigns.Text = "Signos";
-            this.ttipBtn.SetToolTip(this.btnSigns, resources.GetString("btnSigns.ToolTip"));
-            this.btnSigns.UseVisualStyleBackColor = true;
-            this.btnSigns.Click += new System.EventHandler(this.btnSigns_Click);
+            this.dataGridViewTextBoxColumn2.HeaderText = "Raíz Aproximada";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // btnEuler
+            // dataGridViewTextBoxColumn3
             // 
-            this.btnEuler.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEuler.Font = new System.Drawing.Font("Trebuchet MS", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEuler.Location = new System.Drawing.Point(346, 25);
-            this.btnEuler.Name = "btnEuler";
-            this.btnEuler.Padding = new System.Windows.Forms.Padding(3, 0, 0, 4);
-            this.btnEuler.Size = new System.Drawing.Size(32, 36);
-            this.btnEuler.TabIndex = 1;
-            this.btnEuler.Text = "ℯ";
-            this.ttipBtn.SetToolTip(this.btnEuler, "Símbolo de Euler ℯ\r\n\r\n• Función: \r\n   Imprime ℯ al campo de la función.\r\n\r\n• Valo" +
-        "r:\r\n    ℯ = 2.718281828\r\n\r\n• Aplicación:\r\n    ℯ^n ó ℯn");
-            this.btnEuler.UseVisualStyleBackColor = true;
-            this.btnEuler.Click += new System.EventHandler(this.btnEuler_Click);
-            // 
-            // btnPow
-            // 
-            this.btnPow.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPow.Font = new System.Drawing.Font("Trebuchet MS", 20.25F);
-            this.btnPow.Location = new System.Drawing.Point(384, 25);
-            this.btnPow.Name = "btnPow";
-            this.btnPow.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.btnPow.Size = new System.Drawing.Size(30, 36);
-            this.btnPow.TabIndex = 2;
-            this.btnPow.Text = "^";
-            this.ttipBtn.SetToolTip(this.btnPow, "Símbolo de Potencia\r\n\r\n• Función: \r\n   Imprime ^ al campo de la función.\r\n\r\n• Apl" +
-        "icación:\r\n    a^b = aᵇ");
-            this.btnPow.UseVisualStyleBackColor = true;
-            this.btnPow.Click += new System.EventHandler(this.btnPow_Click);
-            // 
-            // lblMODE
-            // 
-            this.lblMODE.AutoSize = true;
-            this.lblMODE.BackColor = System.Drawing.Color.Transparent;
-            this.lblMODE.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMODE.Location = new System.Drawing.Point(81, 11);
-            this.lblMODE.Name = "lblMODE";
-            this.lblMODE.Size = new System.Drawing.Size(30, 16);
-            this.lblMODE.TabIndex = 27;
-            this.lblMODE.Text = "RAD";
-            this.ttipTxtBox.SetToolTip(this.lblMODE, "Radianes\r\n\r\n• Información:\r\n   Calcula la función en RADIANES\r\n   ÚNICAMENTE si e" +
-        "xiste una función \r\n   trigonométrica en el campo de texto.");
-            this.lblMODE.Visible = false;
+            this.dataGridViewTextBoxColumn3.HeaderText = "Error Relativo Aproximado";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // gbValues
             // 
@@ -726,9 +726,9 @@ namespace rootprox_2022.Forms
             this.Name = "ROOTPROX_Secante";
             this.Text = "ROOTPROX - Secante";
             this.Load += new System.EventHandler(this.ROOTPROX_Secante_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.numericRound)).EndInit();
             this.gbTipoResult.ResumeLayout(false);
             this.gbTipoResult.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericRound)).EndInit();
             this.gbOptions.ResumeLayout(false);
             this.gbOptions.PerformLayout();
             this.gbResult.ResumeLayout(false);

@@ -30,18 +30,33 @@ namespace rootprox_2022.Forms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ROOTPROX_Regla_Falsa));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.ttipTxtBox = new System.Windows.Forms.ToolTip(this.components);
+            this.lblMODE = new System.Windows.Forms.Label();
+            this.numericRound = new System.Windows.Forms.NumericUpDown();
+            this.txtE = new System.Windows.Forms.TextBox();
+            this.txtNmax = new System.Windows.Forms.TextBox();
+            this.txtB = new System.Windows.Forms.TextBox();
+            this.txtA = new System.Windows.Forms.TextBox();
+            this.txtFX = new System.Windows.Forms.TextBox();
             this.ttipBtn = new System.Windows.Forms.ToolTip(this.components);
+            this.btnPow = new System.Windows.Forms.Button();
+            this.btnEuler = new System.Windows.Forms.Button();
+            this.btnSigns = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.btnCalculate = new System.Windows.Forms.Button();
             this.ttipOptions = new System.Windows.Forms.ToolTip(this.components);
+            this.cbSinEA = new System.Windows.Forms.CheckBox();
+            this.rbRedondear = new System.Windows.Forms.RadioButton();
+            this.rbNormal = new System.Windows.Forms.RadioButton();
             this.dgvResults = new System.Windows.Forms.DataGridView();
             this.iter = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.X0 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,15 +67,7 @@ namespace rootprox_2022.Forms
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lblMODE = new System.Windows.Forms.Label();
-            this.btnPow = new System.Windows.Forms.Button();
-            this.btnEuler = new System.Windows.Forms.Button();
-            this.cbSinEA = new System.Windows.Forms.CheckBox();
             this.gbTipoResult = new System.Windows.Forms.GroupBox();
-            this.numericRound = new System.Windows.Forms.NumericUpDown();
-            this.rbRedondear = new System.Windows.Forms.RadioButton();
-            this.rbNormal = new System.Windows.Forms.RadioButton();
-            this.btnSigns = new System.Windows.Forms.Button();
             this.lblMethodName = new System.Windows.Forms.Label();
             this.gbResult = new System.Windows.Forms.GroupBox();
             this.gbValues = new System.Windows.Forms.GroupBox();
@@ -69,23 +76,16 @@ namespace rootprox_2022.Forms
             this.lblCorchete2 = new System.Windows.Forms.Label();
             this.lblCorchete1 = new System.Windows.Forms.Label();
             this.lblError = new System.Windows.Forms.Label();
-            this.txtE = new System.Windows.Forms.TextBox();
             this.lblIteraciones = new System.Windows.Forms.Label();
             this.lblNmax = new System.Windows.Forms.Label();
-            this.txtNmax = new System.Windows.Forms.TextBox();
             this.lblB = new System.Windows.Forms.Label();
-            this.txtB = new System.Windows.Forms.TextBox();
             this.lblA = new System.Windows.Forms.Label();
-            this.txtA = new System.Windows.Forms.TextBox();
             this.lblFX = new System.Windows.Forms.Label();
-            this.txtFX = new System.Windows.Forms.TextBox();
-            this.btnReset = new System.Windows.Forms.Button();
-            this.btnCalculate = new System.Windows.Forms.Button();
             this.gbOptions = new System.Windows.Forms.GroupBox();
+            ((System.ComponentModel.ISupportInitialize)(this.numericRound)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResults)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultAprox)).BeginInit();
             this.gbTipoResult.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericRound)).BeginInit();
             this.gbResult.SuspendLayout();
             this.gbValues.SuspendLayout();
             this.gbOptions.SuspendLayout();
@@ -100,6 +100,115 @@ namespace rootprox_2022.Forms
             this.ttipTxtBox.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.ttipTxtBox.ToolTipTitle = "Ayuda con Campos de Texto";
             // 
+            // lblMODE
+            // 
+            this.lblMODE.AutoSize = true;
+            this.lblMODE.BackColor = System.Drawing.Color.Transparent;
+            this.lblMODE.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMODE.Location = new System.Drawing.Point(81, 11);
+            this.lblMODE.Name = "lblMODE";
+            this.lblMODE.Size = new System.Drawing.Size(30, 16);
+            this.lblMODE.TabIndex = 27;
+            this.lblMODE.Text = "RAD";
+            this.ttipTxtBox.SetToolTip(this.lblMODE, "Radianes\r\n\r\n• Información:\r\n   Calcula la función en RADIANES\r\n   ÚNICAMENTE si e" +
+        "xiste una función \r\n   trigonométrica en el campo de texto.");
+            this.lblMODE.Visible = false;
+            // 
+            // numericRound
+            // 
+            this.numericRound.AutoSize = true;
+            this.numericRound.Enabled = false;
+            this.numericRound.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericRound.Location = new System.Drawing.Point(99, 55);
+            this.numericRound.Name = "numericRound";
+            this.numericRound.Size = new System.Drawing.Size(52, 26);
+            this.numericRound.TabIndex = 9;
+            this.ttipTxtBox.SetToolTip(this.numericRound, resources.GetString("numericRound.ToolTip"));
+            this.numericRound.Value = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
+            this.numericRound.ValueChanged += new System.EventHandler(this.numericRound_ValueChanged);
+            // 
+            // txtE
+            // 
+            this.txtE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtE.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtE.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtE.Location = new System.Drawing.Point(243, 172);
+            this.txtE.Name = "txtE";
+            this.txtE.Size = new System.Drawing.Size(155, 36);
+            this.txtE.TabIndex = 7;
+            this.txtE.Text = "0.01";
+            this.ttipTxtBox.SetToolTip(this.txtE, resources.GetString("txtE.ToolTip"));
+            this.txtE.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtE_KeyPress);
+            // 
+            // txtNmax
+            // 
+            this.txtNmax.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNmax.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNmax.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtNmax.Location = new System.Drawing.Point(216, 124);
+            this.txtNmax.Name = "txtNmax";
+            this.txtNmax.Size = new System.Drawing.Size(143, 36);
+            this.txtNmax.TabIndex = 6;
+            this.txtNmax.Text = "20";
+            this.ttipTxtBox.SetToolTip(this.txtNmax, resources.GetString("txtNmax.ToolTip"));
+            this.txtNmax.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNmax_KeyPress);
+            // 
+            // txtB
+            // 
+            this.txtB.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtB.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtB.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtB.Location = new System.Drawing.Point(327, 77);
+            this.txtB.MaximumSize = new System.Drawing.Size(500, 4);
+            this.txtB.MinimumSize = new System.Drawing.Size(130, 36);
+            this.txtB.Name = "txtB";
+            this.txtB.Size = new System.Drawing.Size(130, 36);
+            this.txtB.TabIndex = 5;
+            this.txtB.Text = "1";
+            this.ttipTxtBox.SetToolTip(this.txtB, "• Escriba el intérvalo b  → [a, b].\r\n\r\n• Información:\r\n   Recuerde que los valore" +
+        "s del intérvalo\r\n   deben ser de distintos signos.");
+            this.txtB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtB_KeyPress);
+            // 
+            // txtA
+            // 
+            this.txtA.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtA.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtA.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtA.Location = new System.Drawing.Point(95, 77);
+            this.txtA.MaximumSize = new System.Drawing.Size(500, 36);
+            this.txtA.MinimumSize = new System.Drawing.Size(130, 4);
+            this.txtA.Name = "txtA";
+            this.txtA.Size = new System.Drawing.Size(130, 36);
+            this.txtA.TabIndex = 4;
+            this.txtA.Text = "0";
+            this.ttipTxtBox.SetToolTip(this.txtA, "• Escriba el intérvalo b  → [a, b].\r\n\r\n• Información:\r\n   Recuerde que los valore" +
+        "s del intérvalo\r\n   deben ser de distintos signos.");
+            this.txtA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtA_KeyPress);
+            // 
+            // txtFX
+            // 
+            this.txtFX.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtFX.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFX.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtFX.Location = new System.Drawing.Point(79, 25);
+            this.txtFX.Name = "txtFX";
+            this.txtFX.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtFX.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtFX.Size = new System.Drawing.Size(261, 36);
+            this.txtFX.TabIndex = 0;
+            this.txtFX.Text = "xℯ^x-1";
+            this.ttipTxtBox.SetToolTip(this.txtFX, "• Escriba la fórmula\r\n\r\n• Ejemplos:\r\n   • x^3-x-1\r\n   • (ℯ^x+1)/(√(x))\r\n   • (ℯ^x" +
+        "^-x)/(ℯ^x^x^x)\r\n   • 1/2 + sin(π / 4) + (sin(3x)2 + cos(3x)2)\r\n");
+            this.txtFX.TextChanged += new System.EventHandler(this.txtFX_TextChanged);
+            this.txtFX.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFX_KeyPress);
+            // 
             // ttipBtn
             // 
             this.ttipBtn.AutoPopDelay = 15000;
@@ -109,6 +218,77 @@ namespace rootprox_2022.Forms
             this.ttipBtn.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.ttipBtn.ToolTipTitle = "Ayuda con Botones";
             // 
+            // btnPow
+            // 
+            this.btnPow.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPow.Font = new System.Drawing.Font("Trebuchet MS", 20.25F);
+            this.btnPow.Location = new System.Drawing.Point(384, 25);
+            this.btnPow.Name = "btnPow";
+            this.btnPow.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.btnPow.Size = new System.Drawing.Size(30, 36);
+            this.btnPow.TabIndex = 2;
+            this.btnPow.Text = "^";
+            this.ttipBtn.SetToolTip(this.btnPow, "Símbolo de Potencia\r\n\r\n• Función: \r\n   Imprime ^ al campo de la función.\r\n\r\n• Apl" +
+        "icación:\r\n    a^b = aᵇ");
+            this.btnPow.UseVisualStyleBackColor = true;
+            this.btnPow.Click += new System.EventHandler(this.btnPow_Click);
+            // 
+            // btnEuler
+            // 
+            this.btnEuler.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEuler.Font = new System.Drawing.Font("Trebuchet MS", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEuler.Location = new System.Drawing.Point(346, 25);
+            this.btnEuler.Name = "btnEuler";
+            this.btnEuler.Padding = new System.Windows.Forms.Padding(3, 0, 0, 4);
+            this.btnEuler.Size = new System.Drawing.Size(32, 36);
+            this.btnEuler.TabIndex = 1;
+            this.btnEuler.Text = "ℯ";
+            this.ttipBtn.SetToolTip(this.btnEuler, "Símbolo de Euler ℯ\r\n\r\n• Función: \r\n   Imprime ℯ al campo de la función.\r\n\r\n• Valo" +
+        "r:\r\n    ℯ = 2.718281828\r\n\r\n• Aplicación:\r\n    ℯ^n ó ℯn");
+            this.btnEuler.UseVisualStyleBackColor = true;
+            this.btnEuler.Click += new System.EventHandler(this.btnEuler_Click);
+            // 
+            // btnSigns
+            // 
+            this.btnSigns.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSigns.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSigns.Location = new System.Drawing.Point(420, 25);
+            this.btnSigns.Name = "btnSigns";
+            this.btnSigns.Size = new System.Drawing.Size(74, 36);
+            this.btnSigns.TabIndex = 3;
+            this.btnSigns.Text = "Signos";
+            this.ttipBtn.SetToolTip(this.btnSigns, resources.GetString("btnSigns.ToolTip"));
+            this.btnSigns.UseVisualStyleBackColor = true;
+            this.btnSigns.Click += new System.EventHandler(this.btnSigns_Click);
+            // 
+            // btnReset
+            // 
+            this.btnReset.AutoSize = true;
+            this.btnReset.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.Location = new System.Drawing.Point(12, 124);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(179, 63);
+            this.btnReset.TabIndex = 33;
+            this.btnReset.Text = "Reiniciar";
+            this.ttipBtn.SetToolTip(this.btnReset, "Reiniciar / Limpiar\r\n\r\n• Función: \r\n   Limpia todos los campos de texto y resulta" +
+        "dos.\r\n");
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // btnCalculate
+            // 
+            this.btnCalculate.AutoSize = true;
+            this.btnCalculate.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.btnCalculate.Location = new System.Drawing.Point(12, 12);
+            this.btnCalculate.Name = "btnCalculate";
+            this.btnCalculate.Size = new System.Drawing.Size(175, 106);
+            this.btnCalculate.TabIndex = 32;
+            this.btnCalculate.Text = "Calcular";
+            this.ttipBtn.SetToolTip(this.btnCalculate, "Calcular\r\n\r\n• Función: \r\n   Calcula por el método seleccionado a partir de los \r\n" +
+        "    valores que proporcione.");
+            this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
+            // 
             // ttipOptions
             // 
             this.ttipOptions.AutoPopDelay = 15000;
@@ -117,6 +297,47 @@ namespace rootprox_2022.Forms
             this.ttipOptions.ReshowDelay = 100;
             this.ttipOptions.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.ttipOptions.ToolTipTitle = "Ayuda con Opciones";
+            // 
+            // cbSinEA
+            // 
+            this.cbSinEA.AutoSize = true;
+            this.cbSinEA.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbSinEA.Location = new System.Drawing.Point(6, 19);
+            this.cbSinEA.Name = "cbSinEA";
+            this.cbSinEA.Size = new System.Drawing.Size(157, 22);
+            this.cbSinEA.TabIndex = 11;
+            this.cbSinEA.Text = "Sin Factor de Paroᴮᴱᵀᴬ";
+            this.ttipOptions.SetToolTip(this.cbSinEA, resources.GetString("cbSinEA.ToolTip"));
+            this.cbSinEA.UseVisualStyleBackColor = true;
+            this.cbSinEA.CheckedChanged += new System.EventHandler(this.cbSinEA_CheckedChanged);
+            // 
+            // rbRedondear
+            // 
+            this.rbRedondear.AutoSize = true;
+            this.rbRedondear.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbRedondear.Location = new System.Drawing.Point(6, 47);
+            this.rbRedondear.Name = "rbRedondear";
+            this.rbRedondear.Size = new System.Drawing.Size(87, 40);
+            this.rbRedondear.TabIndex = 8;
+            this.rbRedondear.Text = "Redondear\r\ndecimales";
+            this.ttipOptions.SetToolTip(this.rbRedondear, "Redondear a n decimales\r\n\r\n• Información:\r\n   Toma el número del cuadro de número" +
+        "\r\n   de la derecha y redondea los valores.");
+            this.rbRedondear.UseVisualStyleBackColor = true;
+            this.rbRedondear.CheckedChanged += new System.EventHandler(this.rbRedondear_CheckedChanged);
+            // 
+            // rbNormal
+            // 
+            this.rbNormal.AutoSize = true;
+            this.rbNormal.Checked = true;
+            this.rbNormal.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbNormal.Location = new System.Drawing.Point(6, 19);
+            this.rbNormal.Name = "rbNormal";
+            this.rbNormal.Size = new System.Drawing.Size(67, 22);
+            this.rbNormal.TabIndex = 10;
+            this.rbNormal.TabStop = true;
+            this.rbNormal.Text = "Normal";
+            this.ttipOptions.SetToolTip(this.rbNormal, "Resultado sin alterar\r\n\r\n• Información:\r\n   No altera el resultado.");
+            this.rbNormal.UseVisualStyleBackColor = true;
             // 
             // dgvResults
             // 
@@ -133,14 +354,14 @@ namespace rootprox_2022.Forms
             this.dgvResults.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvResults.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.dgvResults.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(137)))), ((int)(((byte)(199)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(137)))), ((int)(((byte)(199)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvResults.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(137)))), ((int)(((byte)(199)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(137)))), ((int)(((byte)(199)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvResults.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvResults.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResults.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iter,
@@ -148,15 +369,15 @@ namespace rootprox_2022.Forms
             this.X1,
             this.xr,
             this.ea});
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle10.NullValue = null;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvResults.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.NullValue = null;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvResults.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvResults.EnableHeadersVisualStyles = false;
             this.dgvResults.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(84)))), ((int)(((byte)(122)))));
             this.dgvResults.Location = new System.Drawing.Point(12, 360);
@@ -164,22 +385,22 @@ namespace rootprox_2022.Forms
             this.dgvResults.Name = "dgvResults";
             this.dgvResults.ReadOnly = true;
             this.dgvResults.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvResults.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvResults.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvResults.RowHeadersVisible = false;
             this.dgvResults.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            this.dgvResults.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            this.dgvResults.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvResults.Size = new System.Drawing.Size(685, 189);
             this.dgvResults.TabIndex = 36;
             this.dgvResults.TabStop = false;
@@ -231,28 +452,28 @@ namespace rootprox_2022.Forms
             this.dgvResultAprox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvResultAprox.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.dgvResultAprox.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(137)))), ((int)(((byte)(199)))));
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(137)))), ((int)(((byte)(199)))));
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvResultAprox.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(137)))), ((int)(((byte)(199)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(137)))), ((int)(((byte)(199)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvResultAprox.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvResultAprox.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultAprox.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle14.NullValue = null;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvResultAprox.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.NullValue = null;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvResultAprox.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvResultAprox.EnableHeadersVisualStyles = false;
             this.dgvResultAprox.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(84)))), ((int)(((byte)(122)))));
             this.dgvResultAprox.Location = new System.Drawing.Point(6, 19);
@@ -260,22 +481,22 @@ namespace rootprox_2022.Forms
             this.dgvResultAprox.Name = "dgvResultAprox";
             this.dgvResultAprox.ReadOnly = true;
             this.dgvResultAprox.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvResultAprox.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvResultAprox.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvResultAprox.RowHeadersVisible = false;
             this.dgvResultAprox.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
-            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            this.dgvResultAprox.RowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Trebuchet MS", 11.25F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            this.dgvResultAprox.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvResultAprox.Size = new System.Drawing.Size(476, 64);
             this.dgvResultAprox.TabIndex = 18;
             this.dgvResultAprox.TabStop = false;
@@ -301,63 +522,6 @@ namespace rootprox_2022.Forms
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
-            // lblMODE
-            // 
-            this.lblMODE.AutoSize = true;
-            this.lblMODE.BackColor = System.Drawing.Color.Transparent;
-            this.lblMODE.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMODE.Location = new System.Drawing.Point(81, 11);
-            this.lblMODE.Name = "lblMODE";
-            this.lblMODE.Size = new System.Drawing.Size(30, 16);
-            this.lblMODE.TabIndex = 27;
-            this.lblMODE.Text = "RAD";
-            this.ttipTxtBox.SetToolTip(this.lblMODE, "Radianes\r\n\r\n• Información:\r\n   Calcula la función en RADIANES\r\n   ÚNICAMENTE si e" +
-        "xiste una función \r\n   trigonométrica en el campo de texto.");
-            this.lblMODE.Visible = false;
-            // 
-            // btnPow
-            // 
-            this.btnPow.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPow.Font = new System.Drawing.Font("Trebuchet MS", 20.25F);
-            this.btnPow.Location = new System.Drawing.Point(384, 25);
-            this.btnPow.Name = "btnPow";
-            this.btnPow.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.btnPow.Size = new System.Drawing.Size(30, 36);
-            this.btnPow.TabIndex = 2;
-            this.btnPow.Text = "^";
-            this.ttipBtn.SetToolTip(this.btnPow, "Símbolo de Potencia\r\n\r\n• Función: \r\n   Imprime ^ al campo de la función.\r\n\r\n• Apl" +
-        "icación:\r\n    a^b = aᵇ");
-            this.btnPow.UseVisualStyleBackColor = true;
-            this.btnPow.Click += new System.EventHandler(this.btnPow_Click);
-            // 
-            // btnEuler
-            // 
-            this.btnEuler.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEuler.Font = new System.Drawing.Font("Trebuchet MS", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEuler.Location = new System.Drawing.Point(346, 25);
-            this.btnEuler.Name = "btnEuler";
-            this.btnEuler.Padding = new System.Windows.Forms.Padding(3, 0, 0, 4);
-            this.btnEuler.Size = new System.Drawing.Size(32, 36);
-            this.btnEuler.TabIndex = 1;
-            this.btnEuler.Text = "ℯ";
-            this.ttipBtn.SetToolTip(this.btnEuler, "Símbolo de Euler ℯ\r\n\r\n• Función: \r\n   Imprime ℯ al campo de la función.\r\n\r\n• Valo" +
-        "r:\r\n    ℯ = 2.718281828\r\n\r\n• Aplicación:\r\n    ℯ^n ó ℯn");
-            this.btnEuler.UseVisualStyleBackColor = true;
-            this.btnEuler.Click += new System.EventHandler(this.btnEuler_Click);
-            // 
-            // cbSinEA
-            // 
-            this.cbSinEA.AutoSize = true;
-            this.cbSinEA.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbSinEA.Location = new System.Drawing.Point(6, 19);
-            this.cbSinEA.Name = "cbSinEA";
-            this.cbSinEA.Size = new System.Drawing.Size(157, 22);
-            this.cbSinEA.TabIndex = 11;
-            this.cbSinEA.Text = "Sin Factor de Paroᴮᴱᵀᴬ";
-            this.ttipOptions.SetToolTip(this.cbSinEA, resources.GetString("cbSinEA.ToolTip"));
-            this.cbSinEA.UseVisualStyleBackColor = true;
-            this.cbSinEA.CheckedChanged += new System.EventHandler(this.cbSinEA_CheckedChanged);
-            // 
             // gbTipoResult
             // 
             this.gbTipoResult.Controls.Add(this.numericRound);
@@ -370,64 +534,6 @@ namespace rootprox_2022.Forms
             this.gbTipoResult.TabIndex = 15;
             this.gbTipoResult.TabStop = false;
             this.gbTipoResult.Text = "Tipo de Resultado";
-            // 
-            // numericRound
-            // 
-            this.numericRound.AutoSize = true;
-            this.numericRound.Enabled = false;
-            this.numericRound.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericRound.Location = new System.Drawing.Point(99, 55);
-            this.numericRound.Name = "numericRound";
-            this.numericRound.Size = new System.Drawing.Size(52, 26);
-            this.numericRound.TabIndex = 9;
-            this.ttipTxtBox.SetToolTip(this.numericRound, resources.GetString("numericRound.ToolTip"));
-            this.numericRound.Value = new decimal(new int[] {
-            4,
-            0,
-            0,
-            0});
-            this.numericRound.ValueChanged += new System.EventHandler(this.numericRound_ValueChanged);
-            // 
-            // rbRedondear
-            // 
-            this.rbRedondear.AutoSize = true;
-            this.rbRedondear.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbRedondear.Location = new System.Drawing.Point(6, 47);
-            this.rbRedondear.Name = "rbRedondear";
-            this.rbRedondear.Size = new System.Drawing.Size(87, 40);
-            this.rbRedondear.TabIndex = 8;
-            this.rbRedondear.Text = "Redondear\r\ndecimales";
-            this.ttipOptions.SetToolTip(this.rbRedondear, "Redondear a n decimales\r\n\r\n• Información:\r\n   Toma el número del cuadro de número" +
-        "\r\n   de la derecha y redondea los valores.");
-            this.rbRedondear.UseVisualStyleBackColor = true;
-            this.rbRedondear.CheckedChanged += new System.EventHandler(this.rbRedondear_CheckedChanged);
-            // 
-            // rbNormal
-            // 
-            this.rbNormal.AutoSize = true;
-            this.rbNormal.Checked = true;
-            this.rbNormal.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbNormal.Location = new System.Drawing.Point(6, 19);
-            this.rbNormal.Name = "rbNormal";
-            this.rbNormal.Size = new System.Drawing.Size(67, 22);
-            this.rbNormal.TabIndex = 10;
-            this.rbNormal.TabStop = true;
-            this.rbNormal.Text = "Normal";
-            this.ttipOptions.SetToolTip(this.rbNormal, "Resultado sin alterar\r\n\r\n• Información:\r\n   No altera el resultado.");
-            this.rbNormal.UseVisualStyleBackColor = true;
-            // 
-            // btnSigns
-            // 
-            this.btnSigns.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSigns.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSigns.Location = new System.Drawing.Point(420, 25);
-            this.btnSigns.Name = "btnSigns";
-            this.btnSigns.Size = new System.Drawing.Size(74, 36);
-            this.btnSigns.TabIndex = 3;
-            this.btnSigns.Text = "Signos";
-            this.ttipBtn.SetToolTip(this.btnSigns, resources.GetString("btnSigns.ToolTip"));
-            this.btnSigns.UseVisualStyleBackColor = true;
-            this.btnSigns.Click += new System.EventHandler(this.btnSigns_Click);
             // 
             // lblMethodName
             // 
@@ -539,20 +645,6 @@ namespace rootprox_2022.Forms
             this.lblError.TabIndex = 11;
             this.lblError.Text = "Factor de Paro  (εa) =";
             // 
-            // txtE
-            // 
-            this.txtE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtE.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtE.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtE.Location = new System.Drawing.Point(243, 172);
-            this.txtE.Name = "txtE";
-            this.txtE.Size = new System.Drawing.Size(155, 36);
-            this.txtE.TabIndex = 7;
-            this.txtE.Text = "0.01";
-            this.ttipTxtBox.SetToolTip(this.txtE, resources.GetString("txtE.ToolTip"));
-            this.txtE.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtE_KeyPress);
-            // 
             // lblIteraciones
             // 
             this.lblIteraciones.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -574,20 +666,6 @@ namespace rootprox_2022.Forms
             this.lblNmax.TabIndex = 14;
             this.lblNmax.Text = "Número máximo =";
             // 
-            // txtNmax
-            // 
-            this.txtNmax.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNmax.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNmax.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtNmax.Location = new System.Drawing.Point(216, 124);
-            this.txtNmax.Name = "txtNmax";
-            this.txtNmax.Size = new System.Drawing.Size(143, 36);
-            this.txtNmax.TabIndex = 6;
-            this.txtNmax.Text = "20";
-            this.ttipTxtBox.SetToolTip(this.txtNmax, resources.GetString("txtNmax.ToolTip"));
-            this.txtNmax.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNmax_KeyPress);
-            // 
             // lblB
             // 
             this.lblB.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -598,22 +676,6 @@ namespace rootprox_2022.Forms
             this.lblB.Size = new System.Drawing.Size(52, 28);
             this.lblB.TabIndex = 9;
             this.lblB.Text = "X₁ =";
-            // 
-            // txtB
-            // 
-            this.txtB.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtB.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtB.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtB.Location = new System.Drawing.Point(327, 77);
-            this.txtB.MaximumSize = new System.Drawing.Size(500, 4);
-            this.txtB.MinimumSize = new System.Drawing.Size(130, 36);
-            this.txtB.Name = "txtB";
-            this.txtB.Size = new System.Drawing.Size(130, 36);
-            this.txtB.TabIndex = 5;
-            this.txtB.Text = "1";
-            this.ttipTxtBox.SetToolTip(this.txtB, "• Escriba el intérvalo b  → [a, b].\r\n\r\n• Información:\r\n   Recuerde que los valore" +
-        "s del intérvalo\r\n   deben ser de distintos signos.");
-            this.txtB.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtB_KeyPress);
             // 
             // lblA
             // 
@@ -626,22 +688,6 @@ namespace rootprox_2022.Forms
             this.lblA.TabIndex = 7;
             this.lblA.Text = "X₀ =";
             // 
-            // txtA
-            // 
-            this.txtA.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtA.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtA.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtA.Location = new System.Drawing.Point(95, 77);
-            this.txtA.MaximumSize = new System.Drawing.Size(500, 36);
-            this.txtA.MinimumSize = new System.Drawing.Size(130, 4);
-            this.txtA.Name = "txtA";
-            this.txtA.Size = new System.Drawing.Size(130, 36);
-            this.txtA.TabIndex = 4;
-            this.txtA.Text = "0";
-            this.ttipTxtBox.SetToolTip(this.txtA, "• Escriba el intérvalo b  → [a, b].\r\n\r\n• Información:\r\n   Recuerde que los valore" +
-        "s del intérvalo\r\n   deben ser de distintos signos.");
-            this.txtA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtA_KeyPress);
-            // 
             // lblFX
             // 
             this.lblFX.AutoSize = true;
@@ -651,52 +697,6 @@ namespace rootprox_2022.Forms
             this.lblFX.Size = new System.Drawing.Size(66, 28);
             this.lblFX.TabIndex = 5;
             this.lblFX.Text = "f(x) =";
-            // 
-            // txtFX
-            // 
-            this.txtFX.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtFX.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFX.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtFX.Location = new System.Drawing.Point(79, 25);
-            this.txtFX.Name = "txtFX";
-            this.txtFX.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtFX.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtFX.Size = new System.Drawing.Size(261, 36);
-            this.txtFX.TabIndex = 0;
-            this.txtFX.Text = "x*ℯ^x-1";
-            this.ttipTxtBox.SetToolTip(this.txtFX, "• Escriba la fórmula\r\n\r\n• Ejemplos:\r\n   • x^3-x-1\r\n   • (ℯ^x+1)/(√(x))\r\n   • (ℯ^x" +
-        "^-x)/(ℯ^x^x^x)\r\n   • 1/2 + sin(π / 4) + (sin(3x)2 + cos(3x)2)\r\n");
-            this.txtFX.TextChanged += new System.EventHandler(this.txtFX_TextChanged);
-            this.txtFX.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFX_KeyPress);
-            // 
-            // btnReset
-            // 
-            this.btnReset.AutoSize = true;
-            this.btnReset.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.Location = new System.Drawing.Point(12, 124);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(179, 63);
-            this.btnReset.TabIndex = 33;
-            this.btnReset.Text = "Reiniciar";
-            this.ttipBtn.SetToolTip(this.btnReset, "Reiniciar / Limpiar\r\n\r\n• Función: \r\n   Limpia todos los campos de texto y resulta" +
-        "dos.\r\n");
-            this.btnReset.UseVisualStyleBackColor = true;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
-            // 
-            // btnCalculate
-            // 
-            this.btnCalculate.AutoSize = true;
-            this.btnCalculate.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.btnCalculate.Location = new System.Drawing.Point(12, 12);
-            this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(175, 106);
-            this.btnCalculate.TabIndex = 32;
-            this.btnCalculate.Text = "Calcular";
-            this.ttipBtn.SetToolTip(this.btnCalculate, "Calcular\r\n\r\n• Función: \r\n   Calcula por el método seleccionado a partir de los \r\n" +
-        "    valores que proporcione.");
-            this.btnCalculate.UseVisualStyleBackColor = true;
-            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
             // gbOptions
             // 
@@ -726,11 +726,11 @@ namespace rootprox_2022.Forms
             this.Name = "ROOTPROX_Regla_Falsa";
             this.Text = "ROOTPROX - Regla Falsa";
             this.Load += new System.EventHandler(this.ROOTPROX_Regla_Falsa_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.numericRound)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResults)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultAprox)).EndInit();
             this.gbTipoResult.ResumeLayout(false);
             this.gbTipoResult.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericRound)).EndInit();
             this.gbResult.ResumeLayout(false);
             this.gbValues.ResumeLayout(false);
             this.gbValues.PerformLayout();
