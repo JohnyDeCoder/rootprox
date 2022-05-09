@@ -120,6 +120,12 @@
   <metadata name="ttipTxtBox.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 11</value>
   </metadata>
+  <metadata name="ttipBtn.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>123, 11</value>
+  </metadata>
+  <metadata name="ttipOptions.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>211, 11</value>
+  </metadata>
   <data name="numericRound.ToolTip" xml:space="preserve">
     <value>• Escriba número a redondear.
 
@@ -132,40 +138,6 @@
    Redondear 2.718281828 a 4 decimales 
     = 2.7183</value>
   </data>
-  <data name="txtE.ToolTip" xml:space="preserve">
-    <value>• Escriba el factor de paro.
-
-• Información:
-   El factor de paro sirve como el límite de
-   cada iteración, mientras más decimales
-   tenga el factor de paro, más cerca estará
-   la raíz aproximada.
-</value>
-  </data>
-  <data name="txtNmax.ToolTip" xml:space="preserve">
-    <value>• Escriba el número de iteraciones máximo
-
-• Información:
-   El número máximo representa el límite de
-   iteraciones que quiere obtener de la función.
-   Se recomienda establecer a 20 iteraciones.</value>
-  </data>
-  <metadata name="ttipBtn.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>123, 11</value>
-  </metadata>
-  <data name="btnSigns.ToolTip" xml:space="preserve">
-    <value>Signos / Símbolos
-
-• Función: 
-   Abre el mapa de símbolos matemáticos donde contiene 
-   todos los símbolos de las operaciones aritméticas y
-   funciones trigonométricas.
-   Al entrar usted puede seleccionar cualquier símbolo para
-   imprimirlo en el campo de la función.</value>
-  </data>
-  <metadata name="ttipOptions.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>211, 11</value>
-  </metadata>
   <data name="cbSinEA.ToolTip" xml:space="preserve">
     <value>Sin Factor de Paroᴮᴱᵀᴬ
 
@@ -178,6 +150,24 @@
    Se recomienda de 10 a 30 iteraciones.
    Puede ocasionar fallas o retardos.</value>
   </data>
+  <data name="txtNmax.ToolTip" xml:space="preserve">
+    <value>• Escriba el número de iteraciones máximo
+
+• Información:
+   El número máximo representa el límite de
+   iteraciones que quiere obtener de la función.
+   Se recomienda establecer a 20 iteraciones.</value>
+  </data>
+  <data name="txtE.ToolTip" xml:space="preserve">
+    <value>• Escriba el factor de paro.
+
+• Información:
+   El factor de paro sirve como el límite de
+   cada iteración, mientras más decimales
+   tenga el factor de paro, más cerca estará
+   la raíz aproximada.
+</value>
+  </data>
   <metadata name="dataGridViewTextBoxColumn1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -187,19 +177,29 @@
   <metadata name="dataGridViewTextBoxColumn3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="iter.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="X0.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="X1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="btnSigns.ToolTip" xml:space="preserve">
+    <value>Signos / Símbolos
+
+• Función: 
+   Abre el mapa de símbolos matemáticos donde contiene 
+   todos los símbolos de las operaciones aritméticas y
+   funciones trigonométricas.
+   Al entrar usted puede seleccionar cualquier símbolo para
+   imprimirlo en el campo de la función.</value>
+  </data>
+  <metadata name="ea.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="xr.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="ea.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="X1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="X0.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="iter.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
 </root>

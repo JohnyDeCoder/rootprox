@@ -435,7 +435,6 @@ namespace rootprox_2022.Forms
                 txtE.Enabled = true;
                 txtE.Visible = true;
                 lblPor100.Visible = true;
-
             }
         }
 

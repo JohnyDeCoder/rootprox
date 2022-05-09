@@ -44,7 +44,7 @@ namespace rootprox_2022.Forms
                     break;
                 case "ROOTPROX_Regla_Falsa":
                     // Crea la instancia como un rol
-                    ROOTPROX_Bisección formMethodReFa = Owner as ROOTPROX_Bisección;
+                    ROOTPROX_Regla_Falsa formMethodReFa = Owner as ROOTPROX_Regla_Falsa;
                     formMethodReFa.txtFX.Text += sign;
                     break;
             }
