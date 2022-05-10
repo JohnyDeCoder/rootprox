@@ -35,6 +35,13 @@
     </li>
     <li><a href="#contribuyendo">Contribuyendo</a></li>
     <li><a href="#guía-de-uso">Guía de Uso</a></li>
+    <li>
+      <a href="#errores-y-advertencias">Errores y advertencias</a>
+      <ul>
+        <li><a href="código-de-errores">Código de Errores</a></li>
+        <li><a href="#código-de-advertencias">Código de Advertencias</a></li>
+      </ul>
+    </li>
     <li><a href="#versionado">Versionado</a></li>
     <li><a href="#autores">Autores</a></li>
     <li><a href="#licencia">Licencia</a></li>
@@ -136,6 +143,48 @@ Esta guía te ayudará a familiarizarte con la aplicación de manera sencilla.
 
 ### Salir
 * _Se cerrará la aplicación_
+
+## Errores y advertencias
+
+Esta mini guía te ayudará a solucionar (buscando por código) errores dentro de la aplicación de manera rápida y cómoda.
+
+### Código de Errores
+#### ERR100
+* **Nombre original:** _no viable alternative at input_
+* **Causa:** El usuario ha escrito una función que ha sido parcialmente correcta excepto en una parte.
+* **Solución:** Escribir correctamente la función de acuerdo a los tipos de ecuaciones que se pueden calcular.
+#### ERR101
+* **Nombre original:** _mismatched input_
+* **Causa:** El usuario ha escrito una serie de signos o símbolos de manera consecutiva _ej: /////////_.
+* **Solución:** Escribir correctamente la función de acuerdo a los tipos de ecuaciones que se pueden calcular.
+#### ERR102
+* **Nombre original:** _extraneous input_
+* **Causa:** El usuario ha escrito un dígito que no corresponde a la librería de AngouriMath.
+* **Solución:** Escribir correctamente la función de acuerdo a los tipos de ecuaciones que se pueden calcular.
+#### ERR103
+* **Nombre original:** _Cannot cast from AngouriMath.Entity+Number+Complex to System.Double_
+* **Causa:** El usuario ha escrito una función larga y compleja, imposible de calcular.
+* **Solución:** Escribir correctamente una función más corta de acuerdo a los tipos de ecuaciones que se pueden calcular.
+#### ERR104
+* **Nombre original:** _Result cannot be represented as a simple number!_
+* **Causa:** El usuario ha escrito una función con un signo o número que no puede ser calculado.
+* **Solución:** Escribir correctamente la función de acuerdo a los tipos de ecuaciones que se pueden calcular.
+#### ERR105
+* **Nombre original:** _token recognition error at_
+* **Causa:** El usuario ha escrito una función con un signo o número que no existe en la librería de AngouriMath.
+* **Solución:** Escribir correctamente la función de acuerdo a los tipos de ecuaciones que se pueden calcular.
+#### ERR106
+* **Nombre original:** _La cadena de entrada no tiene el formato correcto_
+* **Causa:** El usuario ha escrito una operación aritmética en los cuadros de textos que solamente contienen números _ej: 2-2 ó 2+2_.
+* **Solución:** Escribir solamente números, ya sea positivo, negativo o decimal de manera correcta _ej: 0 ó 1.5 ó -1.5_.
+
+### Código de Advertencias
+#### A100
+* **Causa:** Algunos cuadros de texto están vacíos o tienen expresiones inválidas.
+* **Solución:** Escribir correctamente el dígito, no dejar espacios en blanco ni cuadros de textos vacíos.
+#### A101
+* **Causa:** La función o los intérvalos tienen signos iguales o simplemente no se puede encontrar una raíz aproximada entre la función o el intérvalo.
+* **Solución:** Cambiar la función por otra, cambiar el intérvalo con signos opuestos.
 
 ## Versionado
 
