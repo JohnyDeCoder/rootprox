@@ -51,7 +51,6 @@
     <Reference Include="IndexRange, Version=1.0.0.0, Culture=neutral, PublicKeyToken=35e6a3c4212514c6, processorArchitecture=MSIL">
       <HintPath>packages\IndexRange.1.0.0\lib\net471\IndexRange.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.JScript" />
     <Reference Include="Numbers, Version=1.8.0.0, Culture=neutral, PublicKeyToken=9cd62db60ea5554c, processorArchitecture=MSIL">
       <HintPath>packages\PeterO.Numbers.1.8.0\lib\net40\Numbers.dll</HintPath>
     </Reference>
@@ -170,17 +169,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <COMReference Include="MSScriptControl">
-      <Guid>{0E59F1D2-1FBE-11D0-8FF2-00A0D10038BC}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>tlbimp</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\BrandonMoran11_Avatar_GitHub_2022.png" />
