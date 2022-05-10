@@ -377,6 +377,7 @@ namespace rootprox_2022.Forms
             this.Controls.Add(this.tabControlSignos);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "ROOTPROX_Signos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
