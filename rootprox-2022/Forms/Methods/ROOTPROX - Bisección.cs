@@ -104,7 +104,7 @@ namespace rootprox_2022.Forms
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error,
                     MessageBoxDefaultButton.Button1,
-                    0, "https://google.com"
+                    0, "https://github.com/JohnyDeCoder/rootprox#err100"
                     );
                 }
 
@@ -118,7 +118,7 @@ namespace rootprox_2022.Forms
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error,
                     MessageBoxDefaultButton.Button1,
-                    0, "https://google.com"
+                    0, "https://github.com/JohnyDeCoder/rootprox#err101"
                     );
                 }
 
@@ -132,7 +132,7 @@ namespace rootprox_2022.Forms
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error,
                     MessageBoxDefaultButton.Button1,
-                    0, "https://google.com"
+                    0, "https://github.com/JohnyDeCoder/rootprox#err102"
                     );
                 }
 
@@ -146,7 +146,7 @@ namespace rootprox_2022.Forms
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error,
                     MessageBoxDefaultButton.Button1,
-                    0, "https://google.com"
+                    0, "https://github.com/JohnyDeCoder/rootprox#err103"
                     );
                 }
 
@@ -160,7 +160,7 @@ namespace rootprox_2022.Forms
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error,
                     MessageBoxDefaultButton.Button1,
-                    0, "https://google.com"
+                    0, "https://github.com/JohnyDeCoder/rootprox#err104"
                     );
                 }
 
@@ -174,7 +174,7 @@ namespace rootprox_2022.Forms
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error,
                     MessageBoxDefaultButton.Button1,
-                    0, "https://google.com"
+                    0, "https://github.com/JohnyDeCoder/rootprox#err105"
                     );
                 }
             }
@@ -210,7 +210,7 @@ namespace rootprox_2022.Forms
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning,
                     MessageBoxDefaultButton.Button1,
-                    0, "https://google.com"
+                    0, "https://github.com/JohnyDeCoder/rootprox#a100"
                     );
 
                 txtEmpty = false; // Se reinicia la variable si ya se había encontrado un TextBox vacío.
@@ -245,7 +245,7 @@ namespace rootprox_2022.Forms
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Warning,
                             MessageBoxDefaultButton.Button1,
-                            0, "https://google.com"
+                            0, "https://github.com/JohnyDeCoder/rootprox#a101"
                             );
                         }
                         else
@@ -432,7 +432,7 @@ namespace rootprox_2022.Forms
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error,
                         MessageBoxDefaultButton.Button1,
-                        0, "https://google.com"
+                        0, "https://github.com/JohnyDeCoder/rootprox#err106"
                         );
                     }
                 }
