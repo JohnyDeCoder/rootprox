@@ -3,8 +3,6 @@ D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\Git
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\rootprox-2022.pdb
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\FontAwesome.Sharp.dll
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\obj\Debug\rootprox-2022.csproj.AssemblyReference.cache
-D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\obj\Debug\Interop.MSScriptControl.dll
-D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\obj\Debug\rootprox-2022.csproj.ResolveComReference.cache
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\obj\Debug\rootprox_2022.Properties.Resources.resources
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\obj\Debug\rootprox_2022.ROOTPROX_Inicio.resources
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\obj\Debug\rootprox-2022.csproj.GenerateResource.cache
