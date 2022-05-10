@@ -218,192 +218,222 @@ namespace rootprox_2022.Forms
             }
             else
             {
-                xi = double.Parse(txtA.Text);
-                xd = double.Parse(txtB.Text);
-                em = double.Parse(txtE.Text);
-                imax = int.Parse(txtNmax.Text);
-
-                dgvResults.Rows.Clear();
-                dgvResultAprox.Rows.Clear();
-
-                iter = 0;
-                xa = 0;
-
-                function(xi); // Detectar error al inicio solo 1 vez
-
-                if (error == false)
+                try
                 {
-                    if (function(xi) * function(xd) > 0)
+                    xi = double.Parse(txtA.Text);
+                    xd = double.Parse(txtB.Text);
+                    em = double.Parse(txtE.Text);
+                    imax = int.Parse(txtNmax.Text);
+
+                    dgvResults.Rows.Clear();
+                    dgvResultAprox.Rows.Clear();
+
+                    iter = 0;
+                    xa = 0;
+
+                    function(xi); // Detectar error al inicio solo 1 vez
+
+                    if (error == false)
                     {
-                        MessageBox.Show(
-                        "No se existe una raíz entre esos intérvalos [X₀, X₁], por favor cambie de intérvalos y/o cambie la función para calcular\n\n" +
-                        "Da click en el botón AYUDA para obtener más información.\n\n" +
-                        "Código: A101",
-                        "Advertencia",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Warning,
-                        MessageBoxDefaultButton.Button1,
-                        0, "https://google.com"
-                        );
-                    }
-                    else
-                    {
-                        if (cbSinEA.Checked == true)
+                        if (function(xi) * function(xd) > 0)
                         {
-                            if (rbRedondear.Checked == true)
-                            {
-                                round = Convert.ToInt32(Math.Round(numericRound.Value, 0));
-
-                                do
-                                {
-                                    iter++;
-
-                                    xa = (xi + xd) / 2;
-
-                                    int n1 = dgvResults.Rows.Add();
-
-                                    dgvResults.Rows[n1].Cells[1].Value = Math.Round(xi, round);
-                                    dgvResults.Rows[n1].Cells[2].Value = Math.Round(xd, round);
-
-                                    if (function(xi) * function(xa) < 0)
-                                    {
-                                        xd = xa;
-                                    }
-                                    else
-                                    {
-                                        xi = xa;
-                                    }
-
-                                    dgvResults.Rows[n1].Cells[0].Value = iter;
-                                    dgvResults.Rows[n1].Cells[3].Value = Math.Round(xa, round);
-
-                                } while (iter <= imax);
-
-                                int n2 = dgvResultAprox.Rows.Add();
-
-                                dgvResultAprox.Rows[n2].Cells[0].Value = iter;
-                                dgvResultAprox.Rows[n2].Cells[1].Value = Math.Round(xa, round);
-                            }
-                            else
-                            {
-                                do
-                                {
-                                    iter++;
-
-                                    xa = (xi + xd) / 2;
-
-                                    int n1 = dgvResults.Rows.Add();
-
-                                    dgvResults.Rows[n1].Cells[1].Value = xi;
-                                    dgvResults.Rows[n1].Cells[2].Value = xd;
-
-                                    if (function(xi) * function(xa) < 0)
-                                    {
-                                        xd = xa;
-                                    }
-                                    else
-                                    {
-                                        xi = xa;
-                                    }
-
-                                    dgvResults.Rows[n1].Cells[0].Value = iter;
-                                    dgvResults.Rows[n1].Cells[3].Value = xa;
-
-                                } while (iter <= imax);
-
-                                int n2 = dgvResultAprox.Rows.Add();
-
-                                dgvResultAprox.Rows[n2].Cells[0].Value = iter;
-                                dgvResultAprox.Rows[n2].Cells[1].Value = xa;
-                            }
+                            MessageBox.Show(
+                            "No se existe una raíz entre esos intérvalos [X₀, X₁], por favor cambie de intérvalos y/o cambie la función para calcular\n\n" +
+                            "Da click en el botón AYUDA para obtener más información.\n\n" +
+                            "Código: A101",
+                            "Advertencia",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Warning,
+                            MessageBoxDefaultButton.Button1,
+                            0, "https://google.com"
+                            );
                         }
                         else
                         {
-                            if (rbRedondear.Checked == true)
+                            if (cbSinEA.Checked == true)
                             {
-                                round = Convert.ToInt32(Math.Round(numericRound.Value, 0));
-
-                                do
+                                if (rbRedondear.Checked == true)
                                 {
-                                    iter++;
+                                    round = Convert.ToInt32(Math.Round(numericRound.Value, 0));
 
-                                    xaold = xa;
-                                    xa = (xi + xd) / 2;
-
-                                    ea = Math.Abs((xa - xaold) / xa) * 100;
-
-                                    int n1 = dgvResults.Rows.Add();
-
-                                    dgvResults.Rows[n1].Cells[1].Value = Math.Round(xi, round);
-                                    dgvResults.Rows[n1].Cells[2].Value = Math.Round(xd, round);
-
-                                    if (function(xi) * function(xa) < 0)
+                                    do
                                     {
-                                        xd = xa;
-                                    }
-                                    else if (function(xi) * function(xa) > 0)
+                                        iter++;
+
+                                        xa = (xi + xd) / 2;
+
+                                        int n1 = dgvResults.Rows.Add();
+
+                                        dgvResults.Rows[n1].Cells[1].Value = Math.Round(xi, round);
+                                        dgvResults.Rows[n1].Cells[2].Value = Math.Round(xd, round);
+
+                                        if (function(xi) * function(xa) < 0)
+                                        {
+                                            xd = xa;
+                                        }
+                                        else
+                                        {
+                                            xi = xa;
+                                        }
+
+                                        dgvResults.Rows[n1].Cells[0].Value = iter;
+                                        dgvResults.Rows[n1].Cells[3].Value = Math.Round(xa, round);
+
+                                    } while (iter <= imax);
+
+                                    int n2 = dgvResultAprox.Rows.Add();
+
+                                    dgvResultAprox.Rows[n2].Cells[0].Value = iter;
+                                    dgvResultAprox.Rows[n2].Cells[1].Value = Math.Round(xa, round);
+                                }
+                                else
+                                {
+                                    do
                                     {
-                                        xi = xa;
-                                    }
-                                    else
-                                    {
-                                        ea = 0;
-                                    }
+                                        iter++;
 
-                                    dgvResults.Rows[n1].Cells[0].Value = iter;
-                                    dgvResults.Rows[n1].Cells[3].Value = Math.Round(xa, round);
-                                    dgvResults.Rows[n1].Cells[4].Value = Math.Round(ea, round) + " %";
+                                        xa = (xi + xd) / 2;
 
-                                } while (ea > em && iter <= imax);
+                                        int n1 = dgvResults.Rows.Add();
 
-                                int n2 = dgvResultAprox.Rows.Add();
+                                        dgvResults.Rows[n1].Cells[1].Value = xi;
+                                        dgvResults.Rows[n1].Cells[2].Value = xd;
 
-                                dgvResultAprox.Rows[n2].Cells[0].Value = iter;
-                                dgvResultAprox.Rows[n2].Cells[1].Value = Math.Round(xa, round);
-                                dgvResultAprox.Rows[n2].Cells[2].Value = Math.Round(ea, round) + " %";
+                                        if (function(xi) * function(xa) < 0)
+                                        {
+                                            xd = xa;
+                                        }
+                                        else
+                                        {
+                                            xi = xa;
+                                        }
+
+                                        dgvResults.Rows[n1].Cells[0].Value = iter;
+                                        dgvResults.Rows[n1].Cells[3].Value = xa;
+
+                                    } while (iter <= imax);
+
+                                    int n2 = dgvResultAprox.Rows.Add();
+
+                                    dgvResultAprox.Rows[n2].Cells[0].Value = iter;
+                                    dgvResultAprox.Rows[n2].Cells[1].Value = xa;
+                                }
                             }
                             else
                             {
-                                do
+                                if (rbRedondear.Checked == true)
                                 {
-                                    iter++;
+                                    round = Convert.ToInt32(Math.Round(numericRound.Value, 0));
 
-                                    xaold = xa;
-                                    xa = (xi + xd) / 2;
-
-                                    ea = Math.Abs((xa - xaold) / xa) * 100;
-
-                                    int n1 = dgvResults.Rows.Add();
-
-                                    dgvResults.Rows[n1].Cells[1].Value = xi;
-                                    dgvResults.Rows[n1].Cells[2].Value = xd;
-
-                                    if (function(xi) * function(xa) < 0)
+                                    do
                                     {
-                                        xd = xa;
-                                    }
-                                    else if (function(xi) * function(xa) > 0)
+                                        iter++;
+
+                                        xaold = xa;
+                                        xa = (xi + xd) / 2;
+
+                                        ea = Math.Abs((xa - xaold) / xa) * 100;
+
+                                        int n1 = dgvResults.Rows.Add();
+
+                                        dgvResults.Rows[n1].Cells[1].Value = Math.Round(xi, round);
+                                        dgvResults.Rows[n1].Cells[2].Value = Math.Round(xd, round);
+
+                                        if (function(xi) * function(xa) < 0)
+                                        {
+                                            xd = xa;
+                                        }
+                                        else if (function(xi) * function(xa) > 0)
+                                        {
+                                            xi = xa;
+                                        }
+                                        else
+                                        {
+                                            ea = 0;
+                                        }
+
+                                        dgvResults.Rows[n1].Cells[0].Value = iter;
+                                        dgvResults.Rows[n1].Cells[3].Value = Math.Round(xa, round);
+                                        dgvResults.Rows[n1].Cells[4].Value = Math.Round(ea, round) + " %";
+
+                                    } while (ea > em && iter <= imax);
+
+                                    int n2 = dgvResultAprox.Rows.Add();
+
+                                    dgvResultAprox.Rows[n2].Cells[0].Value = iter;
+                                    dgvResultAprox.Rows[n2].Cells[1].Value = Math.Round(xa, round);
+                                    dgvResultAprox.Rows[n2].Cells[2].Value = Math.Round(ea, round) + " %";
+                                }
+                                else
+                                {
+                                    do
                                     {
-                                        xi = xa;
-                                    }
-                                    else
+                                        iter++;
+
+                                        xaold = xa;
+                                        xa = (xi + xd) / 2;
+
+                                        ea = Math.Abs((xa - xaold) / xa) * 100;
+
+                                        int n1 = dgvResults.Rows.Add();
+
+                                        dgvResults.Rows[n1].Cells[1].Value = xi;
+                                        dgvResults.Rows[n1].Cells[2].Value = xd;
+
+                                        if (function(xi) * function(xa) < 0)
+                                        {
+                                            xd = xa;
+                                        }
+                                        else if (function(xi) * function(xa) > 0)
+                                        {
+                                            xi = xa;
+                                        }
+                                        else
+                                        {
+                                            ea = 0;
+                                        }
+
+                                        dgvResults.Rows[n1].Cells[0].Value = iter;
+                                        dgvResults.Rows[n1].Cells[3].Value = xa;
+                                        dgvResults.Rows[n1].Cells[4].Value = ea + " %";
+
+                                    } while (ea > em && iter <= imax);
+
+                                    int n2 = dgvResultAprox.Rows.Add();
+
+                                    dgvResultAprox.Rows[n2].Cells[0].Value = iter;
+                                    dgvResultAprox.Rows[n2].Cells[1].Value = xa;
+                                    dgvResultAprox.Rows[n2].Cells[2].Value = ea + " %";
+
+                                    if (ea > em)
                                     {
-                                        ea = 0;
+                                        MessageBox.Show(
+                                        "El cálculo puede continuar. Para obtener el resultado más próximo, por favor cambie el " +
+                                        "valor del número máximo de iteraciones por un valor mayor.",
+                                        "Información",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Information
+                                        );
                                     }
-
-                                    dgvResults.Rows[n1].Cells[0].Value = iter;
-                                    dgvResults.Rows[n1].Cells[3].Value = xa;
-                                    dgvResults.Rows[n1].Cells[4].Value = ea + " %";
-
-                                } while (ea > em && iter <= imax);
-
-                                int n2 = dgvResultAprox.Rows.Add();
-
-                                dgvResultAprox.Rows[n2].Cells[0].Value = iter;
-                                dgvResultAprox.Rows[n2].Cells[1].Value = xa;
-                                dgvResultAprox.Rows[n2].Cells[2].Value = ea + " %";
+                                }
                             }
                         }
+                    }
+                }
+                catch (Exception err)
+                {
+                    if (err.Message.Contains("La cadena de entrada no tiene el formato correcto."))
+                    {
+                        MessageBox.Show(
+                        "Ocurrió un error inesperado, por favor escriba los valores con el formato correcto.\n\n" +
+                        "Si necesitas ayuda, por favor da click en el botón AYUDA para obtener más información.\n\n" +
+                        "Código: ERR106",
+                        "Error",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error,
+                        MessageBoxDefaultButton.Button1,
+                        0, "https://google.com"
+                        );
                     }
                 }
             }
