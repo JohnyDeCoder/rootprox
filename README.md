@@ -44,6 +44,7 @@
     </li>
     <li><a href="#versionado">Versionado</a></li>
     <li><a href="#autores">Autores</a></li>
+    <li><a href="#betatesters">BetaTesters</a></li>
     <li><a href="#licencia">Licencia</a></li>
     <li><a href="#agradecimientos">Agradecimientos</a></li>
   </ol>
@@ -76,7 +77,7 @@ Estas instrucciones te permitirán obtener una copia del proyecto en funcionamie
 ### Instalación
 
 1. Clona el repositorio
-   ```sh
+   ```shell
    git clone https://github.com/JohnyDeCoder/rootprox.git
    ```
 2. Abre el archivo `rootprox-2022.sln`
@@ -195,11 +196,18 @@ Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones
 * **Johny Mora** - *Trabajo Inicial y Documentación* - [JohnyDeCoder](https://github.com/JohnyDeCoder)
 * **Brandon Moran** - *Colaborador* - [BrandonMoran11](https://github.com/BrandonMoran11)
 
+## BetaTesters
+_Les damos gracias por probar nuestra aplicación y por el apoyo recibido <3_
+
+* Jonathan Torres
+* Juan Mesa - **Sobonny**
+
 ## Licencia
 
 Este proyecto está bajo la Licencia GNU General Public License v3.0 - mira el archivo `LICENSE` para más información
 
 ## Agradecimientos
+* [BetaTesters](#betatesters)
 * [Font Awesome](https://fontawesome.com)
 * [README-Plantilla](https://github.com/othneildrew/Best-README-Template)
 * [AngouriMath](https://github.com/asc-community/AngouriMath)
