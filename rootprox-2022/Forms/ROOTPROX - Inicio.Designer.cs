@@ -500,13 +500,13 @@ namespace rootprox_2022
             // 
             this.lblVersion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblVersion.AutoSize = true;
-            this.lblVersion.Font = new System.Drawing.Font("Constantia", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVersion.Font = new System.Drawing.Font("Cambria", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVersion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(84)))), ((int)(((byte)(122)))));
-            this.lblVersion.Location = new System.Drawing.Point(617, 542);
+            this.lblVersion.Location = new System.Drawing.Point(620, 542);
             this.lblVersion.Name = "lblVersion";
-            this.lblVersion.Size = new System.Drawing.Size(92, 19);
+            this.lblVersion.Size = new System.Drawing.Size(89, 19);
             this.lblVersion.TabIndex = 6;
-            this.lblVersion.Text = "v0.0.0-beta";
+            this.lblVersion.Text = "v1.0.0-beta";
             // 
             // pbxFormLogo
             // 
