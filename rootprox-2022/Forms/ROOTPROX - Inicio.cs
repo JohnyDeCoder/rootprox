@@ -64,8 +64,8 @@ namespace rootprox_2022
 
             // Labels
             lblVersion.ForeColor = ColorsTheme.PanelSubMenu;
-            lblHora.ForeColor = ColorsTheme.PanelSubMenu;
-            lblFecha.ForeColor = ColorsTheme.PanelContainerLeft;
+            //lblHora.ForeColor = ColorsTheme.PanelSubMenu;
+            //lblFecha.ForeColor = ColorsTheme.PanelContainerLeft;
         }
 
         #region Controles
@@ -90,8 +90,8 @@ namespace rootprox_2022
 
         private void tmrHoraFecha_Tick(object sender, EventArgs e)
         {
-            lblHora.Text = DateTime.Now.ToString("hh:mm:ss tt");
-            lblFecha.Text = DateTime.Now.ToLongDateString();
+            //lblHora.Text = DateTime.Now.ToString("hh:mm:ss tt");
+            //lblFecha.Text = DateTime.Now.ToLongDateString();
         }
 
         private void btnMethods_Click(object sender, EventArgs e)
@@ -224,8 +224,8 @@ namespace rootprox_2022
 
             // Labels
             lblVersion.ForeColor = ColorsTheme.PanelSubMenu;
-            lblHora.ForeColor = ColorsTheme.PanelSubMenu;
-            lblFecha.ForeColor = ColorsTheme.PanelContainerLeft;
+            //lblHora.ForeColor = ColorsTheme.PanelSubMenu;
+            //lblFecha.ForeColor = ColorsTheme.PanelContainerLeft;
 
             hideSubMenu();
             Reset();
@@ -271,8 +271,8 @@ namespace rootprox_2022
 
             // Labels
             lblVersion.ForeColor = ColorsTheme.PanelSubMenu;
-            lblHora.ForeColor = ColorsTheme.PanelSubMenu;
-            lblFecha.ForeColor = ColorsTheme.PanelContainerLeft;
+            //lblHora.ForeColor = ColorsTheme.PanelSubMenu;
+            //lblFecha.ForeColor = ColorsTheme.PanelContainerLeft;
 
             hideSubMenu();
             Reset();
@@ -318,8 +318,8 @@ namespace rootprox_2022
 
             // Labels
             lblVersion.ForeColor = ColorsTheme.PanelSubMenu;
-            lblHora.ForeColor = ColorsTheme.PanelSubMenu;
-            lblFecha.ForeColor = ColorsTheme.PanelContainerLeft;
+            //lblHora.ForeColor = ColorsTheme.PanelSubMenu;
+            //lblFecha.ForeColor = ColorsTheme.PanelContainerLeft;
 
             hideSubMenu();
             Reset();
@@ -365,8 +365,8 @@ namespace rootprox_2022
 
             // Labels
             lblVersion.ForeColor = ColorsTheme.PanelSubMenu;
-            lblHora.ForeColor = ColorsTheme.PanelSubMenu;
-            lblFecha.ForeColor = ColorsTheme.PanelContainerLeft;
+            //lblHora.ForeColor = ColorsTheme.PanelSubMenu;
+            //lblFecha.ForeColor = ColorsTheme.PanelContainerLeft;
 
             hideSubMenu();
             Reset();

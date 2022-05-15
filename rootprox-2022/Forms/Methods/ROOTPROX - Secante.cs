@@ -164,8 +164,6 @@ namespace rootprox_2022.Forms
                     );
                 }
 
-                MessageBox.Show(err.Message);
-
                 if (err.Message.Contains("token recognition error at"))
                 {
                     MessageBox.Show(
@@ -279,6 +277,23 @@ namespace rootprox_2022.Forms
                                         dgvResults.Rows[n1].Cells[0].Value = iter;
                                         dgvResults.Rows[n1].Cells[3].Value = Math.Round(xa, round);
 
+                                        if (double.IsNaN(xa) || double.IsInfinity(xa) || double.IsNaN(xi) ||
+                                            double.IsInfinity(xi) || double.IsNaN(xd) || double.IsInfinity(xd))
+                                        {
+                                            MessageBox.Show(
+                                            "No se puede calcular más por que el número es infinito o no es un número (NaN).\n\n" +
+                                            "Si necesitas ayuda, por favor da click en el botón AYUDA para obtener más información.\n\n" +
+                                            "Código: ERR107",
+                                            "Error",
+                                            MessageBoxButtons.OK,
+                                            MessageBoxIcon.Error,
+                                            MessageBoxDefaultButton.Button1,
+                                            0, "https://github.com/JohnyDeCoder/rootprox#err107"
+                                            );
+
+                                            break;
+                                        }
+
                                     } while (iter <= imax);
 
                                     int n2 = dgvResultAprox.Rows.Add();
@@ -303,7 +318,24 @@ namespace rootprox_2022.Forms
                                         xd = xa;
 
                                         dgvResults.Rows[n1].Cells[0].Value = iter;
-                                        dgvResults.Rows[n1].Cells[1].Value = xa;
+                                        dgvResults.Rows[n1].Cells[3].Value = xa;
+
+                                        if (double.IsNaN(xa) || double.IsInfinity(xa) || double.IsNaN(xi) ||
+                                            double.IsInfinity(xi) || double.IsNaN(xd) || double.IsInfinity(xd))
+                                        {
+                                            MessageBox.Show(
+                                            "No se puede calcular más por que el número es infinito o no es un número (NaN).\n\n" +
+                                            "Si necesitas ayuda, por favor da click en el botón AYUDA para obtener más información.\n\n" +
+                                            "Código: ERR107",
+                                            "Error",
+                                            MessageBoxButtons.OK,
+                                            MessageBoxIcon.Error,
+                                            MessageBoxDefaultButton.Button1,
+                                            0, "https://github.com/JohnyDeCoder/rootprox#err107"
+                                            );
+
+                                            break;
+                                        }
 
                                     } while (iter <= imax);
 
@@ -339,6 +371,24 @@ namespace rootprox_2022.Forms
                                         dgvResults.Rows[n1].Cells[3].Value = Math.Round(xa, round);
                                         dgvResults.Rows[n1].Cells[4].Value = Math.Round(ea, round) + " %";
 
+                                        if (double.IsNaN(xa) || double.IsInfinity(xa) || double.IsNaN(xi) ||
+                                            double.IsInfinity(xi) || double.IsNaN(xd) || double.IsInfinity(xd) ||
+                                            double.IsNaN(ea) || double.IsInfinity(ea))
+                                        {
+                                            MessageBox.Show(
+                                            "No se puede calcular más por que el número es infinito o no es un número (NaN).\n\n" +
+                                            "Si necesitas ayuda, por favor da click en el botón AYUDA para obtener más información.\n\n" +
+                                            "Código: ERR107",
+                                            "Error",
+                                            MessageBoxButtons.OK,
+                                            MessageBoxIcon.Error,
+                                            MessageBoxDefaultButton.Button1,
+                                            0, "https://github.com/JohnyDeCoder/rootprox#err107"
+                                            );
+
+                                            break;
+                                        }
+
                                     } while (ea > em && iter <= imax);
 
                                     int n2 = dgvResultAprox.Rows.Add();
@@ -368,6 +418,24 @@ namespace rootprox_2022.Forms
                                         dgvResults.Rows[n1].Cells[0].Value = iter;
                                         dgvResults.Rows[n1].Cells[3].Value = xa;
                                         dgvResults.Rows[n1].Cells[4].Value = ea + " %";
+
+                                        if (double.IsNaN(xa) || double.IsInfinity(xa) || double.IsNaN(xi) ||
+                                            double.IsInfinity(xi) || double.IsNaN(xd) || double.IsInfinity(xd) ||
+                                            double.IsNaN(ea) || double.IsInfinity(ea))
+                                        {
+                                            MessageBox.Show(
+                                            "No se puede calcular más por que el número es infinito o no es un número (NaN).\n\n" +
+                                            "Si necesitas ayuda, por favor da click en el botón AYUDA para obtener más información.\n\n" +
+                                            "Código: ERR107",
+                                            "Error",
+                                            MessageBoxButtons.OK,
+                                            MessageBoxIcon.Error,
+                                            MessageBoxDefaultButton.Button1,
+                                            0, "https://github.com/JohnyDeCoder/rootprox#err107"
+                                            );
+
+                                            break;
+                                        }
 
                                     } while (ea > em && iter <= imax);
 
@@ -523,6 +591,7 @@ namespace rootprox_2022.Forms
             {
                 txtE.Enabled = false;
                 txtE.Visible = false;
+                txtE.Text = "0.01";
                 lblPor100.Visible = false;
                 dgvResultAprox.Columns.RemoveAt(2);
                 dgvResults.Columns.RemoveAt(4);
