@@ -63,6 +63,7 @@
 * [.NET Framework 4.8](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48)
 * [FontAwesome.Sharp v5.15.4](http://www.dropwizard.io/1.0.2/docs/)
 * [AngouriMath for C#](https://am.angouri.org/)
+* [PrettyBin](https://github.com/slmjy/PrettyBin)
 
 ## Comenzando
 
@@ -222,5 +223,6 @@ Este proyecto está bajo la Licencia GNU General Public License v3.0 - mira el a
 * [BetaTesters](#betatesters)
 * [Font Awesome](https://fontawesome.com)
 * [README-Plantilla](https://github.com/othneildrew/Best-README-Template)
+* [PrettyBin](https://github.com/slmjy/PrettyBin)
 
 <p align="right">(<a href="#top">regresar al inicio</a>)</p>
