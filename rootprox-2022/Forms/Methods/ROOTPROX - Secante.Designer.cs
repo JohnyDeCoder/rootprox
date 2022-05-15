@@ -129,7 +129,7 @@ namespace rootprox_2022.Forms
             this.txtFX.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txtFX.Size = new System.Drawing.Size(261, 36);
             this.txtFX.TabIndex = 0;
-            this.txtFX.Text = "xℯ^x-1";
+            this.txtFX.Text = "ℯ^(-x)-x";
             this.ttipTxtBox.SetToolTip(this.txtFX, "• Escriba la fórmula\r\n\r\n• Ejemplos:\r\n   • x^3-x-1\r\n   • (ℯ^x+1)/(√(x))\r\n   • (ℯ^x" +
         "^-x)/(ℯ^x^x^x)\r\n   • 1/2 + sin(π / 4) + (sin(3x)2 + cos(3x)2)\r\n");
             this.txtFX.TextChanged += new System.EventHandler(this.txtFX_TextChanged);

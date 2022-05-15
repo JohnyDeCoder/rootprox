@@ -32,39 +32,37 @@ namespace rootprox_2022
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ROOTPROX_Inicio));
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.pbxLogo = new System.Windows.Forms.PictureBox();
             this.panelContainerLeft = new System.Windows.Forms.Panel();
-            this.panelSubMenuTheme = new System.Windows.Forms.Panel();
-            this.panelSubMenuHelp = new System.Windows.Forms.Panel();
-            this.panelSubMenuMethods = new System.Windows.Forms.Panel();
-            this.panelForm = new System.Windows.Forms.Panel();
-            this.lblVersion = new System.Windows.Forms.Label();
             this.btnTags = new FontAwesome.Sharp.IconButton();
+            this.panelSubMenuTheme = new System.Windows.Forms.Panel();
             this.btnPurpleTheme = new FontAwesome.Sharp.IconButton();
             this.btnGreenTheme = new FontAwesome.Sharp.IconButton();
             this.btnRedTheme = new FontAwesome.Sharp.IconButton();
             this.btnBlueTheme = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.btnTheme = new FontAwesome.Sharp.IconButton();
+            this.panelSubMenuHelp = new System.Windows.Forms.Panel();
             this.btnAbout = new FontAwesome.Sharp.IconButton();
             this.btnGuia = new FontAwesome.Sharp.IconButton();
             this.btnAyuda = new FontAwesome.Sharp.IconButton();
+            this.panelSubMenuMethods = new System.Windows.Forms.Panel();
             this.btnReglaFalsa = new FontAwesome.Sharp.IconButton();
             this.btnSecante = new FontAwesome.Sharp.IconButton();
             this.btnBiseccion = new FontAwesome.Sharp.IconButton();
             this.btnMethods = new FontAwesome.Sharp.IconButton();
             this.btnExit = new FontAwesome.Sharp.IconButton();
-            this.pbxLogo = new System.Windows.Forms.PictureBox();
+            this.panelForm = new System.Windows.Forms.Panel();
+            this.lblVersion = new System.Windows.Forms.Label();
             this.pbxFormLogo = new System.Windows.Forms.PictureBox();
-            this.lblHora = new System.Windows.Forms.Label();
-            this.lblFecha = new System.Windows.Forms.Label();
             this.tmrHoraFecha = new System.Windows.Forms.Timer(this.components);
             this.panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
             this.panelContainerLeft.SuspendLayout();
             this.panelSubMenuTheme.SuspendLayout();
             this.panelSubMenuHelp.SuspendLayout();
             this.panelSubMenuMethods.SuspendLayout();
             this.panelForm.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFormLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,6 +74,17 @@ namespace rootprox_2022
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(208, 100);
             this.panelLogo.TabIndex = 0;
+            // 
+            // pbxLogo
+            // 
+            this.pbxLogo.Image = global::rootprox_2022.Properties.Resources.ROOTPROX_logo_blanco;
+            this.pbxLogo.Location = new System.Drawing.Point(0, 12);
+            this.pbxLogo.Name = "pbxLogo";
+            this.pbxLogo.Size = new System.Drawing.Size(208, 91);
+            this.pbxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxLogo.TabIndex = 7;
+            this.pbxLogo.TabStop = false;
+            this.pbxLogo.Click += new System.EventHandler(this.pbxLogo_Click);
             // 
             // panelContainerLeft
             // 
@@ -95,68 +104,6 @@ namespace rootprox_2022
             this.panelContainerLeft.Name = "panelContainerLeft";
             this.panelContainerLeft.Size = new System.Drawing.Size(225, 561);
             this.panelContainerLeft.TabIndex = 2;
-            // 
-            // panelSubMenuTheme
-            // 
-            this.panelSubMenuTheme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(84)))), ((int)(((byte)(122)))));
-            this.panelSubMenuTheme.Controls.Add(this.btnPurpleTheme);
-            this.panelSubMenuTheme.Controls.Add(this.btnGreenTheme);
-            this.panelSubMenuTheme.Controls.Add(this.btnRedTheme);
-            this.panelSubMenuTheme.Controls.Add(this.btnBlueTheme);
-            this.panelSubMenuTheme.Controls.Add(this.iconButton2);
-            this.panelSubMenuTheme.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubMenuTheme.Location = new System.Drawing.Point(0, 435);
-            this.panelSubMenuTheme.Name = "panelSubMenuTheme";
-            this.panelSubMenuTheme.Size = new System.Drawing.Size(208, 160);
-            this.panelSubMenuTheme.TabIndex = 20;
-            // 
-            // panelSubMenuHelp
-            // 
-            this.panelSubMenuHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(84)))), ((int)(((byte)(122)))));
-            this.panelSubMenuHelp.Controls.Add(this.btnAbout);
-            this.panelSubMenuHelp.Controls.Add(this.btnGuia);
-            this.panelSubMenuHelp.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubMenuHelp.Location = new System.Drawing.Point(0, 310);
-            this.panelSubMenuHelp.Name = "panelSubMenuHelp";
-            this.panelSubMenuHelp.Size = new System.Drawing.Size(208, 80);
-            this.panelSubMenuHelp.TabIndex = 17;
-            // 
-            // panelSubMenuMethods
-            // 
-            this.panelSubMenuMethods.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(84)))), ((int)(((byte)(122)))));
-            this.panelSubMenuMethods.Controls.Add(this.btnReglaFalsa);
-            this.panelSubMenuMethods.Controls.Add(this.btnSecante);
-            this.panelSubMenuMethods.Controls.Add(this.btnBiseccion);
-            this.panelSubMenuMethods.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubMenuMethods.Location = new System.Drawing.Point(0, 145);
-            this.panelSubMenuMethods.Name = "panelSubMenuMethods";
-            this.panelSubMenuMethods.Size = new System.Drawing.Size(208, 120);
-            this.panelSubMenuMethods.TabIndex = 15;
-            // 
-            // panelForm
-            // 
-            this.panelForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(211)))), ((int)(((byte)(251)))));
-            this.panelForm.Controls.Add(this.lblFecha);
-            this.panelForm.Controls.Add(this.lblHora);
-            this.panelForm.Controls.Add(this.lblVersion);
-            this.panelForm.Controls.Add(this.pbxFormLogo);
-            this.panelForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelForm.Location = new System.Drawing.Point(225, 0);
-            this.panelForm.Name = "panelForm";
-            this.panelForm.Size = new System.Drawing.Size(709, 561);
-            this.panelForm.TabIndex = 3;
-            // 
-            // lblVersion
-            // 
-            this.lblVersion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblVersion.AutoSize = true;
-            this.lblVersion.Font = new System.Drawing.Font("Constantia", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVersion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(84)))), ((int)(((byte)(122)))));
-            this.lblVersion.Location = new System.Drawing.Point(617, 542);
-            this.lblVersion.Name = "lblVersion";
-            this.lblVersion.Size = new System.Drawing.Size(92, 19);
-            this.lblVersion.TabIndex = 6;
-            this.lblVersion.Text = "v0.0.0-beta";
             // 
             // btnTags
             // 
@@ -180,6 +127,20 @@ namespace rootprox_2022
             this.btnTags.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTags.UseVisualStyleBackColor = true;
             this.btnTags.Click += new System.EventHandler(this.btnTags_Click);
+            // 
+            // panelSubMenuTheme
+            // 
+            this.panelSubMenuTheme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(84)))), ((int)(((byte)(122)))));
+            this.panelSubMenuTheme.Controls.Add(this.btnPurpleTheme);
+            this.panelSubMenuTheme.Controls.Add(this.btnGreenTheme);
+            this.panelSubMenuTheme.Controls.Add(this.btnRedTheme);
+            this.panelSubMenuTheme.Controls.Add(this.btnBlueTheme);
+            this.panelSubMenuTheme.Controls.Add(this.iconButton2);
+            this.panelSubMenuTheme.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSubMenuTheme.Location = new System.Drawing.Point(0, 435);
+            this.panelSubMenuTheme.Name = "panelSubMenuTheme";
+            this.panelSubMenuTheme.Size = new System.Drawing.Size(208, 160);
+            this.panelSubMenuTheme.TabIndex = 20;
             // 
             // btnPurpleTheme
             // 
@@ -317,6 +278,17 @@ namespace rootprox_2022
             this.btnTheme.UseVisualStyleBackColor = true;
             this.btnTheme.Click += new System.EventHandler(this.btnTheme_Click);
             // 
+            // panelSubMenuHelp
+            // 
+            this.panelSubMenuHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(84)))), ((int)(((byte)(122)))));
+            this.panelSubMenuHelp.Controls.Add(this.btnAbout);
+            this.panelSubMenuHelp.Controls.Add(this.btnGuia);
+            this.panelSubMenuHelp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSubMenuHelp.Location = new System.Drawing.Point(0, 310);
+            this.panelSubMenuHelp.Name = "panelSubMenuHelp";
+            this.panelSubMenuHelp.Size = new System.Drawing.Size(208, 80);
+            this.panelSubMenuHelp.TabIndex = 17;
+            // 
             // btnAbout
             // 
             this.btnAbout.Dock = System.Windows.Forms.DockStyle.Top;
@@ -385,6 +357,18 @@ namespace rootprox_2022
             this.btnAyuda.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAyuda.UseVisualStyleBackColor = true;
             this.btnAyuda.Click += new System.EventHandler(this.btnAyuda_Click);
+            // 
+            // panelSubMenuMethods
+            // 
+            this.panelSubMenuMethods.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(84)))), ((int)(((byte)(122)))));
+            this.panelSubMenuMethods.Controls.Add(this.btnReglaFalsa);
+            this.panelSubMenuMethods.Controls.Add(this.btnSecante);
+            this.panelSubMenuMethods.Controls.Add(this.btnBiseccion);
+            this.panelSubMenuMethods.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSubMenuMethods.Location = new System.Drawing.Point(0, 145);
+            this.panelSubMenuMethods.Name = "panelSubMenuMethods";
+            this.panelSubMenuMethods.Size = new System.Drawing.Size(208, 120);
+            this.panelSubMenuMethods.TabIndex = 15;
             // 
             // btnReglaFalsa
             // 
@@ -501,51 +485,39 @@ namespace rootprox_2022
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // pbxLogo
+            // panelForm
             // 
-            this.pbxLogo.Image = global::rootprox_2022.Properties.Resources.ROOTPROX_logo_blanco;
-            this.pbxLogo.Location = new System.Drawing.Point(18, 12);
-            this.pbxLogo.Name = "pbxLogo";
-            this.pbxLogo.Size = new System.Drawing.Size(169, 91);
-            this.pbxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbxLogo.TabIndex = 7;
-            this.pbxLogo.TabStop = false;
-            this.pbxLogo.Click += new System.EventHandler(this.pbxLogo_Click);
+            this.panelForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(211)))), ((int)(((byte)(251)))));
+            this.panelForm.Controls.Add(this.lblVersion);
+            this.panelForm.Controls.Add(this.pbxFormLogo);
+            this.panelForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelForm.Location = new System.Drawing.Point(225, 0);
+            this.panelForm.Name = "panelForm";
+            this.panelForm.Size = new System.Drawing.Size(709, 561);
+            this.panelForm.TabIndex = 3;
+            // 
+            // lblVersion
+            // 
+            this.lblVersion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblVersion.AutoSize = true;
+            this.lblVersion.Font = new System.Drawing.Font("Constantia", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVersion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(84)))), ((int)(((byte)(122)))));
+            this.lblVersion.Location = new System.Drawing.Point(617, 542);
+            this.lblVersion.Name = "lblVersion";
+            this.lblVersion.Size = new System.Drawing.Size(92, 19);
+            this.lblVersion.TabIndex = 6;
+            this.lblVersion.Text = "v0.0.0-beta";
             // 
             // pbxFormLogo
             // 
             this.pbxFormLogo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pbxFormLogo.Image = global::rootprox_2022.Properties.Resources.ROOTPROX_logo_blanco;
-            this.pbxFormLogo.Location = new System.Drawing.Point(0, 19);
+            this.pbxFormLogo.Location = new System.Drawing.Point(0, 145);
             this.pbxFormLogo.Name = "pbxFormLogo";
-            this.pbxFormLogo.Size = new System.Drawing.Size(709, 371);
+            this.pbxFormLogo.Size = new System.Drawing.Size(709, 302);
             this.pbxFormLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxFormLogo.TabIndex = 8;
             this.pbxFormLogo.TabStop = false;
-            // 
-            // lblHora
-            // 
-            this.lblHora.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblHora.AutoSize = true;
-            this.lblHora.Font = new System.Drawing.Font("Impact", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(84)))), ((int)(((byte)(122)))));
-            this.lblHora.Location = new System.Drawing.Point(159, 390);
-            this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(391, 80);
-            this.lblHora.TabIndex = 9;
-            this.lblHora.Text = "00:00:00 a. m.";
-            // 
-            // lblFecha
-            // 
-            this.lblFecha.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblFecha.AutoSize = true;
-            this.lblFecha.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(137)))), ((int)(((byte)(199)))));
-            this.lblFecha.Location = new System.Drawing.Point(181, 470);
-            this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(347, 39);
-            this.lblFecha.TabIndex = 10;
-            this.lblFecha.Text = "lunes, 1 de enero de 0000";
             // 
             // tmrHoraFecha
             // 
@@ -568,13 +540,13 @@ namespace rootprox_2022
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ROOTPROX_Inicio_FormClosing);
             this.Load += new System.EventHandler(this.ROOTPROX_Inicio_Load);
             this.panelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
             this.panelContainerLeft.ResumeLayout(false);
             this.panelSubMenuTheme.ResumeLayout(false);
             this.panelSubMenuHelp.ResumeLayout(false);
             this.panelSubMenuMethods.ResumeLayout(false);
             this.panelForm.ResumeLayout(false);
             this.panelForm.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFormLogo)).EndInit();
             this.ResumeLayout(false);
 
@@ -605,8 +577,6 @@ namespace rootprox_2022
         private System.Windows.Forms.Label lblVersion;
         private System.Windows.Forms.PictureBox pbxLogo;
         private System.Windows.Forms.PictureBox pbxFormLogo;
-        private System.Windows.Forms.Label lblFecha;
-        private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Timer tmrHoraFecha;
     }
 }
