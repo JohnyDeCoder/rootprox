@@ -178,6 +178,9 @@ Esta mini guía te ayudará a solucionar (buscando por código) errores dentro d
 * **Nombre original:** _La cadena de entrada no tiene el formato correcto_
 * **Causa:** El usuario ha escrito una operación aritmética en los cuadros de textos que solamente contienen números _ej: 2-2 ó 2+2_.
 * **Solución:** Escribir solamente números, ya sea positivo, negativo o decimal de manera correcta _ej: 0 ó 1.5 ó -1.5_.
+#### ERR107
+* **Causa:** Cuando se calcula con la casilla "Sin Factor de Paroᴮᴱᵀᴬ" _marcada_, puede mostrar en la tabla de resultados valores infinitos (∞) o valores que no son números (NaN).
+* **Solución:** Desmarcar la casilla "Sin Factor de Paroᴮᴱᵀᴬ" para evitar el error.
 
 ### Código de Advertencias
 #### A100
@@ -207,9 +210,9 @@ _Les damos gracias por probar nuestra aplicación y por el apoyo recibido <3_
 Este proyecto está bajo la Licencia GNU General Public License v3.0 - mira el archivo `LICENSE` para más información
 
 ## Agradecimientos
+* [AngouriMath](https://github.com/asc-community/AngouriMath)
 * [BetaTesters](#betatesters)
 * [Font Awesome](https://fontawesome.com)
 * [README-Plantilla](https://github.com/othneildrew/Best-README-Template)
-* [AngouriMath](https://github.com/asc-community/AngouriMath)
 
 <p align="right">(<a href="#top">regresar al inicio</a>)</p>
