@@ -125,19 +125,27 @@ Esta guía te ayudará a familiarizarte con la aplicación de manera sencilla.
 * **Tabla de resultados** - _La tabla más pequeña (localizada en la parte inferior del "Factor de Paro") muestra el **último** resultado obtenido del cálculo, mientras que la tabla más grande (localizada en la parte inferior) muestra **todos** los resultados obtenidos del cálculo_
 
 #### Ayuda
-* Esta sección te ayuda a resolver problemas de ecuaciones por métodos.
-* _Al hacer "click" se desplegará un **submenú** en el cual hay 3 métodos disponibles:_
+* Esta sección te ayuda a obtener la guía de uso e información relevante acerca de la aplicación.
+* _Al hacer "click" se desplegará un **submenú** en el cual hay 2 opciones disponibles:_
+
+1. Guía de Uso
+2. Acerca de
 
 ##### **Guía de Uso**
 * _El botón te redirigirá a esta guía de uso para usuarios para saber cómo utilizar o cómo funciona cada una de las partes de la aplicación_
 
-##### **Cambiar Tema**
-* _Se desplegará un **submenú** con todos los temas (colores) disponibles, elija el que más le agrade ;)_
-
-* _**NOTA IMPORTANTE:** LA APLICACIÓN ES UN TRABAJO ACADÉMICO Y DEBE TOMARSE COMO TAL, NI EL LOGOTIPO NI LA APLICACIÓN ESTÁN REGISTRADOS ACTUALMENTE, **SOLO DEBERÁ USARSE PARA FINES ACADÉMICOS**_
-
 ##### **Acerca de**
 * _Se abrirá una nueva ventana con los datos de los creadores de la aplicación y un pequeño mensaje que debe cumplirse_
+
+##### **Cambiar Tema**
+* _Se desplegará un **submenú** con todos los temas de colores disponibles, elija el que más le agrade ;)_
+* _Puedes proponer mas temas en [Solicitar Función](https://github.com/JohnyDeCoder/rootprox/issues)_
+* _Actualmente hay 4 temas de colores disponibles:_
+
+1. Azul (por defecto)
+2. Rojo
+3. Verde
+4. Morado
 
 #### Lanzamientos
 * _Te redirigirá a los [tags de este repositorio](https://github.com/JohnyDeCoder/rootprox/tags) que son versiones disponibles para descargar y usar_
@@ -147,7 +155,7 @@ Esta guía te ayudará a familiarizarte con la aplicación de manera sencilla.
 
 ## Errores y advertencias
 
-Esta mini guía te ayudará a solucionar (buscando por código) errores dentro de la aplicación de manera rápida y cómoda.
+Esta mini guía te ayudará a solucionar (buscando por código) errores dentro de la aplicación de manera rápida, sencilla y cómoda.
 
 ### Código de Errores
 #### ERR100
@@ -200,7 +208,7 @@ Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones
 * **Brandon Moran** - *Colaborador* - [BrandonMoran11](https://github.com/BrandonMoran11)
 
 ## BetaTesters
-_Les damos gracias por probar nuestra aplicación y por el apoyo recibido <3_
+Les damos gracias por probar nuestra aplicación y por el apoyo recibido <3
 
 * Jonathan Torres
 * Juan Mesa - **Sobonny**
