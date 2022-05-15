@@ -7,7 +7,7 @@
   <h1 align="center">ROOTPROX ₂₀₂₂</h1>
 
   <p align="center">
-    <i>ROOTPROX es una calculadora de ecuaciones no lineales por el método de bisección, secante y regla falsa.</i>
+    <i>ROOTPROX es una calculadora para aproximar raíces de ecuaciones no lineales por el método de bisección, secante o regla falsa.</i>
     <br />
     <br />
     <a href="https://github.com/JohnyDeCoder/rootprox/issues">Reportar Bug</a>
