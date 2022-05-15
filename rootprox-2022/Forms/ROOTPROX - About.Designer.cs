@@ -96,7 +96,7 @@ namespace rootprox_2022.Forms
             // 
             // pbxFlagMex1
             // 
-            this.pbxFlagMex1.Image = global::rootprox_2022.Properties.Resources.flag_mexico_icon;
+            this.pbxFlagMex1.Image = global::Rootprox.Properties.Resources.flag_mexico_icon;
             this.pbxFlagMex1.Location = new System.Drawing.Point(130, 140);
             this.pbxFlagMex1.Name = "pbxFlagMex1";
             this.pbxFlagMex1.Size = new System.Drawing.Size(31, 29);
@@ -128,7 +128,7 @@ namespace rootprox_2022.Forms
             // 
             // pbxJohnyDeCoder
             // 
-            this.pbxJohnyDeCoder.Image = global::rootprox_2022.Properties.Resources.JohnyDeCoder_Avatar_GitHub_2022;
+            this.pbxJohnyDeCoder.Image = global::Rootprox.Properties.Resources.JohnyDeCoder_Avatar_GitHub_2022;
             this.pbxJohnyDeCoder.Location = new System.Drawing.Point(16, 45);
             this.pbxJohnyDeCoder.Name = "pbxJohnyDeCoder";
             this.pbxJohnyDeCoder.Size = new System.Drawing.Size(104, 124);
@@ -205,7 +205,7 @@ namespace rootprox_2022.Forms
             // 
             // pbxFlagMex2
             // 
-            this.pbxFlagMex2.Image = global::rootprox_2022.Properties.Resources.flag_mexico_icon;
+            this.pbxFlagMex2.Image = global::Rootprox.Properties.Resources.flag_mexico_icon;
             this.pbxFlagMex2.Location = new System.Drawing.Point(130, 140);
             this.pbxFlagMex2.Name = "pbxFlagMex2";
             this.pbxFlagMex2.Size = new System.Drawing.Size(31, 29);
@@ -215,7 +215,7 @@ namespace rootprox_2022.Forms
             // 
             // pbxBrandonMoran11
             // 
-            this.pbxBrandonMoran11.Image = global::rootprox_2022.Properties.Resources.BrandonMoran11_Avatar_GitHub_2022;
+            this.pbxBrandonMoran11.Image = global::Rootprox.Properties.Resources.BrandonMoran11_Avatar_GitHub_2022;
             this.pbxBrandonMoran11.Location = new System.Drawing.Point(16, 45);
             this.pbxBrandonMoran11.Name = "pbxBrandonMoran11";
             this.pbxBrandonMoran11.Size = new System.Drawing.Size(104, 124);
@@ -272,7 +272,7 @@ namespace rootprox_2022.Forms
             // 
             // pbxUdeC
             // 
-            this.pbxUdeC.Image = global::rootprox_2022.Properties.Resources.UdeC_2L_izq_Negro;
+            this.pbxUdeC.Image = global::Rootprox.Properties.Resources.UdeC_2L_izq_Negro;
             this.pbxUdeC.Location = new System.Drawing.Point(174, 43);
             this.pbxUdeC.Name = "pbxUdeC";
             this.pbxUdeC.Size = new System.Drawing.Size(110, 60);
@@ -296,7 +296,7 @@ namespace rootprox_2022.Forms
             // pbxGitHub2
             // 
             this.pbxGitHub2.BackColor = System.Drawing.Color.Transparent;
-            this.pbxGitHub2.Image = global::rootprox_2022.Properties.Resources.GitHub_Mark_120px_plus;
+            this.pbxGitHub2.Image = global::Rootprox.Properties.Resources.GitHub_Mark_120px_plus;
             this.pbxGitHub2.Location = new System.Drawing.Point(16, 74);
             this.pbxGitHub2.Name = "pbxGitHub2";
             this.pbxGitHub2.Size = new System.Drawing.Size(25, 25);
@@ -322,7 +322,7 @@ namespace rootprox_2022.Forms
             // pbxGitHub1
             // 
             this.pbxGitHub1.BackColor = System.Drawing.Color.Transparent;
-            this.pbxGitHub1.Image = global::rootprox_2022.Properties.Resources.GitHub_Mark_120px_plus;
+            this.pbxGitHub1.Image = global::Rootprox.Properties.Resources.GitHub_Mark_120px_plus;
             this.pbxGitHub1.Location = new System.Drawing.Point(16, 43);
             this.pbxGitHub1.Name = "pbxGitHub1";
             this.pbxGitHub1.Size = new System.Drawing.Size(25, 25);

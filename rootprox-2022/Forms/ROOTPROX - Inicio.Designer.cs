@@ -77,7 +77,7 @@ namespace rootprox_2022
             // 
             // pbxLogo
             // 
-            this.pbxLogo.Image = global::rootprox_2022.Properties.Resources.ROOTPROX_logo_blanco;
+            this.pbxLogo.Image = global::Rootprox.Properties.Resources.ROOTPROX_logo_blanco;
             this.pbxLogo.Location = new System.Drawing.Point(0, 12);
             this.pbxLogo.Name = "pbxLogo";
             this.pbxLogo.Size = new System.Drawing.Size(208, 91);
@@ -511,7 +511,7 @@ namespace rootprox_2022
             // pbxFormLogo
             // 
             this.pbxFormLogo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pbxFormLogo.Image = global::rootprox_2022.Properties.Resources.ROOTPROX_logo_blanco;
+            this.pbxFormLogo.Image = global::Rootprox.Properties.Resources.ROOTPROX_logo_blanco;
             this.pbxFormLogo.Location = new System.Drawing.Point(0, 145);
             this.pbxFormLogo.Name = "pbxFormLogo";
             this.pbxFormLogo.Size = new System.Drawing.Size(709, 302);
