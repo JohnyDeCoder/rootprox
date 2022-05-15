@@ -139,14 +139,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Rootprox.exe" size="3945472">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Rootprox.exe" size="3940352">
       <assemblyIdentity name="Rootprox" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>n09l125SuHV4bGagn64uLhnjwItzPoCU7Ank5unfDUU=</dsig:DigestValue>
+        <dsig:DigestValue>ag92u3SWxwPgwKWvlkF/HnWfHD151kHWszpTtAx3Uvk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -210,13 +210,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Rootprox.exe.config" size="334">
+  <file name="Rootprox.exe.config" size="187">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>j69osHzPNm/cs7mUHW+JSvNuQeAzMfvY5DWXJCCP29c=</dsig:DigestValue>
+      <dsig:DigestValue>+CM46OnHRrXZXNLMx7+U3V3iubiYL//d8hGOR13lDhU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="rootprox-icon.ico" size="4286">

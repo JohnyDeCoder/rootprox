@@ -72,9 +72,7 @@ D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\Git
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\obj\Debug\Rootprox.Properties.Resources.resources
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\Rootprox.exe.config
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\Rootprox.exe
-D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\Rootprox.pdb
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\obj\Debug\Rootprox.exe
-D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\obj\Debug\Rootprox.pdb
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\Rootprox.exe.manifest
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\bin\Debug\Rootprox.application
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\repos\rootprox\rootprox-2022\obj\Debug\Rootprox.TrustInfo.xml
