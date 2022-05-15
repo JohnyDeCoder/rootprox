@@ -31,42 +31,42 @@ namespace rootprox_2022.Forms
         {
             this.panelP1 = new System.Windows.Forms.Panel();
             this.lblLocation1 = new System.Windows.Forms.Label();
+            this.pbxFlagMex1 = new System.Windows.Forms.PictureBox();
             this.lblMajor1 = new System.Windows.Forms.Label();
             this.lblRoleOwner = new System.Windows.Forms.Label();
+            this.pbxJohnyDeCoder = new System.Windows.Forms.PictureBox();
             this.panelName1 = new System.Windows.Forms.Panel();
             this.lblName1 = new System.Windows.Forms.Label();
             this.lblLocation2 = new System.Windows.Forms.Label();
             this.lblMajor2 = new System.Windows.Forms.Label();
             this.lblRoleColab = new System.Windows.Forms.Label();
             this.panelP2 = new System.Windows.Forms.Panel();
+            this.pbxFlagMex2 = new System.Windows.Forms.PictureBox();
+            this.pbxBrandonMoran11 = new System.Windows.Forms.PictureBox();
             this.panelName2 = new System.Windows.Forms.Panel();
             this.lblName2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lblPhrase = new System.Windows.Forms.Label();
+            this.pbxUdeC = new System.Windows.Forms.PictureBox();
             this.linkBrandonMoran11 = new System.Windows.Forms.LinkLabel();
+            this.pbxGitHub2 = new System.Windows.Forms.PictureBox();
             this.linkJohnyDeCoder = new System.Windows.Forms.LinkLabel();
+            this.pbxGitHub1 = new System.Windows.Forms.PictureBox();
             this.lblProfilesGit = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.pbxUdeC = new System.Windows.Forms.PictureBox();
-            this.pbxGitHub2 = new System.Windows.Forms.PictureBox();
-            this.pbxGitHub1 = new System.Windows.Forms.PictureBox();
-            this.pbxFlagMex2 = new System.Windows.Forms.PictureBox();
-            this.pbxBrandonMoran11 = new System.Windows.Forms.PictureBox();
-            this.pbxFlagMex1 = new System.Windows.Forms.PictureBox();
-            this.pbxJohnyDeCoder = new System.Windows.Forms.PictureBox();
-            this.lblPhrase = new System.Windows.Forms.Label();
             this.lblVersion = new System.Windows.Forms.Label();
             this.panelP1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFlagMex1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxJohnyDeCoder)).BeginInit();
             this.panelName1.SuspendLayout();
             this.panelP2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFlagMex2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBrandonMoran11)).BeginInit();
             this.panelName2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxUdeC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxGitHub2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxGitHub1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxFlagMex2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxBrandonMoran11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxFlagMex1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxJohnyDeCoder)).BeginInit();
             this.SuspendLayout();
             // 
             // panelP1
@@ -94,6 +94,16 @@ namespace rootprox_2022.Forms
             this.lblLocation1.TabIndex = 4;
             this.lblLocation1.Text = "Colima, México";
             // 
+            // pbxFlagMex1
+            // 
+            this.pbxFlagMex1.Image = global::rootprox_2022.Properties.Resources.flag_mexico_icon;
+            this.pbxFlagMex1.Location = new System.Drawing.Point(130, 140);
+            this.pbxFlagMex1.Name = "pbxFlagMex1";
+            this.pbxFlagMex1.Size = new System.Drawing.Size(31, 29);
+            this.pbxFlagMex1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxFlagMex1.TabIndex = 3;
+            this.pbxFlagMex1.TabStop = false;
+            // 
             // lblMajor1
             // 
             this.lblMajor1.AutoSize = true;
@@ -115,6 +125,16 @@ namespace rootprox_2022.Forms
             this.lblRoleOwner.Size = new System.Drawing.Size(74, 23);
             this.lblRoleOwner.TabIndex = 1;
             this.lblRoleOwner.Text = "Creador";
+            // 
+            // pbxJohnyDeCoder
+            // 
+            this.pbxJohnyDeCoder.Image = global::rootprox_2022.Properties.Resources.JohnyDeCoder_Avatar_GitHub_2022;
+            this.pbxJohnyDeCoder.Location = new System.Drawing.Point(16, 45);
+            this.pbxJohnyDeCoder.Name = "pbxJohnyDeCoder";
+            this.pbxJohnyDeCoder.Size = new System.Drawing.Size(104, 124);
+            this.pbxJohnyDeCoder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxJohnyDeCoder.TabIndex = 0;
+            this.pbxJohnyDeCoder.TabStop = false;
             // 
             // panelName1
             // 
@@ -183,6 +203,26 @@ namespace rootprox_2022.Forms
             this.panelP2.Size = new System.Drawing.Size(290, 176);
             this.panelP2.TabIndex = 5;
             // 
+            // pbxFlagMex2
+            // 
+            this.pbxFlagMex2.Image = global::rootprox_2022.Properties.Resources.flag_mexico_icon;
+            this.pbxFlagMex2.Location = new System.Drawing.Point(130, 140);
+            this.pbxFlagMex2.Name = "pbxFlagMex2";
+            this.pbxFlagMex2.Size = new System.Drawing.Size(31, 29);
+            this.pbxFlagMex2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxFlagMex2.TabIndex = 3;
+            this.pbxFlagMex2.TabStop = false;
+            // 
+            // pbxBrandonMoran11
+            // 
+            this.pbxBrandonMoran11.Image = global::rootprox_2022.Properties.Resources.BrandonMoran11_Avatar_GitHub_2022;
+            this.pbxBrandonMoran11.Location = new System.Drawing.Point(16, 45);
+            this.pbxBrandonMoran11.Name = "pbxBrandonMoran11";
+            this.pbxBrandonMoran11.Size = new System.Drawing.Size(104, 124);
+            this.pbxBrandonMoran11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxBrandonMoran11.TabIndex = 0;
+            this.pbxBrandonMoran11.TabStop = false;
+            // 
             // panelName2
             // 
             this.panelName2.Controls.Add(this.lblName2);
@@ -218,6 +258,28 @@ namespace rootprox_2022.Forms
             this.panel4.Size = new System.Drawing.Size(290, 191);
             this.panel4.TabIndex = 6;
             // 
+            // lblPhrase
+            // 
+            this.lblPhrase.AutoSize = true;
+            this.lblPhrase.Font = new System.Drawing.Font("Candara Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPhrase.ForeColor = System.Drawing.Color.Black;
+            this.lblPhrase.Location = new System.Drawing.Point(10, 115);
+            this.lblPhrase.Name = "lblPhrase";
+            this.lblPhrase.Size = new System.Drawing.Size(274, 57);
+            this.lblPhrase.TabIndex = 11;
+            this.lblPhrase.Text = "\"Esta aplicación es un trabajo académico y\r\ndebe usarse como tal, ni el logo ni e" +
+    "l\r\nnombre están registrados oficialmente\"";
+            // 
+            // pbxUdeC
+            // 
+            this.pbxUdeC.Image = global::rootprox_2022.Properties.Resources.UdeC_2L_izq_Negro;
+            this.pbxUdeC.Location = new System.Drawing.Point(174, 43);
+            this.pbxUdeC.Name = "pbxUdeC";
+            this.pbxUdeC.Size = new System.Drawing.Size(110, 60);
+            this.pbxUdeC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxUdeC.TabIndex = 10;
+            this.pbxUdeC.TabStop = false;
+            // 
             // linkBrandonMoran11
             // 
             this.linkBrandonMoran11.AutoSize = true;
@@ -230,6 +292,17 @@ namespace rootprox_2022.Forms
             this.linkBrandonMoran11.TabStop = true;
             this.linkBrandonMoran11.Text = "BrandonMoran11";
             this.linkBrandonMoran11.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkBrandonMoran11_LinkClicked);
+            // 
+            // pbxGitHub2
+            // 
+            this.pbxGitHub2.BackColor = System.Drawing.Color.Transparent;
+            this.pbxGitHub2.Image = global::rootprox_2022.Properties.Resources.GitHub_Mark_120px_plus;
+            this.pbxGitHub2.Location = new System.Drawing.Point(16, 74);
+            this.pbxGitHub2.Name = "pbxGitHub2";
+            this.pbxGitHub2.Size = new System.Drawing.Size(25, 25);
+            this.pbxGitHub2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxGitHub2.TabIndex = 8;
+            this.pbxGitHub2.TabStop = false;
             // 
             // linkJohnyDeCoder
             // 
@@ -245,6 +318,17 @@ namespace rootprox_2022.Forms
             this.linkJohnyDeCoder.Text = "JohnyDeCoder";
             this.linkJohnyDeCoder.VisitedLinkColor = System.Drawing.Color.Purple;
             this.linkJohnyDeCoder.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkJohnyDeCoder_LinkClicked);
+            // 
+            // pbxGitHub1
+            // 
+            this.pbxGitHub1.BackColor = System.Drawing.Color.Transparent;
+            this.pbxGitHub1.Image = global::rootprox_2022.Properties.Resources.GitHub_Mark_120px_plus;
+            this.pbxGitHub1.Location = new System.Drawing.Point(16, 43);
+            this.pbxGitHub1.Name = "pbxGitHub1";
+            this.pbxGitHub1.Size = new System.Drawing.Size(25, 25);
+            this.pbxGitHub1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxGitHub1.TabIndex = 6;
+            this.pbxGitHub1.TabStop = false;
             // 
             // lblProfilesGit
             // 
@@ -268,100 +352,16 @@ namespace rootprox_2022.Forms
             this.label9.TabIndex = 2;
             this.label9.Text = "__________________________";
             // 
-            // pbxUdeC
-            // 
-            this.pbxUdeC.Image = global::rootprox_2022.Properties.Resources.UdeC_2L_izq_Negro;
-            this.pbxUdeC.Location = new System.Drawing.Point(174, 43);
-            this.pbxUdeC.Name = "pbxUdeC";
-            this.pbxUdeC.Size = new System.Drawing.Size(110, 60);
-            this.pbxUdeC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbxUdeC.TabIndex = 10;
-            this.pbxUdeC.TabStop = false;
-            // 
-            // pbxGitHub2
-            // 
-            this.pbxGitHub2.BackColor = System.Drawing.Color.Transparent;
-            this.pbxGitHub2.Image = global::rootprox_2022.Properties.Resources.GitHub_Mark_120px_plus;
-            this.pbxGitHub2.Location = new System.Drawing.Point(16, 74);
-            this.pbxGitHub2.Name = "pbxGitHub2";
-            this.pbxGitHub2.Size = new System.Drawing.Size(25, 25);
-            this.pbxGitHub2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbxGitHub2.TabIndex = 8;
-            this.pbxGitHub2.TabStop = false;
-            // 
-            // pbxGitHub1
-            // 
-            this.pbxGitHub1.BackColor = System.Drawing.Color.Transparent;
-            this.pbxGitHub1.Image = global::rootprox_2022.Properties.Resources.GitHub_Mark_120px_plus;
-            this.pbxGitHub1.Location = new System.Drawing.Point(16, 43);
-            this.pbxGitHub1.Name = "pbxGitHub1";
-            this.pbxGitHub1.Size = new System.Drawing.Size(25, 25);
-            this.pbxGitHub1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbxGitHub1.TabIndex = 6;
-            this.pbxGitHub1.TabStop = false;
-            // 
-            // pbxFlagMex2
-            // 
-            this.pbxFlagMex2.Image = global::rootprox_2022.Properties.Resources.flag_mexico_icon;
-            this.pbxFlagMex2.Location = new System.Drawing.Point(130, 140);
-            this.pbxFlagMex2.Name = "pbxFlagMex2";
-            this.pbxFlagMex2.Size = new System.Drawing.Size(31, 29);
-            this.pbxFlagMex2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbxFlagMex2.TabIndex = 3;
-            this.pbxFlagMex2.TabStop = false;
-            // 
-            // pbxBrandonMoran11
-            // 
-            this.pbxBrandonMoran11.Image = global::rootprox_2022.Properties.Resources.BrandonMoran11_Avatar_GitHub_2022;
-            this.pbxBrandonMoran11.Location = new System.Drawing.Point(16, 45);
-            this.pbxBrandonMoran11.Name = "pbxBrandonMoran11";
-            this.pbxBrandonMoran11.Size = new System.Drawing.Size(104, 124);
-            this.pbxBrandonMoran11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbxBrandonMoran11.TabIndex = 0;
-            this.pbxBrandonMoran11.TabStop = false;
-            // 
-            // pbxFlagMex1
-            // 
-            this.pbxFlagMex1.Image = global::rootprox_2022.Properties.Resources.flag_mexico_icon;
-            this.pbxFlagMex1.Location = new System.Drawing.Point(130, 140);
-            this.pbxFlagMex1.Name = "pbxFlagMex1";
-            this.pbxFlagMex1.Size = new System.Drawing.Size(31, 29);
-            this.pbxFlagMex1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbxFlagMex1.TabIndex = 3;
-            this.pbxFlagMex1.TabStop = false;
-            // 
-            // pbxJohnyDeCoder
-            // 
-            this.pbxJohnyDeCoder.Image = global::rootprox_2022.Properties.Resources.JohnyDeCoder_Avatar_GitHub_2022;
-            this.pbxJohnyDeCoder.Location = new System.Drawing.Point(16, 45);
-            this.pbxJohnyDeCoder.Name = "pbxJohnyDeCoder";
-            this.pbxJohnyDeCoder.Size = new System.Drawing.Size(104, 124);
-            this.pbxJohnyDeCoder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbxJohnyDeCoder.TabIndex = 0;
-            this.pbxJohnyDeCoder.TabStop = false;
-            // 
-            // lblPhrase
-            // 
-            this.lblPhrase.AutoSize = true;
-            this.lblPhrase.Font = new System.Drawing.Font("Candara Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhrase.ForeColor = System.Drawing.Color.Black;
-            this.lblPhrase.Location = new System.Drawing.Point(10, 115);
-            this.lblPhrase.Name = "lblPhrase";
-            this.lblPhrase.Size = new System.Drawing.Size(274, 57);
-            this.lblPhrase.TabIndex = 11;
-            this.lblPhrase.Text = "\"Esta aplicación es un trabajo académico y\r\ndebe usarse como tal, ni el logo ni e" +
-    "l\r\nnombre están registrados oficialmente\"";
-            // 
             // lblVersion
             // 
             this.lblVersion.AutoSize = true;
-            this.lblVersion.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVersion.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVersion.ForeColor = System.Drawing.Color.Black;
-            this.lblVersion.Location = new System.Drawing.Point(225, 556);
+            this.lblVersion.Location = new System.Drawing.Point(232, 558);
             this.lblVersion.Name = "lblVersion";
-            this.lblVersion.Size = new System.Drawing.Size(85, 19);
+            this.lblVersion.Size = new System.Drawing.Size(80, 19);
             this.lblVersion.TabIndex = 5;
-            this.lblVersion.Text = "v0.0.0-beta";
+            this.lblVersion.Text = "v1.0.0-beta";
             // 
             // ROOTPROX_About
             // 
@@ -383,10 +383,14 @@ namespace rootprox_2022.Forms
             this.Load += new System.EventHandler(this.ROOTPROX_About_Load);
             this.panelP1.ResumeLayout(false);
             this.panelP1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFlagMex1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxJohnyDeCoder)).EndInit();
             this.panelName1.ResumeLayout(false);
             this.panelName1.PerformLayout();
             this.panelP2.ResumeLayout(false);
             this.panelP2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFlagMex2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBrandonMoran11)).EndInit();
             this.panelName2.ResumeLayout(false);
             this.panelName2.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -394,10 +398,6 @@ namespace rootprox_2022.Forms
             ((System.ComponentModel.ISupportInitialize)(this.pbxUdeC)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxGitHub2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxGitHub1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxFlagMex2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxBrandonMoran11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxFlagMex1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxJohnyDeCoder)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
